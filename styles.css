@@ -52,7 +52,7 @@ li a{
 }
 .Order_Button{
     width: 149.9px;
-    height: 33px;
+    height: 32px;
     text-align: center;
     background-color: #C94040;
     color: white;
@@ -62,7 +62,6 @@ li a{
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
     line-height: 100%;
     align-items: center;
     text-align: center;
@@ -222,4 +221,35 @@ li a{
     align-items: center;
     text-align: center;
     text-transform: uppercase;
+}
+
+
+
+.Instagram{
+    width: 100%;
+}
+.Instagram_Handle{
+    display: flex;
+    flex-direction: row;
+}
+.Instagram_Handle img{
+    width: 37.63px;
+    height: 37.63px;
+}
+.Instagram h1{
+    position: absolute;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28.125px;
+    line-height: 104%;
+    /* or 29px */
+    text-align: right;
+    float: right;
+    /* Dark Blue */
+    color: #1D2A63;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
 }
