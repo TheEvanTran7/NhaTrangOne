@@ -1,0 +1,225 @@
+body{
+    background: #FFFFFF;
+    width: 100%;
+    margin: auto;
+}
+
+
+nav{
+    background: #FFFFFF;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+.Layer_3{
+    width: 29.86px;
+    height: 24.99px;
+    text-align: center;
+}
+.NHA_TRANG_ONE{
+    font-size: 22.5px;
+    font-family: 'Squada One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.5px;
+    line-height: 30px;
+    /* Dark Blue */
+    color: #1D2A63;
+}
+.Nav_Bar_Links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: right;
+    align-items: center;
+}
+li{
+    display: inline-block;
+}
+li a{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.5px;
+    line-height: 30px;
+    display: flex;
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #1D2A63;
+}
+.Order_Button{
+    width: 149.9px;
+    height: 33px;
+    text-align: center;
+    background-color: #C94040;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 2px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+
+.Landing_Page_Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/nha-trang-inside.jfif');
+    background-size: cover;
+    height: 945px;
+    gap: 44.32px;
+}
+.Landing_Page_Content .main_logo{
+    width: 367.53px;
+    height: 306.31px;
+}
+.Landing_Page_Content h1{
+    width: 883.9px;
+    height: 114.56px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52.441px;
+    line-height: 104%;
+    /* or 55px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    /* Light */
+    color: #FAFAFB;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.Landing_Page_Content button{
+    width: 247.55px;
+    height: 63.45px;
+    text-align: center;
+    background-color: #C94040;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 2px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    /* or 30px */
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.Popular_Dishes_Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 56.25px;
+    gap: 56.25px;
+    background-color: #1D2A63;
+}
+.Popular_Dishes_Content h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 76px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #FAFAFB;
+}
+.Popular_Dishes_Content .dishes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 67.5px;
+}
+.Popular_Dishes_Content .Top_Row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 80.66px;
+}
+.Popular_Dishes_Content .dish{
+    width: 417.73px;
+    height: 229.97px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    order: 1;
+    flex-grow: 0;
+}
+.Popular_Dishes_Content .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 229.97px;
+    left: 0px;
+    top: 0px;
+    border-radius: 4.53609px;
+}
+.Popular_Dishes_Content p{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100%;
+    /* or 18px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+.Popular_Dishes_Content img{
+    height: 190px;
+    width: 180px;
+    border-radius: 2.72165px;
+    align-self: center;
+}
+.Popular_Dishes_Content button{
+    width: 324.68px;
+    height: 67.21px;
+    text-align: center;
+    background-color: #C94040;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 2px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 100%;
+    /* or 30px */
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
