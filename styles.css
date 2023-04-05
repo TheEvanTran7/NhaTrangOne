@@ -227,29 +227,90 @@ li a{
 
 .Instagram{
     width: 100%;
+    padding-bottom: 30px;
 }
 .Instagram_Handle{
-    display: flex;
-    flex-direction: row;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
 }
-.Instagram_Handle img{
+.Instagram_Handle svg{
     width: 37.63px;
     height: 37.63px;
 }
-.Instagram h1{
-    position: absolute;
+.Instagram_Handle li{
+    display: inline-block;
+}
+.Instagram_Handle p{
     font-family: 'Roboto Slab';
     font-style: normal;
-    font-weight: 600;
-    font-size: 28.125px;
-    line-height: 104%;
-    /* or 29px */
-    text-align: right;
-    float: right;
-    /* Dark Blue */
-    color: #1D2A63;
+    font-weight: 900;
+    font-size: 30.1045px;
+    text-transform: lowercase;
+    color: #182353;
+}
+.Instagram .photos{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5.16306px;
+    gap: 29.27px;
+}
+.photos .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    width: 1312.06px;
+    height: 426.48px;
+}
+.photos img{
+    width: 425.95px;
+    height: 425.95px;
+}
+
+
+
+.Location{
+    background-color: #182353;
+    color: #FFFFFF;
+    font-family: 'Roboto Slab';
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+.Location #map, .Location .description{
+    width: 50%;
+}
+.Location h1{
+    font-size: 54px;
+}
+.Location h2{
+    font-size: 28px;
+}
+.Location table{
+    width: 100%;
+}
+.Location button{
+    width: 183.38px;
+    height: 44.35px;
+    text-align: center;
+    background-color: #C94040;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 2px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    /* or 30px */
     align-items: center;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
