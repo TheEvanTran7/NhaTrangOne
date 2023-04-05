@@ -12,16 +12,18 @@ nav{
     top: 0px;
 }
 .Layer_3{
-    width: 29.86px;
-    height: 24.99px;
+    width: 30px;
+    height: 25px;
     text-align: center;
 }
+
 .NHA_TRANG_ONE{
-    font-size: 22.5px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     font-family: 'Squada One';
     font-style: normal;
     font-weight: 400;
-    font-size: 22.5px;
+    font-size: 32px;
     line-height: 30px;
     /* Dark Blue */
     color: #1D2A63;
@@ -30,14 +32,16 @@ nav{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    height: auto;
     overflow: hidden;
     text-align: right;
-    align-items: center;
 }
 li{
     display: inline-block;
+    
 }
 li a{
+    margin:auto;
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 600;
@@ -46,19 +50,23 @@ li a{
     display: flex;
     float: right;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 14px;
     text-decoration: none;
     color: #1D2A63;
 }
+#order{
+    padding: 7px 14px;
+}
 .Order_Button{
     width: 149.9px;
-    height: 32px;
+    height: 39px;
     text-align: center;
-    background-color: #C94040;
+    background: #C94040;
     color: white;
     cursor: pointer;
     border: 0px;
     border-radius: 2px;
+    font-size:18px;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 700;
@@ -66,6 +74,7 @@ li a{
     align-items: center;
     text-align: center;
     text-transform: uppercase;
+ 
 
 }
 
