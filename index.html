@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Squada One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
     <link rel="stylesheet" href="styles.css">
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
@@ -19,17 +22,26 @@
     <title>Nha Trang One</title>
 </head>
 <body>
-    <nav>
+    <nav class = "navdesktop">
         <ul class="Nav_Bar_Links">
             <div class="Logo" style="float:left; display: flex; justify-content: center; align-items: center; padding: 0px 10px ; gap: 7px;">
                 <img class="Layer_3" src="nhatrangimg/nha-trang-one-logo.svg" alt="nha-trang-one-logo">
                 <a href="index.html" style="text-decoration: none;"><h1 class="NHA_TRANG_ONE">NHA TRANG ONE</h1></a>
             </div>
             <li><a href="">About Us</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="">Location</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="#Location">Location</a></li>
             <li><a href="">FAQ</a></li>
             <li><a href="" id="order"><button class="Order_Button">ORDER NOW</button></a></li>
+        </ul>
+    </nav>
+    <nav class = 'navmobile'>
+        <ul class="Nav_Bar_Links">
+            <div class="Logo" style="float:left; display: flex; justify-content: center; align-items: center; padding: 0px 10px ; gap: 7px;">
+                <img class="Layer_3" src="nhatrangimg/nha-trang-one-logo.svg" alt="nha-trang-one-logo">
+                <h1 class="NHA_TRANG_ONE">NHA TRANG ONE</h1>
+            </div>
+            <button>TEMPORARY</button>
         </ul>
     </nav>
 
@@ -45,51 +57,47 @@
         <div class="Popular_Dishes_Content">
             <h1>POPULAR DISHES & DRINKS</h1>
             <div class="dishes">
-                <div class="Top_Row">
-                    <div class="dish">
-                        <div class="description">
-                            <h2>Gỏi Cuốn</h2>
-                            <p>Summer Roll with Rice Vermicelli and Shrimp</p>
-                        </div>
-                        <img src="nhatrangImg/goi-cuon.png" alt="goi-cuon">
+                <div class="dish">
+                    <div class="description">
+                        <h2>Gỏi Cuốn</h2>
+                        <p>Summer Rolls with Rice Vermicelli and Shrimp</p>
                     </div>
-                    <div class="dish">
-                        <div class="description">
-                            <h2>Phở Dặc Biệt</h2>
-                            <p>Special Beef and Rice Noodle Soup</p>
-                        </div>
-                        <img src="nhatrangImg/pho-dac-biet.png" alt="pho-dac-biet">
-                    </div>
-                    <div class="dish">
-                        <div class="description">
-                            <h2>Chả Giò</h2>
-                            <p>Vietnamese Style Deep Fried Spring Roll</p>
-                        </div>
-                        <img src="nhatrangImg/cha-gio.png" alt="cha-gio">
-                    </div>
+                    <img src="nhatrangImg/goi-cuon.png" alt="goi-cuon">
                 </div>
-                <div class="Top_Row">
-                    <div class="dish">
-                        <div class="description">
-                            <h2>Mực Chiên Dòn</h2>
-                            <p>Crispy Squid (Calamari) with Garlic Sauce</p>
-                        </div>
-                        <img src="nhatrangImg/muc-chien-don.png" alt="muc-chien-don">
+                <div class="dish">
+                    <div class="description">
+                        <h2>Phở Dặc Biệt</h2>
+                        <p>Special Beef and Rice Noodle Soup</p>
                     </div>
-                    <div class="dish">
-                        <div class="description">
-                            <h2>Sườn Heo Nướng</h2>
-                            <p>Vietnamese Style Barbecue Pork Chop</p>
-                        </div>
-                        <img src="nhatrangImg/suon-heo-nuong.png" alt="suon-heo-nuong">
+                    <img src="nhatrangImg/PTDB.JPG" alt="pho-dac-biet">
+                </div>
+                <div class="dish">
+                    <div class="description">
+                        <h2>Chả Giò</h2>
+                        <p>Vietnamese Style Deep Fried Spring Rolls</p>
                     </div>
-                    <div class="dish">
-                        <div class="description">
-                            <h2>Cà Phê Sữa Đá</h2>
-                            <p>Vietnamese Style Iced Coffee with Condensed Milk</p>
-                        </div>
-                        <img src="nhatrangImg/ca-phe-sua-da.png" alt="ca-phe-sua-da">
+                    <img src="nhatrangImg/cha-gio.png" alt="cha-gio">
+                </div>
+                <div class="dish">
+                    <div class="description">
+                        <h2>Mực Chiên Dòn</h2>
+                        <p>Crispy Squid (Calamari) with Garlic Sauce</p>
                     </div>
+                    <img src="nhatrangImg/muc-chien-don.png" alt="muc-chien-don">
+                </div>
+                <div class="dish">
+                    <div class="description">
+                        <h2>Sườn Heo Nướng</h2>
+                        <p>Vietnamese Style Barbecue Pork Chops</p>
+                    </div>
+                    <img src="nhatrangImg/suon-heo-nuong.png" alt="suon-heo-nuong">
+                </div>
+                <div class="dish">
+                    <div class="description">
+                        <h2>Cà Phê Sữa Đá</h2>
+                        <p>Vietnamese Style Iced Coffee with Condensed Milk</p>
+                    </div>
+                    <img src="nhatrangImg/ca-phe-sua-da.png" alt="ca-phe-sua-da">
                 </div>
             </div>
             <button>EXPLORE THE MENU</button>
@@ -97,48 +105,44 @@
     </section>
 
     <section class="Instagram">
+        <!-- fix formatting with the p elements -->
         <div class="Instagram_Handle">
-            <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.4471 0.875H27.2519C33.2729 0.875 38.1648 5.76699 38.1648 11.7879V27.5928C38.1648 30.487 37.0151 33.2628 34.9685 35.3093C32.922 37.3559 30.1462 38.5057 27.2519 38.5057H11.4471C5.42617 38.5057 0.53418 33.6137 0.53418 27.5928V11.7879C0.53418 8.89361 1.68393 6.11788 3.73049 4.07131C5.77706 2.02475 8.55279 0.875 11.4471 0.875ZM11.0708 4.63807C9.27432 4.63807 7.55144 5.3517 6.28116 6.62198C5.01088 7.89227 4.29725 9.61514 4.29725 11.4116V27.9691C4.29725 31.7133 7.32651 34.7426 11.0708 34.7426H27.6283C29.4247 34.7426 31.1476 34.029 32.4179 32.7587C33.6881 31.4884 34.4018 29.7655 34.4018 27.9691V11.4116C34.4018 7.66733 31.3725 4.63807 27.6283 4.63807H11.0708ZM29.2276 7.46037C29.8513 7.46037 30.4495 7.70816 30.8906 8.14923C31.3317 8.5903 31.5795 9.18851 31.5795 9.81228C31.5795 10.436 31.3317 11.0343 30.8906 11.4753C30.4495 11.9164 29.8513 12.1642 29.2276 12.1642C28.6038 12.1642 28.0056 11.9164 27.5645 11.4753C27.1234 11.0343 26.8756 10.436 26.8756 9.81228C26.8756 9.18851 27.1234 8.5903 27.5645 8.14923C28.0056 7.70816 28.6038 7.46037 29.2276 7.46037ZM19.3495 10.2827C21.8446 10.2827 24.2375 11.2738 26.0017 13.0381C27.766 14.8024 28.7572 17.1953 28.7572 19.6903C28.7572 22.1854 27.766 24.5783 26.0017 26.3426C24.2375 28.1068 21.8446 29.098 19.3495 29.098C16.8544 29.098 14.4616 28.1068 12.6973 26.3426C10.933 24.5783 9.94184 22.1854 9.94184 19.6903C9.94184 17.1953 10.933 14.8024 12.6973 13.0381C14.4616 11.2738 16.8544 10.2827 19.3495 10.2827ZM19.3495 14.0457C17.8525 14.0457 16.4167 14.6404 15.3582 15.699C14.2996 16.7576 13.7049 18.1933 13.7049 19.6903C13.7049 21.1874 14.2996 22.6231 15.3582 23.6817C16.4167 24.7402 17.8525 25.3349 19.3495 25.3349C20.8466 25.3349 22.2823 24.7402 23.3408 23.6817C24.3994 22.6231 24.9941 21.1874 24.9941 19.6903C24.9941 18.1933 24.3994 16.7576 23.3408 15.699C22.2823 14.6404 20.8466 14.0457 19.3495 14.0457Z" fill="#182353"/></svg>                    
-            <p>@NHATRANGNYC </p>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+                <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.4471 0.875H27.2519C33.2729 0.875 38.1648 5.76699 38.1648 11.7879V27.5928C38.1648 30.487 37.0151 33.2628 34.9685 35.3093C32.922 37.3559 30.1462 38.5057 27.2519 38.5057H11.4471C5.42617 38.5057 0.53418 33.6137 0.53418 27.5928V11.7879C0.53418 8.89361 1.68393 6.11788 3.73049 4.07131C5.77706 2.02475 8.55279 0.875 11.4471 0.875ZM11.0708 4.63807C9.27432 4.63807 7.55144 5.3517 6.28116 6.62198C5.01088 7.89227 4.29725 9.61514 4.29725 11.4116V27.9691C4.29725 31.7133 7.32651 34.7426 11.0708 34.7426H27.6283C29.4247 34.7426 31.1476 34.029 32.4179 32.7587C33.6881 31.4884 34.4018 29.7655 34.4018 27.9691V11.4116C34.4018 7.66733 31.3725 4.63807 27.6283 4.63807H11.0708ZM29.2276 7.46037C29.8513 7.46037 30.4495 7.70816 30.8906 8.14923C31.3317 8.5903 31.5795 9.18851 31.5795 9.81228C31.5795 10.436 31.3317 11.0343 30.8906 11.4753C30.4495 11.9164 29.8513 12.1642 29.2276 12.1642C28.6038 12.1642 28.0056 11.9164 27.5645 11.4753C27.1234 11.0343 26.8756 10.436 26.8756 9.81228C26.8756 9.18851 27.1234 8.5903 27.5645 8.14923C28.0056 7.70816 28.6038 7.46037 29.2276 7.46037ZM19.3495 10.2827C21.8446 10.2827 24.2375 11.2738 26.0017 13.0381C27.766 14.8024 28.7572 17.1953 28.7572 19.6903C28.7572 22.1854 27.766 24.5783 26.0017 26.3426C24.2375 28.1068 21.8446 29.098 19.3495 29.098C16.8544 29.098 14.4616 28.1068 12.6973 26.3426C10.933 24.5783 9.94184 22.1854 9.94184 19.6903C9.94184 17.1953 10.933 14.8024 12.6973 13.0381C14.4616 11.2738 16.8544 10.2827 19.3495 10.2827ZM19.3495 14.0457C17.8525 14.0457 16.4167 14.6404 15.3582 15.699C14.2996 16.7576 13.7049 18.1933 13.7049 19.6903C13.7049 21.1874 14.2996 22.6231 15.3582 23.6817C16.4167 24.7402 17.8525 25.3349 19.3495 25.3349C20.8466 25.3349 22.2823 24.7402 23.3408 23.6817C24.3994 22.6231 24.9941 21.1874 24.9941 19.6903C24.9941 18.1933 24.3994 16.7576 23.3408 15.699C22.2823 14.6404 20.8466 14.0457 19.3495 14.0457Z" fill="#182353"/></svg>                    
+                <p>@nhatrangone </p>
+            </div>
+            <!-- <p>Instagram</p> -->
         </div>
-
         <div class="photos">
-            <div class="row">
                 <img src="nhatrangImg/ig1.png" alt="ig1">
                 <img src="nhatrangImg/ig2.png" alt="ig2">
                 <img src="nhatrangImg/ig3.png" alt="ig3">
-            </div>
-            <div class="row">
                 <img src="nhatrangImg/ig4.png" alt="ig4">
                 <img src="nhatrangImg/ig5.png" alt="ig5">
                 <img src="nhatrangImg/ig6.png" alt="ig6">
-            </div>
         </div>
+        <div class="Instagram_Handle" style = "justify-content: right; margin-top: 15px;">
+            <p>Follow Us On Instagram!</p>
+        </div>
+        
     </section>
     
-    <section class="Location">
+    <section class="Location" id = "Location"> 
         <div class="description">
-            <h1>Location</h1>
-            <h2>87 Baxter Street New York, NY 10013</h2>
-            <h2>(212) 233-5948</h2>
-            <button>GET DIRECTIONS</button>
-            <br>
-            <h1>Hours</h1>
-            <table>
-                <tr>
-                    <td><h2>Monday</h2></td>
-                    <td><h2>Closed</h2></td>
-                </tr>
-                <tr>
-                    <td><h2>Tuesday - Sunday</h2></td>
-                    <td><h2>11:00 AM - 8:30 PM</h2></td>
-                </tr>
-            </table>
+            <h1>HOURS & LOCATION</h1>
+            <!-- add diamonds -->
+            <br>diamonds go here</br> 
+            <p>87 Baxter Street</p>
+            <p>New York, NY 10013</p>
+            <p>(212)-233-5948</p>
+            <br/>
+            <h2>OPEN EVERDAY EXCEPT MONDAY</h2>
+            <p>11:00 AM - 8:30 PM</p>
         </div>
-        <div id="map"></div>
+        <div id="map"> I am map</div>
         <script>
             // Adding my map from mapbox with access token and map style
-            mapboxgl.accessToken = '[Your API KEY HERE]'; 
+            mapboxgl.accessToken = ''; 
             const map = new mapboxgl.Map({
               container: 'map',
               style: 'mapbox://styles/andrewdai6123/clg2xlsap002f01mqrt7vrgqt', 
@@ -146,6 +150,6 @@
               zoom: 18
             });
         </script>
-    </section> 
+    </section>
 </body>
 </html>
