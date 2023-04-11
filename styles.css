@@ -156,7 +156,7 @@ li a{
     background-color: var(--darkBlue);
 }
 .Popular_Dishes_Content h1{
-    font-family: 'Roboto';
+    font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 900;
     font-size: 65px;
@@ -164,15 +164,15 @@ li a{
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: capitalize;
-    color: var(--lightColor);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--lightColor); 
 }
 
 .Popular_Dishes_Content h2{
     /* Pop Dishes Food Header */
 
-font-family: 'Roboto';
+font-family: 'Roboto Condensed';
 font-style: normal;
 font-weight: 600;
 font-size: 25px;
@@ -223,16 +223,17 @@ color: var(--lightGrey);
     border-radius: 4.53609px;
 }
 .Popular_Dishes_Content p{
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 100%;
-    /* or 18px */
+    /* or 20px */
+    
     display: flex;
     align-items: center;
     text-align: center;
-    text-transform: capitalize;
+    letter-spacing: 0.025em;
 }
 .Popular_Dishes_Content img{
     height: 190px;
