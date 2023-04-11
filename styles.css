@@ -58,7 +58,7 @@ li a{
     padding: 7px 14px;
 }
 .Order_Button{
-    width: 149.9px;
+    width: 150px;
     height: 39px;
     text-align: center;
     background: #C94040;
@@ -115,8 +115,8 @@ li a{
     margin-bottom: 0;
 }
 .Landing_Page_Content button{
-    width: 247.55px;
-    height: 63.45px;
+    width: 255px;
+    height: 65px;
     text-align: center;
     background-color: #C94040;
     color: white;
@@ -172,7 +172,7 @@ li a{
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    gap: 80.66px;
+    gap: 80px;
 }
 .Popular_Dishes_Content .dish{
     width: 417.73px;
