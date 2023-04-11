@@ -362,10 +362,9 @@ p{
     text-align: center;
     text-transform: uppercase;
 }
-/* #map{
-    height: 100px;
-    width: 100%;
-} */
+#map{
+    height: 40vh;
+}
 
 /* mobile responsiveness */
 @media only screen and (min-width: 1010px) {

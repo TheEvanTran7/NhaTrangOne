@@ -29,7 +29,7 @@
                 <a href="index.html" style="text-decoration: none;"><h1 class="NHA_TRANG_ONE">NHA TRANG ONE</h1></a>
             </div>
             <li><a href="">About Us</a></li>
-            <li><a href="">Menu</a></li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="#Location">Location</a></li>
             <li><a href="">FAQ</a></li>
             <li><a href="" id="order"><button class="Order_Button">ORDER NOW</button></a></li>
@@ -131,7 +131,6 @@
         <div class="description">
             <h1>HOURS & LOCATION</h1>
             <!-- add diamonds -->
-            <br>diamonds go here</br> 
             <p>87 Baxter Street</p>
             <p>New York, NY 10013</p>
             <p>(212)-233-5948</p>
@@ -139,15 +138,15 @@
             <h2>OPEN EVERDAY EXCEPT MONDAY</h2>
             <p>11:00 AM - 8:30 PM</p>
         </div>
-        <div id="map"> I am map</div>
+        <div id="map"></div>
         <script>
             // Adding my map from mapbox with access token and map style
-            mapboxgl.accessToken = ''; 
+            mapboxgl.accessToken = '[Your API KEY HERE]'; 
             const map = new mapboxgl.Map({
               container: 'map',
               style: 'mapbox://styles/andrewdai6123/clg2xlsap002f01mqrt7vrgqt', 
               center: [-73.99965, 40.71675],
-              zoom: 18
+              zoom: 13.5
             });
         </script>
     </section>
