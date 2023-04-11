@@ -1,12 +1,21 @@
+:root{
+    --lightColor: #FAFAFB;
+    --darkBlue: #182353;
+    --white: #ffffff;
+    --primaryRed: #C94040;
+    --darkGrey: #2C2726;
+    --lightGrey: #3D3A39;
+}
+
 body{
-    background: #FFFFFF;
+    background: var(--lightColor);
     width: 100%;
     margin: auto;
 }
 
 
 nav{
-    background: #FFFFFF;
+    background: var(--lightColor);
     width: 100%;
     left: 0px;
     top: 0px;
@@ -27,7 +36,7 @@ nav{
     font-size: 32px;
     line-height: 30px;
     /* Dark Blue */
-    color: #1D2A63;
+    color: var(--darkBlue);
 }
 .Nav_Bar_Links{
     list-style-type: none;
@@ -53,7 +62,7 @@ li a{
     text-align: center;
     padding: 14px 14px;
     text-decoration: none;
-    color: #1D2A63;
+    color: var(--darkBlue);
 }
 #order{
     padding: 7px 14px;
@@ -62,8 +71,8 @@ li a{
     width: 150px;
     height: 39px;
     text-align: center;
-    background: #C94040;
-    color: white;
+    background: var(--primaryRed);
+    color: var(--white);
     cursor: pointer;
     border: 0px;
     border-radius: 2px;
@@ -111,7 +120,7 @@ li a{
     letter-spacing: 0.035em;
     text-transform: capitalize;
     /* Light */
-    color: #FAFAFB;
+    color: var(--lightColor);
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -119,8 +128,8 @@ li a{
     width: 255px;
     height: 65px;
     text-align: center;
-    background-color: #C94040;
-    color: white;
+    background-color: var(--primaryRed);
+    color: var(--white);
     cursor: pointer;
     border: 0px;
     border-radius: 2px;
@@ -144,7 +153,7 @@ li a{
     align-items: center;
     padding: 0px 0px 56.25px;
     gap: 56.25px;
-    background-color: #1D2A63;
+    background-color: var(--darkBlue);
 }
 .Popular_Dishes_Content h1{
     font-family: 'Roboto';
@@ -157,7 +166,25 @@ li a{
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: capitalize;
-    color: #FAFAFB;
+    color: var(--lightColor);
+}
+
+.Popular_Dishes_Content h2{
+    /* Pop Dishes Food Header */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 104%;
+/* identical to box height, or 26px */
+
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+/* Nav Bar */
+color: var(--lightGrey);
 }
 .Popular_Dishes_Content .dishes{
     display: flex;
@@ -173,12 +200,12 @@ li a{
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    gap: 80px;
+    gap: 80.66px;
 }
 .Popular_Dishes_Content .dish{
     width: 417.73px;
     height: 229.97px;
-    background-color: #FFFFFF;
+    background-color: var(--lightColor);
     display: flex;
     flex-direction: row;
     order: 1;
@@ -217,8 +244,8 @@ li a{
     width: 324.68px;
     height: 67.21px;
     text-align: center;
-    background-color: #C94040;
-    color: white;
+    background-color: var(--primaryRed);
+    color: var(--white);
     cursor: pointer;
     border: 0px;
     border-radius: 2px;
@@ -258,7 +285,7 @@ li a{
     font-weight: 900;
     font-size: 30.1045px;
     text-transform: lowercase;
-    color: #182353;
+    color: var(--darkBlue);
 }
 .Instagram .photos{
     display: flex;
@@ -286,8 +313,8 @@ li a{
 
 
 .Location{
-    background-color: #182353;
-    color: #FFFFFF;
+    background-color: var(--darkBlue);
+    color: var(--lightColor);
     font-family: 'Roboto Slab';
     display: flex;
     flex-direction: row;
@@ -309,8 +336,8 @@ li a{
     width: 183.38px;
     height: 44.35px;
     text-align: center;
-    background-color: #C94040;
-    color: white;
+    background-color: var(--primaryRed);
+    color: var(--lightColor);
     cursor: pointer;
     border: 0px;
     border-radius: 2px;
