@@ -428,7 +428,7 @@ footer ul{
         padding-bottom: 20px;
     }
     .active li a{
-        font-size: 60px;
+        font-size: 33px;
     }
 }
 @media only screen and(min-width: 300px) {
