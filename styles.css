@@ -98,7 +98,7 @@ li a{
     padding: 0px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/nha-trang-inside.jfif');
     background-size: cover;
-    height: 945px;
+    height: 100vh;
     gap: 44.32px;
 }
 .Landing_Page_Content .main_logo{
@@ -190,20 +190,13 @@ li a{
 }
 .Popular_Dishes_Content .dishes{
     display: grid;
-
+    /* column-gap: 40px;
+    row-gap: 40px; */
     /* flex-direction: column;
     justify-content: center;
     align-items: center; */
     padding: 0px;
-    gap: 67.5px;
-}
-.Popular_Dishes_Content .Top_Row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    gap: 80.66px;
+    gap: 32.27px;
 }
 .Popular_Dishes_Content .dish{
     width: 417.73px;
