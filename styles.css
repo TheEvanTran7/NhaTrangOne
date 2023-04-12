@@ -174,19 +174,19 @@ li a{
 .Popular_Dishes_Content h2{
     /* Pop Dishes Food Header */
 
-font-family: 'Roboto Condensed';
-font-style: normal;
-font-weight: 600;
-font-size: 25px;
-line-height: 104%;
-/* identical to box height, or 26px */
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 104%;
+    /* identical to box height, or 26px */
 
-display: flex;
-align-items: center;
-text-align: center;
-text-transform: capitalize;
-/* Nav Bar */
-color: var(--lightGrey);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    /* Nav Bar */
+    color: var(--lightGrey);
 }
 .Popular_Dishes_Content .dishes{
     display: grid;
@@ -277,6 +277,7 @@ color: var(--lightGrey);
     display: flex; 
     justify-content: space-between; 
     align-items: center;
+    padding-bottom: 10px;
 }
 .Instagram_Handle svg{
     /* width: 37.63px;
@@ -322,7 +323,10 @@ color: var(--lightGrey);
     text-align: center;
     padding: 30px;
 }
-.Location #map, .Location .description{
+.Location .description{
+    width: 100%;
+}
+.Location #map{
     width: 50%;
 }
 .Location h1{
@@ -365,16 +369,66 @@ p{
 #map{
     height: 40vh;
 }
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul{
+    margin-bottom: 0;
+}
+
 
 /* mobile responsiveness */
+#toggle{
+    position: absolute;
+    top: 20px;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+#toggle .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
 @media only screen and (min-width: 1010px) {
-    .navmobile{
+    #toggle{
         display: none;
     }
 }
 @media only screen and (max-width: 1010px) {
-    .navdesktop{
+    #toggle{
+        display: flex;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Nav_Bar_Links{
         display: none;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Nav_Bar_Links.active {
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        justify-content: space-around;
+    }
+    .active li{
+        padding-bottom: 20px;
+    }
+    .active li a{
+        font-size: 60px;
     }
 }
 @media only screen and(min-width: 300px) {
@@ -382,13 +436,21 @@ p{
     .photos { grid-template-columns: repeat(1, 1fr); }
 }
 
-@media (min-width: 800px) {
-    .dishes { grid-template-columns: repeat(2, 1fr); }
-    .photos { grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 930px) {
+    .dishes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .photos {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media (min-width: 1400px) {
-  .dishes { grid-template-columns: repeat(3, 1fr); }
-  .photos { grid-template-columns: repeat(3, 1fr); }
+  .dishes {
+    grid-template-columns: repeat(3, 1fr);
+    }
+  .photos {
+    grid-template-columns: repeat(3, 1fr);
+    }
 }
 /* change width of items 
     fonts with 

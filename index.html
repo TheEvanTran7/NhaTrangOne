@@ -22,12 +22,19 @@
     <title>Nha Trang One</title>
 </head>
 <body>
-    <nav class = "navdesktop">
-        <ul class="Nav_Bar_Links">
+    <nav>
+        <div>
             <div class="Logo" style="float:left; display: flex; justify-content: center; align-items: center; padding: 0px 10px ; gap: 7px;">
                 <img class="Layer_3" src="nhatrangimg/nha-trang-one-logo.svg" alt="nha-trang-one-logo">
                 <a href="index.html" style="text-decoration: none;"><h1 class="NHA_TRANG_ONE">NHA TRANG ONE</h1></a>
             </div>
+            <a id = "toggle">
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+            </a>
+        </div>
+        <ul class="Nav_Bar_Links">
             <li><a href="">About Us</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="#Location">Location</a></li>
@@ -35,16 +42,15 @@
             <li><a href="" id="order"><button class="Order_Button">ORDER NOW</button></a></li>
         </ul>
     </nav>
-    <nav class = 'navmobile'>
-        <ul class="Nav_Bar_Links">
-            <div class="Logo" style="float:left; display: flex; justify-content: center; align-items: center; padding: 0px 10px ; gap: 7px;">
-                <img class="Layer_3" src="nhatrangimg/nha-trang-one-logo.svg" alt="nha-trang-one-logo">
-                <h1 class="NHA_TRANG_ONE">NHA TRANG ONE</h1>
-            </div>
-            <button>TEMPORARY</button>
-        </ul>
-    </nav>
-
+    <script>
+        //toggle button the dropdown menu
+        const toggle = document.getElementById("toggle");
+        const navLinks = document.querySelector(".Nav_Bar_Links");
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle("active")
+        })
+    </script>
+    
     <section class="Landing_Page">
         <div class="Landing_Page_Content">
             <img class="main_logo" src="nhatrangImg/NhaTrangOneLogo.svg" alt="NhaTrangOneLogo">
@@ -150,5 +156,16 @@
             });
         </script>
     </section>
+    <footer>
+        <div>
+            <div class="Logo" style="float:left; display: flex; justify-content: center; align-items: center; padding: 0px 10px ; gap: 7px;">
+                <img class="Layer_3" src="nhatrangimg/nha-trang-one-logo.svg" alt="nha-trang-one-logo">
+                <a href="index.html" style="text-decoration: none;"><h1 class="NHA_TRANG_ONE">NHA TRANG ONE</h1></a>
+            </div>
+        </div>
+            <ul>
+                <li><a href="" id="order"><button class="Order_Button">ORDER NOW</button></a></li>
+            </ul>
+    </footer>
 </body>
 </html>
