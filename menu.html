@@ -32,6 +32,17 @@
             <li><a href="" id="order"><button class="Order_Button">ORDER NOW</button></a></li>
         </ul>
     </nav>
+    <script>
+        //toggle button the dropdown menu
+        const toggle = document.getElementById("toggle");
+        const navLinks = document.querySelector(".Nav_Bar_Links");
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle("active")
+            if (navLinks.classList.contains('active')) {document.body.style.overflow = 'hidden';}
+            else {document.body.style.overflow = 'auto';}
+        })
+        
+    </script>
     
     <img src="nhatrangImg/nhatrangoneMenupt1.png" alt="nhatrangoneMenupt1">
     <img src="nhatrangImg/nhatrangoneMenupt2.png" alt="nhatrangoneMenupt2">
