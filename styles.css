@@ -272,9 +272,8 @@ li a{
     align-items: center;
     padding-bottom: 10px;
 }
-.Instagram_Handle svg{
-    /* width: 37.63px;
-    height: 37.63px; */
+.Instagram a{
+    text-decoration: none;
 }
 .Instagram_Handle li{
     display: inline-block;
