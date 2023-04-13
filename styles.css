@@ -19,7 +19,9 @@ nav{
     width: 100%;
     left: 0px;
     top: 0px;
-    position: sticky;
+    /* position: sticky; */
+    position: fixed;
+  z-index: 999;
 }
 .Layer_3{
     width: 12%;
@@ -444,7 +446,7 @@ footer ul{
     }
     .Nav_Bar_Links{
         display: none;
-        height: 100vh;
+        height: 94vh;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -454,14 +456,32 @@ footer ul{
         padding-top: 50px;
         padding-bottom: 50px;
         justify-content: center;
-        gap: 230px;
-        margin-bottom: 300px;
+        gap: 190px;
     }
+
+    /* create the X for the bars */
+    .bar:nth-of-type(1).active {
+        transform: rotate(45deg) translate(0px, 0px);
+      }
+      
+      .bar:nth-of-type(2).active {
+        opacity: 0;
+      }
+      
+      .bar:nth-of-type(3).active {
+        transform: rotate(-45deg) translate(0px, 0px);
+      }
     .active li{
         padding-bottom: 20px;
     }
     .active li a{
         font-size: 63px;
+    }
+    .active li a button{
+        height: 90px;
+        width: 300px;
+        font-size: 36px;
+        border-radius: 20px;
     }
 }
 /* @media (min-width:  */

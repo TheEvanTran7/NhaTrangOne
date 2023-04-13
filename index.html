@@ -37,7 +37,7 @@
         <ul class="Nav_Bar_Links">
             <li><a href="">About Us</a></li>
             <li><a href="menu.html">Menu</a></li>
-            <li><a href="#Location">Location</a></li>
+            <li><a id = 'location' href="#Location">Location</a></li>
             <li><a href="">FAQ</a></li>
             <li><a href="" id="order"><button class="Order_Button">ORDER NOW</button></a></li>
         </ul>
@@ -46,10 +46,21 @@
         //toggle button the dropdown menu
         const toggle = document.getElementById("toggle");
         const navLinks = document.querySelector(".Nav_Bar_Links");
-        toggle.addEventListener('click', () => {
+        const locationNavLink = document.getElementById("location")
+        const bars = document.querySelectorAll(".bar")
+        const toggleDropDown =  () => {
             navLinks.classList.toggle("active")
             if (navLinks.classList.contains('active')) {document.body.style.overflow = 'hidden';}
             else {document.body.style.overflow = 'auto';}
+            bars.forEach((element) => {
+                element.classList.toggle("active")
+            })
+        }
+        toggle.addEventListener('click', () => {
+            toggleDropDown()
+        })
+        locationNavLink.addEventListener("click", () => {
+            toggleDropDown()
         })
         
     </script>
