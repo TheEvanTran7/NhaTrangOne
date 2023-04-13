@@ -22,8 +22,8 @@ nav{
     position: sticky;
 }
 .Layer_3{
-    width: 30px;
-    height: 25px;
+    width: 12%;
+    height: auto;
     text-align: center;
 }
 
@@ -33,7 +33,7 @@ nav{
     font-family: 'Squada One';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    /* font-size: 32px; */
     line-height: 30px;
     /* Dark Blue */
     color: var(--darkBlue);
@@ -400,8 +400,29 @@ footer ul{
     }
     nav{
         display: flex;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
+        height: 100px;
+    }
+    nav h1{
+        font-size: 66px;
+    }
+    #toggle{
+        position: absolute;
+        top: 34px;
+        right: 1.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40px;
+        height: 35px;
+    }
+    #toggle .bar{
+        height: 4px;
+        width: 100%;
+        background-color: black;
+        border-radius: 10px;
     }
     .Nav_Bar_Links{
         display: none;
