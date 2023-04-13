@@ -21,7 +21,7 @@ nav{
     top: 0px;
     /* position: sticky; */
     position: fixed;
-  z-index: 999;
+  z-index: 1000;
 }
 .Layer_3{
     width: 12%;
@@ -121,11 +121,11 @@ li a{
     gap: 44.32px;
   }
 .Landing_Page_Content .main_logo{
-    width: 367.53px;
-    height: 306.31px;
+    width: 20vw;
+    height: auto;
 }
 .Landing_Page_Content h1{
-    width: 883.9px;
+    width: 60vw;
     height: 114.56px;
     font-family: 'Roboto Slab';
     font-style: normal;
@@ -180,7 +180,7 @@ li a{
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 900;
-    font-size: 3vw;
+    font-size: 3rem;
     line-height: 76px;
     display: flex;
     align-items: center;
@@ -317,8 +317,8 @@ li a{
     gap: 32.27px;
 }
 .photos img{
-    width: 425.95px;
-    height: 425.95px;
+    width: 425px;
+    height: auto;
 }
 
 
@@ -423,7 +423,8 @@ footer ul{
         align-items: center;
         flex-direction: column;
         /* height: 100px; */
-        padding-top: 10px;
+        width: 100vw;
+        padding-top: 20px;
         padding-bottom: 10px;
     }
     nav h1{
@@ -431,7 +432,7 @@ footer ul{
     }
     #toggle{
         position: absolute;
-        top: 23px;
+        top: 30px;
         right: 1.5rem;
         display: flex;
         flex-direction: column;
@@ -454,7 +455,7 @@ footer ul{
     }
     .Nav_Bar_Links.active {
         display: flex;
-        padding-top: 50px;
+        padding-top: 0px;
         padding-bottom: 50px;
         justify-content: center;
         gap: 50px;
@@ -489,29 +490,60 @@ footer ul{
         font-size: 30px;
         justify-content: center;
     }
+    .Landing_Page_Content .main_logo{
+        width: 50vw;
+    }
+    .Landing_Page_Content button{
+        width: 50vw;
+    }
 
+    .Popular_Dishes_Content h1{
+        font-size: 1.75rem;
+    }
+    .Instagram_Handle p{
+        font-size: 1.75rem;
+    }
     .Location h1 {
         font-size: 38px;
         font-weight: 700;
     }
-    
     .Location h2, .Location p {
         font-size: 18px;
     }
 }
 /* @media (min-width:  */
-@media only screen and(min-width: 300px) {
+@media (min-width: 300px) and (max-width: 1000px) {
     .dishes { grid-template-columns: repeat(1, 1fr); }
-    .photos { grid-template-columns: repeat(1, 1fr); }
+    /* .Popular_Dishes_Content .dish{
+        width: 162px;
+    }
+    .dish img{
+        width: 59.82px;
+        height: 98px;
+    }
+    .description h2{
+        font-size: 12px;
+    }
+    .description p{
+        font-size: 10px;
+    } */
+    .photos { grid-template-columns: repeat(2, 1fr); }
+    .photos img{
+        width: 40vw;
+    }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) and (max-width: 1400px) {
     .dishes {
         grid-template-columns: repeat(2, 1fr);
     }
     .photos {
         grid-template-columns: repeat(2, 1fr);
     }
+    .photos img{
+        width: 40vw;
+    }
+    
 }
 @media (min-width: 1400px) {
   .dishes {
