@@ -48,7 +48,10 @@
         const navLinks = document.querySelector(".Nav_Bar_Links");
         toggle.addEventListener('click', () => {
             navLinks.classList.toggle("active")
+            if (navLinks.classList.contains('active')) {document.body.style.overflow = 'hidden';}
+            else {document.body.style.overflow = 'auto';}
         })
+        
     </script>
     
     <section class="Landing_Page">
