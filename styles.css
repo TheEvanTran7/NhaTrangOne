@@ -17,11 +17,16 @@ body{
 nav{
     background: var(--lightColor);
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     left: 0px;
     top: 0px;
     /* position: sticky; */
     position: fixed;
-  z-index: 1000;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .Layer_3{
     width: 12%;
@@ -57,7 +62,7 @@ li a{
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 600;
-    font-size: 22.5px;
+    font-size: 18px;
     line-height: 30px;
     display: flex;
     float: right;
@@ -121,11 +126,12 @@ li a{
     gap: 44.32px;
   }
 .Landing_Page_Content .main_logo{
+    /* margin-top: 0px; */
     width: 20vw;
     height: auto;
 }
 .Landing_Page_Content h1{
-    width: 60vw;
+    /* width: 60vw; */
     height: 114.56px;
     font-family: 'Roboto Slab';
     font-style: normal;
@@ -144,7 +150,7 @@ li a{
     margin-bottom: 0;
 }
 .Landing_Page_Content button{
-    width: 255px;
+    width: 20vw;
     height: 65px;
     text-align: center;
     background-color: var(--primaryRed);
@@ -155,7 +161,7 @@ li a{
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.5rem;
     line-height: 100%;
     /* or 30px */
     align-items: center;
@@ -220,6 +226,7 @@ li a{
 .Popular_Dishes_Content .dish{
     width: 417.73px;
     height: 229.97px;
+    padding: 10px 10px;
     background-color: var(--lightColor);
     display: flex;
     flex-direction: row;
@@ -231,8 +238,8 @@ li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 220px;
-    height: 229.97px;
+    /* width: 220px;
+    height: 229.97px; */
     left: 0px;
     top: 0px;
     border-radius: 4.53609px;
@@ -251,6 +258,7 @@ li a{
     letter-spacing: 0.025em;
 }
 .Popular_Dishes_Content img{
+    object-fit: cover;
     height: 190px;
     width: 180px;
     border-radius: 2.72165px;
@@ -317,7 +325,7 @@ li a{
     gap: 32.27px;
 }
 .photos img{
-    width: 425px;
+    width: 325px;
     height: auto;
 }
 
@@ -341,15 +349,15 @@ li a{
     width: 50%;
 }
 .Location h1{
-    font-size: 69px;
+    font-size: 55px;
 }
 .Location h2{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
     text-decoration: underline;
 }
 .Location p{
-    font-size: 35px;
+    font-size: 28px;
 }
 /* boot strap */
 h1{
@@ -514,22 +522,24 @@ footer ul{
 /* @media (min-width:  */
 @media (min-width: 300px) and (max-width: 1000px) {
     .dishes { grid-template-columns: repeat(1, 1fr); }
-    /* .Popular_Dishes_Content .dish{
-        width: 162px;
+    .Popular_Dishes_Content .dish{
+        height: 260px;
+        padding-inline: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
     }
     .dish img{
-        width: 59.82px;
-        height: 98px;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+        object-fit: cover;
     }
-    .description h2{
-        font-size: 12px;
-    }
-    .description p{
-        font-size: 10px;
-    } */
     .photos { grid-template-columns: repeat(2, 1fr); }
     .photos img{
-        width: 40vw;
+        width: 45vw;
     }
 }
 
