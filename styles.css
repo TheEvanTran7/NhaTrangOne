@@ -1,7 +1,7 @@
 :root{
     --lightColor: #EEF7FC;
-    --darkBlue: #0C1837;
-    --primaryRed: #CC3030;
+    --darkBlue: #1B1F2F;
+    --primaryRed: #C13434;
     --darkGrey: #2C2726;
     --lightGrey: #3D3A39;
 }
@@ -182,11 +182,11 @@ li a{
     background-color: var(--darkBlue);
 }
 .Popular_Dishes_Content h1{
-    font-family: 'Roboto Condensed';
+    font-family: 'Oswald', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 4rem;
-    line-height: 76px;
+    line-height: 96px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -198,11 +198,11 @@ li a{
 .Popular_Dishes_Content h2{
     /* Pop Dishes Food Header */
 
-    font-family: 'Roboto Condensed';
+    font-family: 'Oswald', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 25px;
-    line-height: 104%;
+    line-height: 105%;
     /* identical to box height, or 26px */
 
     display: flex;
@@ -343,17 +343,29 @@ li a{
 }
 .Location .description{
     width: 100%;
+    padding-bottom: 50px;
 }
 .Location #map{
     width: 50%;
 }
 .Location h1{
-    font-size: 55px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 111px;
+    letter-spacing: 0.05em;
+text-transform: capitalize;
 }
 .Location h2{
-    font-size: 30px;
+    font-family: 'Oswald';
+    font-style: normal;
     font-weight: 700;
-    text-decoration: underline;
+    font-size: 35px;
+    line-height: 150%;
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: capitalize;
 }
 .Location p{
     font-size: 28px;
@@ -376,7 +388,7 @@ p{
     border-radius: 2px;
     font-family: 'Rubik';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
     line-height: 100%;
     /* or 30px */
@@ -387,6 +399,7 @@ p{
 #map{
     height: 40vh;
 }
+
 footer{
     display: flex;
     justify-content: space-between;
