@@ -32,7 +32,14 @@ nav{
     height: auto;
     text-align: center;
 }
-
+.logo{
+    /* style="display: flex; justify-content: center; align-items: center; padding: 0px 10px ; gap: 7px;" */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding-left: 10px;
+}
 .NHA_TRANG_ONE{
     margin-top: 16px;
     margin-bottom: 16px;
@@ -480,7 +487,6 @@ footer ul{
         justify-content: center;
         gap: 50px;
     }
-
     /* create the X for the bars */
     .bar:nth-of-type(1).active {
         transform: rotate(45deg) translate(0px, 0px);
@@ -520,6 +526,12 @@ footer ul{
     .Popular_Dishes_Content h1{
         font-size: 1.75rem;
     }
+    .description h2{
+        font-size: 35px;
+    }
+    .description p{
+        font-size: 25px;
+    }
     .Instagram_Handle p{
         font-size: 1.75rem;
     }
@@ -555,7 +567,13 @@ footer ul{
     }
 }
 
+ /*IPADDD */
 @media (min-width: 1000px) and (max-width: 1400px) {
+    nav{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    
     .dishes {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -564,6 +582,53 @@ footer ul{
     }
     .photos img{
         width: 40vw;
+    }
+    .logo{
+        width: 550px;
+    }
+    .NHA_TRANG_ONE{
+        font-size: 50px;
+    }
+    #toggle{
+        top: 40px
+    }
+    .Landing_Page_Content h1{
+        font-size: 60px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        /* justify-content: center; */
+    }
+    .Landing_Page_Content button{
+        height: 100px;
+        font-size: 45px;
+    }
+    .Nav_Bar_Links.active{
+        gap: 135px;
+    }
+    .active li a{
+        font-size: 70px;
+    }
+    .active li a button{
+        height: 120px;
+        width: 400px;
+        font-size: 40px;
+        border-radius: 20px;
+    }
+    /* .active li{
+        padding-bottom: 20px;
+    } */
+    .Popular_Dishes_Content h1{
+        font-size: 3rem;
+    }
+    .Instagram_Handle p{
+        font-size: 3rem;
+    }
+    .Location h1 {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+    .Location h2, .Location p {
+        font-size: 2.25rem;
     }
     
 }
