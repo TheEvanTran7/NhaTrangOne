@@ -6,8 +6,8 @@ const locationNavLink = document.querySelector("#location")
 const bars = document.querySelectorAll(".bar")
 const toggleDropDown =  () => {
     navLinks.classList.toggle("active")
-    // if (navLinks.classList.contains('active')) {document.body.style.overflow = 'hidden';}
-    // else {document.body.style.overflow = 'auto';}
+    if (navLinks.classList.contains('active')) {document.body.style.overflow = 'hidden';}
+    else {document.body.style.overflow = 'auto';}
     bars.forEach((element) => {
         element.classList.toggle("active")
     })
