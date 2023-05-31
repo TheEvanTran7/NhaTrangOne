@@ -18,14 +18,77 @@ nav{
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    left: 0px;
     top: 0px;
-    /* position: sticky; */
-    position: fixed;
-    z-index: 1000;
+    position: sticky;
+    /* position: fixed;
+    z-index: 1000; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.dropdown{
+    background-color: var(--darkBlue);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.select{
+    background-color: var(--primaryRed);
+    font-family: 'Oswald', sans-serif;
+    width: 75vw;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+.carrot{
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 11px solid white;
+    transition: 0.3s;
+}
+.carrot-rotate{
+    transform: rotate(180deg);
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0.2em 0em;
+    background-color: white;
+    position:absolute;
+    top: 175px;
+    left: 50%;
+    width: 75vw;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+.menu li{
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+.menu-active{
+    background-color: #FFF1F1;
+}
+.menu-open{
+    display: flex;
+    opacity: 1;
 }
 .Layer_3{
     width: 12%;
@@ -97,12 +160,7 @@ li a{
     align-items: center;
     text-align: center;
     text-transform: uppercase;
- 
-
 }
-
-
-
 /* .Landing_Page_Content{
     display: flex;
     flex-direction: column;
@@ -127,7 +185,7 @@ li a{
     width: 100%;
     height: 100%;
     padding: 0px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/nha-trang-inside.jfif') center/cover no-repeat;
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/nha-trang-inside.jfif') center/cover no-repeat; */
     height: 100vh;
     gap: 44.32px;
   }
@@ -185,12 +243,13 @@ li a{
     justify-content: space-between;
     align-items: center;
     padding: 0px 0px 70px;
-    gap: 50px;
+    gap: 10px;
     background-color: var(--darkBlue);
 }
 .Popular_Dishes_Content h1{
     font-family: 'Oswald', sans-serif;
     font-style: normal;
+    margin-top: 30px;
     font-weight: 700;
     font-size: 4rem;
     line-height: 96px;
@@ -218,16 +277,6 @@ li a{
     text-transform: capitalize;
     /* Nav Bar */
     color: var(--lightGrey);
-}
-.Popular_Dishes_Content .dishes{
-    display: grid;
-    /* column-gap: 40px;
-    row-gap: 40px; */
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    padding: 0px;
-    gap: 32.27px;
 }
 .Popular_Dishes_Content .dish{
     width: 417.73px;
@@ -296,8 +345,8 @@ li a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 20px;
 }
 .Instagram_Handle{
     display: flex; 
@@ -319,16 +368,11 @@ li a{
     /* text-transform: lowercase; */
     color: var(--darkBlue);
 }
-.Instagram .photos{
+.Instagram .photos, .Popular_Dishes_Content .dishes{
     display: grid;
     place-items: center;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center; */
     padding: 0px 5.16306px;
-    gap: 32.27px;
+    gap: 30px 20px;
 }
 .photos img{
     width: 325px;
@@ -428,13 +472,6 @@ footer ul{
     width: 30px;
     height: 21px;
 }
-
-#toggle .bar{
-    height: 3px;
-    width: 100%;
-    background-color: black;
-    border-radius: 10px;
-}
 @media only screen and (min-width: 1170px) {
     #toggle{
         display: none;
@@ -468,44 +505,59 @@ footer ul{
         height: 35px;
     }
     #toggle .bar{
+        transition: all 0.3s;
+        float: left;
         height: 4px;
         width: 100%;
         background-color: black;
         border-radius: 10px;
     }
     .Nav_Bar_Links{
-        display: none;
-        height: 94vh;
+        display: flex;
+        height: 0px;
+        padding-top: 0px;
+        /* padding-bottom: 50px; */
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        gap: 50px;
+        transition: height .3s ease-out;
     }
     .Nav_Bar_Links.active {
         display: flex;
+        height: 94vh;
         padding-top: 0px;
         padding-bottom: 50px;
         justify-content: center;
         gap: 50px;
+        transition: height .3s ease-out;
     }
     /* create the X for the bars */
     .bar:nth-of-type(1).active {
-        transform: rotate(45deg) translate(0px, 0px);
+        transition: all 0.3s;
+        transform: rotate(135deg);
+        translate: 0px 20px;
       }
       
       .bar:nth-of-type(2).active {
+        transition: 0.3s;
+        translate: 0px 20px;
         opacity: 0;
+        box-sizing: border-box;
       }
       
       .bar:nth-of-type(3).active {
-        transform: rotate(-45deg) translate(0px, 0px);
+        transition: all 0.3s;
+        transform: rotate(-135deg);
+        translate: 0px -10px;
       }
-    .active li{
+    .Nav_Bar_Links li{
         padding-bottom: 20px;
     }
-    .active li a{
+    .Nav_Bar_Links li a{
         font-size: 45px;
     }
-    .active li a button{
+    .Nav_Bar_Links li a button{
         height: 90px;
         width: 300px;
         font-size: 36px;
@@ -526,12 +578,6 @@ footer ul{
     .Popular_Dishes_Content h1{
         font-size: 1.75rem;
     }
-    .description h2{
-        font-size: 35px;
-    }
-    .description p{
-        font-size: 25px;
-    }
     .Instagram_Handle p{
         font-size: 1.75rem;
     }
@@ -543,9 +589,8 @@ footer ul{
         font-size: 18px;
     }
 }
-/* @media (min-width:  */
 @media (min-width: 300px) and (max-width: 1000px) {
-    .dishes { grid-template-columns: repeat(1, 1fr); }
+    .dishes { grid-template-columns: repeat(2, 1fr); }
     .Popular_Dishes_Content .dish{
         height: 260px;
         padding-inline: 10px;
@@ -553,11 +598,11 @@ footer ul{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        width: 80vw;
+        width: 43vw;
     }
     .dish img{
-        width: 150px;
-        height: 150px;
+        width: 30vw;
+        height: 125px;
         margin-bottom: 10px;
         object-fit: cover;
     }
@@ -573,7 +618,12 @@ footer ul{
         padding-top: 30px;
         padding-bottom: 20px;
     }
-    
+    .description h2{
+        font-size: 35px;
+    }
+    .description p{
+        font-size: 25px;
+    }
     .dishes {
         grid-template-columns: repeat(2, 1fr);
     }

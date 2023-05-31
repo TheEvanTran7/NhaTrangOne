@@ -34,38 +34,17 @@
             </a>
         </div>
         <ul class="Nav_Bar_Links">
-            <li><a href="">About Us</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a id = 'location' href="#Location">Location</a></li>
             <li><a href="">FAQ</a></li>
             <li><a href="" id="order"><button class="Order_Button">ORDER NOW</button></a></li>
         </ul>
+        <script src = "/js/navbar.js"></script>
     </nav>
-    <script>
-        //toggle button the dropdown menu
-        const toggle = document.getElementById("toggle");
-        const navLinks = document.querySelector(".Nav_Bar_Links");
-        const locationNavLink = document.querySelector("#location")
-        const bars = document.querySelectorAll(".bar")
-        const toggleDropDown =  () => {
-            navLinks.classList.toggle("active")
-            if (navLinks.classList.contains('active')) {document.body.style.overflow = 'hidden';}
-            else {document.body.style.overflow = 'auto';}
-            bars.forEach((element) => {
-                element.classList.toggle("active")
-            })
-        }
-        toggle.addEventListener('click', () => {
-            toggleDropDown()
-        })
-        locationNavLink.addEventListener("click", () => {
-            navLinks.classList.remove("active")
-        })
-        
-    </script>
     
     <section class="Landing_Page">
-        <div class="Landing_Page_Content">
+        <div class="Landing_Page_Content" style = "background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/nha-trang-inside.jfif') center/cover no-repeat;">
             <img class="main_logo" src="nhatrangImg/NhaTrangOneLogo.svg" alt="NhaTrangOneLogo">
             <h1>Vietnamese Food From <br>Our Family To Yours</h1>
             <button>Order Now</button>
@@ -119,7 +98,7 @@
                     <img src="nhatrangImg/ca-phe-sua-da.png" alt="ca-phe-sua-da">
                 </div>
             </div>
-            <a href="menu.html"><button>EXPLORE THE MENU</button></a>
+            <a style="margin-top: 40px;" href="menu.html"><button>EXPLORE THE MENU</button></a>
         </div>
     </section>
 
