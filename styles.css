@@ -144,7 +144,7 @@ li a{
     color: var(--lightColor);
     cursor: pointer;
     border: 0px;
-    border-radius: 2px;
+    border-radius: 2 px;
     font-size:18px;
     font-family: 'Rubik';
     font-style: normal;
@@ -499,7 +499,7 @@ p{
 }
 .food-section h2{
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 60px;
     font-weight: 900;
 }
 .food-item{
@@ -716,6 +716,30 @@ footer ul{
     .photos img{
         width: 45vw;
     }
+    
+    .food-section h2{
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 900;
+    }
+    .food-item h3{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .food-item p{
+        font-weight: 300;
+        font-size: 15px;
+        text-transform: capitalize;
+        margin-bottom: 1.5px;
+    }
+    .food-item h2{
+        font-weight: 500;
+        font-size: 45px;
+    }
+    
 }
 
  /*IPADDD */
