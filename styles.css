@@ -27,14 +27,6 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-.dropdown{
-    background-color: var(--darkBlue);
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 .select{
     background-color: var(--primaryRed);
     font-family: 'Oswald', sans-serif;
@@ -66,7 +58,7 @@ nav{
     list-style-type: none;
     padding: 0.2em 0em;
     background-color: white;
-    position:absolute;
+    position:fixed;
     top: 175px;
     left: 50%;
     width: 75vw;
@@ -479,7 +471,7 @@ p{
       linear-gradient(to bottom, #EEF7FC 1px, transparent 2px) 100% 0,
       linear-gradient(to top, #EEF7FC 1px, transparent 2px) 0 100%,
       linear-gradient(to top, #EEF7FC 1px, transparent 2px) 100% 100%;
-  
+    
     background-repeat: no-repeat;
     background-size: 20px 20px;
 }
@@ -487,6 +479,17 @@ p{
 
 
 /* MENUUUUUUUUUUUUUUUUUUU */
+.dropdown{
+    background-color: var(--darkBlue);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 8px;
+}
 .food-section {
     background-color: white;
     margin: 0px 15px;
@@ -499,22 +502,27 @@ section h2{
 }
 .food-item{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 30px;
 }
-.food-item{
-    font-size: 13px;
+.food{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 .alt{
     background-color: var(--lightBlue);
 }
 .food-item h3{
-    font-weight: 800;
+    font-weight: 1000;
+    text-transform: uppercase;
     font-size: 18px;
     margin-bottom: 0;
 }
 .food-item p{
+    text-transform: lowercase;
     font-size: 15px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -613,8 +621,8 @@ footer ul{
       }
       
       .bar:nth-of-type(2).active {
-        transition: 0.3s;
-        translate: 0px 20px;
+        transition: 0.1s;
+        /* translate: 0px 10px; */
         opacity: 0;
         box-sizing: border-box;
       }
