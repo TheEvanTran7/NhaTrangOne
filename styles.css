@@ -716,7 +716,11 @@ footer ul{
         width: 45vw;
     }
     
-    
+    .food-section h2{
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 900;
+    }
     .food-item h3{
         text-transform: uppercase;
         font-weight: 700;
