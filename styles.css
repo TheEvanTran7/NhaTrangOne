@@ -496,7 +496,8 @@ p{
     padding: 15px;
     font-family: 'Oswald', sans-serif;
 }
-section h2{
+.food-section h2{
+    text-transform: uppercase;
     font-size: 26px;
     font-weight: 900;
 }
@@ -507,15 +508,20 @@ section h2{
     align-items: center;
     padding: 10px 30px;
 }
+<<<<<<< Updated upstream
 .food{
     display: flex;
     flex-direction: column;
     justify-content: left;
 }
+=======
+
+>>>>>>> Stashed changes
 .alt{
     background-color: var(--lightBlue);
 }
 .food-item h3{
+<<<<<<< Updated upstream
     font-weight: 1000;
     text-transform: uppercase;
     font-size: 18px;
@@ -524,11 +530,23 @@ section h2{
 .food-item p{
     text-transform: lowercase;
     font-size: 15px;
+=======
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.food-item p{
+    font-weight: 300;
+    font-size: 20px;
+>>>>>>> Stashed changes
     margin-top: 5px;
     margin-bottom: 5px;
 }
 .food-item h2{
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 70px;
 }
 
 
