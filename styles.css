@@ -1,6 +1,7 @@
 :root{
     --lightColor: #EEF7FC;
     --darkBlue: #1B1F2F;
+    --lightBlue: #CEDFFE;
     --primaryRed: #C13434;
     --darkGrey: #2C2726;
     --lightGrey: #3D3A39;
@@ -450,6 +451,43 @@ p{
 #map{
     height: 40vh;
 }
+/* MENUUUUUUUUUUUUUUUUUUU */
+.food-section {
+    background-color: white;
+    margin: 0px 15px;
+    padding: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+section h2{
+    font-size: 26px;
+    font-weight: 900;
+}
+.food-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 30px;
+}
+.food-item{
+    font-size: 13px;
+}
+.alt{
+    background-color: var(--lightBlue);
+}
+.food-item h3{
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.food-item p{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.food-item h2{
+    font-size: 16px;
+}
+
 
 footer{
     display: flex;
@@ -525,9 +563,9 @@ footer ul{
     }
     .Nav_Bar_Links.active {
         display: flex;
-        height: 94vh;
+        height: 90vh;
         padding-top: 0px;
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
         justify-content: center;
         gap: 50px;
         transition: height .3s ease-out;
