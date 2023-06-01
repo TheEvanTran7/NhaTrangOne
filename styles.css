@@ -491,11 +491,7 @@ p{
     top: 80px;
 }
 .food-section {
-<<<<<<< HEAD
     background-color: var(--lightColor);
-=======
-    background-color: #FFFEFE;
->>>>>>> 7e8a9cf3f44a3b05515c32211e86c24583d10b23
     margin: 0px 15px;
     padding: 15px;
     font-family: 'Oswald', sans-serif;
@@ -533,8 +529,13 @@ p{
     font-size: 25px;
     text-transform: capitalize;
     margin-bottom: 1.5px;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 1.5px;
 }
 .food-item h2{
+    font-weight: 500;
+    font-size: 65px;
     font-weight: 500;
     font-size: 65px;
 }
