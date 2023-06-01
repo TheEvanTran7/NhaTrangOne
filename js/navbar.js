@@ -11,11 +11,23 @@ const toggleDropDown =  () => {
     bars.forEach((element) => {
         element.classList.toggle("active")
     })
+    const dropdown = document.querySelector(".dropdown")
+    if(dropdown){
+        dropdown.classList.toggle("show")
+    }
+    const menu = document.querySelector(".menu-open")
+    if(menu){
+        menu.classList.toggle("menu-open")
+        const carrot = document.querySelector(".carrot-rotate")
+        carrot.classList.toggle("carrot-rotate")
+    }
 }
 toggle.addEventListener('click', () => {
     toggleDropDown()
 })
-locationNavLink.addEventListener("click", () => {
-    toggleDropDown()
-})
+if(locationNavLink){
+    locationNavLink.addEventListener("click", () => {
+        toggleDropDown()
+    })
+}
             
