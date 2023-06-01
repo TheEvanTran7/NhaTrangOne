@@ -451,6 +451,41 @@ p{
 #map{
     height: 40vh;
 }
+/* ABOUTTTTTTTTTTTTTTTT */
+.about{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: #EEF7FC;
+    font-family: 'Oswald', sans-serif;
+}
+.about p, .about img{
+    width: 40vw;
+}
+.about img{
+    height: 900px;
+    width: auto;
+}
+.about p{
+    padding: 20px;
+    background:
+      linear-gradient(to right, #EEF7FC 1px, transparent 2px) 0 0,
+      linear-gradient(to right, #EEF7FC 1px, transparent 2px) 0 100%,
+      linear-gradient(to left, #EEF7FC 1px, transparent 2px) 100% 0,
+      linear-gradient(to left, #EEF7FC 1px, transparent 2px) 100% 100%,
+      linear-gradient(to bottom, #EEF7FC 1px, transparent 2px) 0 0,
+      linear-gradient(to bottom, #EEF7FC 1px, transparent 2px) 100% 0,
+      linear-gradient(to top, #EEF7FC 1px, transparent 2px) 0 100%,
+      linear-gradient(to top, #EEF7FC 1px, transparent 2px) 100% 100%;
+  
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+
+
 /* MENUUUUUUUUUUUUUUUUUUU */
 .food-section {
     background-color: white;
@@ -626,6 +661,21 @@ footer ul{
     .Location h2, .Location p {
         font-size: 18px;
     }
+    .about{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        color: #EEF7FC;
+    }
+    .about p, .about img{
+        width: 90vw;
+    }
+    .about img{
+        height: 600px;
+        width: auto;
+    }
+    
 }
 @media (min-width: 300px) and (max-width: 1000px) {
     .dishes { grid-template-columns: repeat(2, 1fr); }
