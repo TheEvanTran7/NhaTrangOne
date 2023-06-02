@@ -477,6 +477,11 @@ p{
 
 
 /* MENUUUUUUUUUUUUUUUUUUU */
+.top-button{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
 .dropdown{
     background-color: var(--darkBlue);
     height: 100px;
@@ -486,10 +491,35 @@ p{
     justify-content: center;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 80px;
+    top: 92px;
 }
 .show{
     display: flex;
+}
+.menu-buttons{
+    color: white;
+    display: flex;
+    width: 65vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 20px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-buttons a{
+    width: 120px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid white;
 }
 .food-section {
     background-color: var(--lightColor);
@@ -566,10 +596,19 @@ footer ul{
     #toggle{
         display: none;
     }
+    .dropdown{
+        display: none;
+    }
 }
 @media only screen and (max-width: 1170px) {
     #toggle{
         display: flex;
+    }
+    .dropdown{
+        display: flex;
+    }
+    .menu-buttons{
+        display: none;
     }
     nav{
         display: flex;
@@ -747,6 +786,9 @@ footer ul{
     nav{
         padding-top: 30px;
         padding-bottom: 20px;
+    }
+    .dropdown{
+        top: 112px;
     }
     .description h2{
         font-size: 35px;

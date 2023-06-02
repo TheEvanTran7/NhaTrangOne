@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Menu</title>
 </head>
-<body style="background-color: #1B1F2F;">
+<body id = "top" style="background-color: #1B1F2F;">
     <nav>
         <div class = 'drop'>
             <div class="logo">
@@ -37,24 +37,50 @@
         </ul>
         <script src = "/js/navbar.js"></script>
     </nav>
-    
+    <a href="#top" class = "top-button">Back to the top</a>
     <!-- <img src="nhatrangImg/nhatrangoneMenupt1.png" alt="nhatrangoneMenupt1">
     <img src="nhatrangImg/nhatrangoneMenupt2.png" alt="nhatrangoneMenupt2"> -->
     <div class = "dropdown show" id = "dropdown">
         <div class = "select">
-            <span class = "selected">Pho</span>
+            <span class = "selected">Choose here...</span>
             <div class = "carrot"></div>
         </div>
     </div>
     <ul class = "menu">
-        <li class="menu-active">Pho</li>
-        <li>Com</li>
-        <li>Mi</li>
-        <li>Bun</li>
+        <a href = "#top"><li  class="menu-active">Appetizers</li></a>
+        <a href = "#Seafood"><li>Seafood | Do Bien</li></a>
+        <a href = "#Beef"><li>Beef | Bo</li></a>
+        <a href = "#Pork"><li>Pork | Heo</li></a>
+        <a href = "#Vegetables"><li>Vegetables | Do Chay</li></a>
+        <a href = "#Casseroles"><li>Casseroles | Tay Cam</li></a>
+        <a href = "#Chicken"><li>Chicken | Ga</li></a>
+        <a href = "#Soup"><li>Soup | Canh</li></a>
+        <a href = "#Bun"><li>Rice Vermicelli | Bun</li></a>
+        <a href = "#Pho"><li>Rice Noodle | Pho</li></a>
+        <a href = "#Com"><li>Rice | Com</li></a>
+        <a href = "#Beverages"><li>Beverages</li></a>
+        <a href = "#Pho"><li>Alcohol</li></a>
     </ul>
+    <div class = "center">
+        <div class = "menu-buttons">
+            <a href = "#top"><li>Appetizers</li></a>
+            <a href = "#Seafood"><li>Seafood | Do Bien</li></a>
+            <a href = "#Beef"><li>Beef | Bo</li></a>
+            <a href = "#Pork"><li>Pork | Heo</li></a>
+            <a href = "#Vegetables"><li>Vegetables | Do Chay</li></a>
+            <a href = "#Casseroles"><li>Casseroles | Tay Cam</li></a>
+            <a href = "#Chicken"><li>Chicken | Ga</li></a>
+            <a href = "#Soup"><li>Soup | Canh</li></a>
+            <a href = "#Bun"><li>Rice Vermicelli | Bun</li></a>
+            <a href = "#Pho"><li>Rice Noodle | Pho</li></a>
+            <a href = "#Com"><li>Rice | Com</li></a>
+            <a href = "#Beverages"><li>Beverages</li></a>
+            <a href = "#Pho"><li>Alcohol</li></a>
+        </div>
+    </div>
     <script src="/js/menu.js"></script>
     <div>
-        <section class = "food-section">
+        <section class = "food-section" id = "Appetizers">
             <h2>Appetizers</h2>
             <div class = "food-item alt">
                 <div class = "food">
@@ -116,7 +142,7 @@
                     <p>Crispy squid with garlic sauce</p>
                 </div>
                 <div>
-                    <h2>11.95</h2>
+                    <h2 id = "Seafood">11.95</h2>
                 </div>
             </div>
         </section>
@@ -155,7 +181,7 @@
                     <p>shrimp with broccoli in oyster sauce</p>
                 </div>
                 <div>
-                    <h2>16.95</h2>
+                    <h2 id = "Beef">16.95</h2>
                 </div>
             </div>
         </section>
@@ -185,11 +211,11 @@
                     <p>beef cubes sauteed with watercress salad</p>
                 </div>
                 <div>
-                    <h2>24.95</h2>
+                    <h2 id = "Pork">24.95</h2>
                 </div>
             </div>
         </section>
-        <section class = "food-section">
+        <section class = "food-section" >
             <h2>Pork | Heo</h2>
             <div class = "food-item alt">
                 <div class = "food">
@@ -197,7 +223,7 @@
                     <p>famous vietnamese Barbecue porkchops</p>
                 </div>
                 <div>
-                    <h2>15.95</h2>
+                    <h2 id = "Vegetables">15.95</h2>
                 </div>
             </div>
         </section>
@@ -236,7 +262,7 @@
                     <p>hollow vegetables with garlic sauce</p>
                 </div>
                 <div>
-                    <h2>14.95</h2>
+                    <h2 id = "Casseroles">14.95</h2>
                 </div>
             </div>
         </section>
@@ -266,7 +292,7 @@
                     <p>steamed salmon with special vietnamese sauce</p>
                 </div>
                 <div>
-                    <h2>20.95</h2>
+                    <h2 id = "Chicken">20.95</h2>
                 </div>
             </div>
         </section>
@@ -305,7 +331,7 @@
                     <p>chicken and green onions in ginger sauce</p>
                 </div>
                 <div>
-                    <h2>15.95</h2>
+                    <h2 id = "Soup">15.95</h2>
                 </div>
             </div>
         </section>
@@ -347,17 +373,17 @@
                     <h2>13.95</h2>
                 </div>
             </div>
-            <div class = "food-item alt">
+            <div class = "food-item alt" >
                 <div class = "food">
                     <h3>D5a. canh chay da hu</h3>
                     <p>hot and sour vegetables soup</p>
                 </div>
                 <div>
-                    <h2>14.95</h2>
+                    <h2 id = "Bun">14.95</h2>
                 </div>
             </div>
         </section>
-        <section class = "food-section">
+        <section class = "food-section" >
             <h2>Rice Vermicelli | Bun</h2>
             <div class = "food-item alt">
                 <div class = "food">
@@ -437,7 +463,7 @@
                     <p>fried tofu with rice vermicelli</p>
                 </div>
                 <div>
-                    <h2>10.95</h2>
+                    <h2 id = "Pho">10.95</h2>
                 </div>
             </div>
         </section>
@@ -533,7 +559,7 @@
                     <h2>10.95</h2>
                 </div>
             </div>
-            <div class = "food-item alt">
+            <div class = "food-item alt" id = "Com">
                 <div class = "food">
                     <h3>L10a. Pho Chay</h3>
                     <p>rice noodle soup with vegetables and tofu (chicken soup)</p>
@@ -653,7 +679,7 @@
                     <h2>13.95</h2>
                 </div>
             </div>
-            <div class = "food-item alt">
+            <div class = "food-item alt" id = "Beverages">
                 <div class = "food">
                     <h3>L30. Com Chien Bo Luc Lac</h3>
                     <p>beef cubes over fried rice</p>
