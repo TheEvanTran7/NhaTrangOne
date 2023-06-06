@@ -12,7 +12,7 @@ eatButtons.forEach(button => {
         foodContent.style.display = "block"
     })
 })
-const navbarHeight = document.querySelector("nav").offsetHeight + 100;
+const navbarHeight = document.querySelector("nav").offsetHeight + 90;
 const noodleButton = document.querySelector("#noodle")
 noodleButton.addEventListener("click", () => {
     const noodleSection = document.querySelector("#noodle-section")
