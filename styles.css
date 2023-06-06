@@ -326,11 +326,10 @@ li a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 30px;
+    padding: 25px;
 }
 .Location .description{
     width: 100%;
-    padding-bottom: 50px;
 }
 .Location #map{
     width: 50%;
@@ -338,17 +337,18 @@ li a{
 .Location h1{
     font-family: 'Oswald';
     font-style: normal;
-    font-weight: 700;
-    font-size: 75px;
+    font-weight: 900;
+    font-size: 65px;
     line-height: 111px;
     letter-spacing: 0.05em;
 text-transform: capitalize;
 }
 .Location h2{
+    padding-top: 25px;
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 25px;
     line-height: 150%;
     text-align: center;
     text-decoration-line: underline;
@@ -477,8 +477,7 @@ a{
     cursor: pointer;
 }
 
-/* hover style */
-
+/*hover style*/
 .menu-buttons a:hover{
     background-color: var(--lightestGrey);
 }
