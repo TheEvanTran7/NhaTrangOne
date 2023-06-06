@@ -427,8 +427,12 @@ a{
 .top-button{
     position: fixed;
     color: red;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: .5rem;
+    right: .5rem;
+}
+.top-button img{
+    width: 100px;
+
 }
 .menu-buttons{
     color: white;
