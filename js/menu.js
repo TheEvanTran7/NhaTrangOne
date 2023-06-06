@@ -1,3 +1,5 @@
+
+
 const drinkButton = document.querySelector(".bev")
 const drinkContent = document.querySelector(".drinks-content")
 const foodContent = document.querySelector(".food-content")

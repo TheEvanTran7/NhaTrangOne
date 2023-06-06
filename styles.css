@@ -440,12 +440,15 @@ a{
     padding-bottom: 30px;
     gap: 20px;
 }
+.hide{
+    display: none;
+}
 .center{
     display: flex;
     justify-content: center;
     align-items: center;
     position: sticky;
-    top: 90px;
+    top: 82px;
     background-color: var(--darkBlue);
 }
 .menu-buttons a{
@@ -687,6 +690,9 @@ footer ul{
         height: 600px;
         width: auto;
     }
+    .center{
+        top: 90px;  
+    }
     
 }
 @media (min-width: 300px) and (max-width: 1000px) {
@@ -732,6 +738,9 @@ footer ul{
     .food-item h2{
         font-weight: 500;
         font-size: 45px;
+    }
+    .menu-buttons a{
+        width: 120px;
     }
     
 }

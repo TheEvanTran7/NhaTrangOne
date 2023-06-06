@@ -11,6 +11,12 @@ const toggleDropDown =  () => {
     bars.forEach((element) => {
         element.classList.toggle("active")
     })
+    var menuButtons = document.querySelector(".menu-buttons")
+    if(menuButtons.classList.contains("hide")){
+        setTimeout(() => menuButtons.classList.toggle("hide"), 250)
+    }else{
+        menuButtons.classList.toggle("hide")
+    }
 }
 toggle.addEventListener('click', () => {
     toggleDropDown()
