@@ -18,8 +18,8 @@ body{
 nav{
     background: white;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     top: 0px;
     position: sticky;
     /* position: fixed;
@@ -461,7 +461,7 @@ a{
     justify-content: center;
     align-items: center;
     position: sticky;
-    top: 82px;
+    top: 70px;
     background-color: var(--darkBlue);
 }
 .menu-buttons a{
