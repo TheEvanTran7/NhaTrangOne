@@ -5,6 +5,7 @@
     --primaryRed: #C13434;
     --darkGrey: #2C2726;
     --lightGrey: #3D3A39;
+    --lightestGrey:#717070;
 }
 
 body{
@@ -435,7 +436,15 @@ a{
 
 }
 .menu-buttons{
-    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 115%;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+
+    color: var(--lightColor);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -447,7 +456,7 @@ a{
 .hide{
     display: none;
 }
-.center{
+.center{ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -456,9 +465,9 @@ a{
     background-color: var(--darkBlue);
 }
 .menu-buttons a{
-    color: #717070;
+    color: #ACACAC;
     background-color: var(--darkGrey);
-    width: 120px;
+    width: 170px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -467,6 +476,13 @@ a{
     box-shadow: 2px 2px;
     cursor: pointer;
 }
+
+/* hover style */
+
+.menu-buttons a:hover{
+    background-color: var(--lightestGrey);
+}
+
 .select{
     background-color: var(--primaryRed)!important;
     color: white!important;
@@ -497,8 +513,8 @@ a{
 }
 .food-section h2{
     text-transform: uppercase;
-    font-size: 60px;
-    font-weight: 900;
+    font-size: 45px;
+    font-weight: 800;
 }
 .food-item{
     background-color: white;
@@ -520,22 +536,19 @@ a{
     text-transform: uppercase;
     font-weight: 700;
     font-style: normal;
-    font-size: 40px;
+    font-size: 37.5px;
     margin-bottom: 0;
 }
 .food-item p{
     font-weight: 300;
-    font-size: 25px;
     text-transform: lowercase;
     margin-bottom: 1.5px;
-    font-size: 25px;
-    margin-bottom: 1.5px;
+    font-size: 30px;
 }
 .food-item h2{
     font-weight: 500;
-    font-size: 65px;
+    font-size: 62.5px;
     font-weight: 500;
-    font-size: 65px;
 }
 
 
@@ -723,25 +736,25 @@ footer ul{
     
     .food-section h2{
         text-transform: uppercase;
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 900;
     }
     .food-item h3{
         text-transform: uppercase;
         font-weight: 700;
         font-style: normal;
-        font-size: 30px;
+        font-size: 40px;
         margin-bottom: 0;
     }
     .food-item p{
         font-weight: 300;
-        font-size: 15px;
+        font-size: 32.5px;
         text-transform: capitalize;
         margin-bottom: 1.5px;
     }
     .food-item h2{
         font-weight: 500;
-        font-size: 45px;
+        font-size: 50px;
     }
     .menu-buttons a{
         width: 120px;
