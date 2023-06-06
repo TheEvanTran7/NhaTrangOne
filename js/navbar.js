@@ -17,6 +17,14 @@ const toggleDropDown =  () => {
     }else{
         menuButtons.classList.toggle("hide")
     }
+    var backTopButton = document.querySelector(".top-button")
+    if(backTopButton){
+        if(backTopButton.classList.contains("hide")){
+            setTimeout(() => backTopButton.classList.toggle("hide"), 100)
+        }else{
+            backTopButton.classList.toggle("hide")
+        }
+    }
 }
 toggle.addEventListener('click', () => {
     toggleDropDown()

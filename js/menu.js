@@ -14,11 +14,14 @@ eatButtons.forEach(button => {
         foodContent.style.display = "block"
     })
 })
-const navbarHeight = document.querySelector("nav").offsetHeight + 90;
+
+
+const navbarHeight = document.querySelector("nav").offsetHeight
+const mobile = window.matchMedia("(max-width: 600px)");
 const noodleButton = document.querySelector("#noodle")
 noodleButton.addEventListener("click", () => {
     const noodleSection = document.querySelector("#noodle-section")
-    var targetPosition = noodleSection.offsetTop - navbarHeight;
+    var targetPosition = getScrollHeight(noodleSection)
     removeActiveButton()
     noodleButton.classList.add("select")
     window.scrollTo({ top: targetPosition, behavior: "smooth"})
@@ -26,7 +29,7 @@ noodleButton.addEventListener("click", () => {
 const appButton = document.querySelector("#appetizer")
 appButton.addEventListener("click", () => {
     const appSection = document.querySelector("#appetizer-section")
-    var targetPosition = appSection.offsetTop - navbarHeight;
+    var targetPosition = getScrollHeight(appSection)
     removeActiveButton()
     appButton.classList.add("select")
     window.scrollTo({ top: targetPosition, behavior: "smooth"})
@@ -34,7 +37,7 @@ appButton.addEventListener("click", () => {
 const riceButton = document.querySelector("#rice")
 riceButton.addEventListener("click", () => {
     const riceSection = document.querySelector("#rice-section")
-    var targetPosition = riceSection.offsetTop - navbarHeight;
+    var targetPosition = getScrollHeight(riceSection)
     removeActiveButton()
     riceButton.classList.add("select")
     window.scrollTo({ top: targetPosition, behavior: "smooth"})
@@ -42,7 +45,7 @@ riceButton.addEventListener("click", () => {
 const entreeButton = document.querySelector("#entree")
 entreeButton.addEventListener("click", () => {
     const entreeSection = document.querySelector("#entree-section")
-    var targetPosition = entreeSection.offsetTop - navbarHeight;
+    var targetPosition = getScrollHeight(entreeSection)
     removeActiveButton()
     entreeButton.classList.add("select")
     window.scrollTo({ top: targetPosition, behavior: "smooth"})
@@ -50,7 +53,7 @@ entreeButton.addEventListener("click", () => {
 const bevButton = document.querySelector(".bev")
 bevButton.addEventListener("click", () => {
     const bevSection = document.querySelector("#bev-content")
-    var targetPosition = bevSection.offsetTop - navbarHeight;
+    var targetPosition = getScrollHeight(bevSection)
     removeActiveButton()
     bevButton.classList.add("select")
     window.scrollTo({ top: targetPosition, behavior: "smooth"})
@@ -62,3 +65,12 @@ function removeActiveButton() {
         button.classList.remove("select")
     })
 }
+
+function getScrollHeight(section){
+    var targetPosition = section.offsetTop - navbarHeight - 90;
+    if(mobile.matches){
+        targetPosition += 90
+    }
+    return targetPosition
+}
+
