@@ -482,20 +482,6 @@ p{
     bottom: 1rem;
     right: 1rem;
 }
-.dropdown{
-    background-color: var(--darkBlue);
-    height: 100px;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 92px;
-}
-.show{
-    display: flex;
-}
 .menu-buttons{
     color: white;
     display: flex;
@@ -521,6 +507,24 @@ p{
     justify-content: center;
     border: 1px solid white;
 }
+.drinks-content{
+    display: none;
+}
+/* .food-content, .drink-content {
+  transition: opacity 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      display: none;
+    }
+    100% {
+      opacity: 1;
+      display: block;
+    }
+  } */
+
 .food-section {
     background-color: var(--lightColor);
     margin: 0px 15px;
@@ -603,12 +607,6 @@ footer ul{
 @media only screen and (max-width: 1170px) {
     #toggle{
         display: flex;
-    }
-    .dropdown{
-        display: flex;
-    }
-    .menu-buttons{
-        display: none;
     }
     nav{
         display: flex;

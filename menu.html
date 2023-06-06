@@ -40,47 +40,17 @@
     <a href="#top" class = "top-button">Back to the top</a>
     <!-- <img src="nhatrangImg/nhatrangoneMenupt1.png" alt="nhatrangoneMenupt1">
     <img src="nhatrangImg/nhatrangoneMenupt2.png" alt="nhatrangoneMenupt2"> -->
-    <div class = "dropdown show" id = "dropdown">
-        <div class = "select">
-            <span class = "selected">Choose here...</span>
-            <div class = "carrot"></div>
-        </div>
-    </div>
-    <ul class = "menu">
-        <a href = "#top"><li  class="menu-active">Appetizers</li></a>
-        <a href = "#Seafood"><li>Seafood | Do Bien</li></a>
-        <a href = "#Beef"><li>Beef | Bo</li></a>
-        <a href = "#Pork"><li>Pork | Heo</li></a>
-        <a href = "#Vegetables"><li>Vegetables | Do Chay</li></a>
-        <a href = "#Casseroles"><li>Casseroles | Tay Cam</li></a>
-        <a href = "#Chicken"><li>Chicken | Ga</li></a>
-        <a href = "#Soup"><li>Soup | Canh</li></a>
-        <a href = "#Bun"><li>Rice Vermicelli | Bun</li></a>
-        <a href = "#Pho"><li>Rice Noodle | Pho</li></a>
-        <a href = "#Com"><li>Rice | Com</li></a>
-        <a href = "#Beverages"><li>Beverages</li></a>
-        <a href = "#Pho"><li>Alcohol</li></a>
-    </ul>
     <div class = "center">
         <div class = "menu-buttons">
-            <a href = "#top"><li>Appetizers</li></a>
-            <a href = "#Seafood"><li>Seafood | Do Bien</li></a>
-            <a href = "#Beef"><li>Beef | Bo</li></a>
-            <a href = "#Pork"><li>Pork | Heo</li></a>
-            <a href = "#Vegetables"><li>Vegetables | Do Chay</li></a>
-            <a href = "#Casseroles"><li>Casseroles | Tay Cam</li></a>
-            <a href = "#Chicken"><li>Chicken | Ga</li></a>
-            <a href = "#Soup"><li>Soup | Canh</li></a>
-            <a href = "#Bun"><li>Rice Vermicelli | Bun</li></a>
-            <a href = "#Pho"><li>Rice Noodle | Pho</li></a>
-            <a href = "#Com"><li>Rice | Com</li></a>
-            <a href = "#Beverages"><li>Beverages</li></a>
-            <a href = "#Pho"><li>Alcohol</li></a>
+            <a class = "eat" id = "appetizer"><li>Appetizers</li></a>
+            <a class = "eat" id = "entree"><li>Entrees</li></a>
+            <a class = "eat" id = "noodle"><li>Noodle</li></a>
+            <a class = "eat" id = "rice"><li>Rice</li></a>
+            <a class = "bev"><li>Beverages</li></a>
         </div>
     </div>
-    <script src="/js/menu.js"></script>
-    <div>
-        <section class = "food-section" id = "Appetizers">
+    <div class = "food-content">
+        <section class = "food-section" id = "appetizer-section">
             <h2>Appetizers</h2>
             <div class = "food-item alt">
                 <div class = "food">
@@ -142,11 +112,11 @@
                     <p>Crispy squid with garlic sauce</p>
                 </div>
                 <div>
-                    <h2 id = "Seafood">11.95</h2>
+                    <h2>11.95</h2>
                 </div>
             </div>
         </section>
-        <section class = "food-section">
+        <section class = "food-section" id = "entree-section">
             <h2>Seafood | Do Bien</h2>
             <div class = "food-item alt">
                 <div class = "food">
@@ -181,7 +151,7 @@
                     <p>shrimp with broccoli in oyster sauce</p>
                 </div>
                 <div>
-                    <h2 id = "Beef">16.95</h2>
+                    <h2>16.95</h2>
                 </div>
             </div>
         </section>
@@ -211,7 +181,7 @@
                     <p>beef cubes sauteed with watercress salad</p>
                 </div>
                 <div>
-                    <h2 id = "Pork">24.95</h2>
+                    <h2>24.95</h2>
                 </div>
             </div>
         </section>
@@ -262,7 +232,7 @@
                     <p>hollow vegetables with garlic sauce</p>
                 </div>
                 <div>
-                    <h2 id = "Casseroles">14.95</h2>
+                    <h2>14.95</h2>
                 </div>
             </div>
         </section>
@@ -292,7 +262,7 @@
                     <p>steamed salmon with special vietnamese sauce</p>
                 </div>
                 <div>
-                    <h2 id = "Chicken">20.95</h2>
+                    <h2>20.95</h2>
                 </div>
             </div>
         </section>
@@ -331,7 +301,7 @@
                     <p>chicken and green onions in ginger sauce</p>
                 </div>
                 <div>
-                    <h2 id = "Soup">15.95</h2>
+                    <h2>15.95</h2>
                 </div>
             </div>
         </section>
@@ -375,99 +345,15 @@
             </div>
             <div class = "food-item alt" >
                 <div class = "food">
-                    <h3>D5a. canh chay da hu</h3>
+                    <h3>D5a. canh chua chay</h3>
                     <p>hot and sour vegetables soup</p>
                 </div>
                 <div>
-                    <h2 id = "Bun">14.95</h2>
+                    <h2>14.95</h2>
                 </div>
             </div>
         </section>
-        <section class = "food-section" >
-            <h2>Rice Vermicelli | Bun</h2>
-            <div class = "food-item alt">
-                <div class = "food">
-                    <h3>LBC1. Bun combo 1</h3>
-                    <p>bbq beef, bbq pork, spring rolls, and taro shrimp cake with rice vermicelli</p>
-                </div>
-                <div>
-                    <h2>17.95</h2>
-                </div>
-            </div>
-            <div class = "food-item">
-                <div class = "food">
-                    <h3>LBC2. Bun combo 2</h3>
-                    <p>bbq pork, fried spring rolls, fried jumbo shrimps with rice vermicelli</p>
-                </div>
-                <div>
-                    <h2>17.95</h2>
-                </div>
-            </div>
-            <div class = "food-item alt">
-                <div class = "food">
-                    <h3>L31. Bun Ga/Tom/Bo Xao sa ot</h3>
-                    <p>chicken/shrimp/beef with lemongrass sauce with rice vermicelli</p>
-                </div>
-                <div>
-                    <h2>11.95</h2>
-                </div>
-            </div>
-            <div class = "food-item">
-                <div class = "food">
-                    <h3>L32. Bun Ga Cary</h3>
-                    <p>chicken curry with rice vermicelli (soup)</p>
-                </div>
-                <div>
-                    <h2>11.95</h2>
-                </div>
-            </div>
-            <div class = "food-item alt">
-                <div class = "food">
-                    <h3>L33. Bun Bo Nuong</h3>
-                    <p>bbq beef with rice vermicelli</p>
-                </div>
-                <div>
-                    <h2>11.95</h2>
-                </div>
-            </div>
-            <div class = "food-item">
-                <div class = "food">
-                    <h3>L34. Bun Thit Nuong</h3>
-                    <p>bbq pork with rice vermicelli</p>
-                </div>
-                <div>
-                    <h2>11.95</h2>
-                </div>
-            </div>
-            <div class = "food-item alt">
-                <div class = "food">
-                    <h3>L34a. Bun Tom Nuong</h3>
-                    <p>bbq shrimp with rice vermicelli</p>
-                </div>
-                <div>
-                    <h2>12.95</h2>
-                </div>
-            </div>
-            <div class = "food-item">
-                <div class = "food">
-                    <h3>L35a. Bun Cha Gio</h3>
-                    <p>spring rolls with rice vermicelli</p>
-                </div>
-                <div>
-                    <h2>11.95</h2>
-                </div>
-            </div>
-            <div class = "food-item alt">
-                <div class = "food">
-                    <h3>L35a. Bun Da Hu</h3>
-                    <p>fried tofu with rice vermicelli</p>
-                </div>
-                <div>
-                    <h2 id = "Pho">10.95</h2>
-                </div>
-            </div>
-        </section>
-        <section class = "food-section">
+        <section class = "food-section" id = "noodle-section">
             <h2>Rice Noodle | Pho</h2>
             <div class = "food-item alt">
                 <div class = "food">
@@ -569,7 +455,91 @@
                 </div>
             </div>
         </section>
-        <section class = "food-section">
+        <section class = "food-section" >
+            <h2>Rice Vermicelli | Bun</h2>
+            <div class = "food-item alt">
+                <div class = "food">
+                    <h3>LBC1. Bun combo 1</h3>
+                    <p>bbq beef, bbq pork, spring rolls, and taro shrimp cake with rice vermicelli</p>
+                </div>
+                <div>
+                    <h2>17.95</h2>
+                </div>
+            </div>
+            <div class = "food-item">
+                <div class = "food">
+                    <h3>LBC2. Bun combo 2</h3>
+                    <p>bbq pork, fried spring rolls, fried jumbo shrimps with rice vermicelli</p>
+                </div>
+                <div>
+                    <h2>17.95</h2>
+                </div>
+            </div>
+            <div class = "food-item alt">
+                <div class = "food">
+                    <h3>L31. Bun Ga/Tom/Bo Xao sa ot</h3>
+                    <p>chicken/shrimp/beef with lemongrass sauce with rice vermicelli</p>
+                </div>
+                <div>
+                    <h2>11.95</h2>
+                </div>
+            </div>
+            <div class = "food-item">
+                <div class = "food">
+                    <h3>L32. Bun Ga Cary</h3>
+                    <p>chicken curry with rice vermicelli (soup)</p>
+                </div>
+                <div>
+                    <h2>11.95</h2>
+                </div>
+            </div>
+            <div class = "food-item alt">
+                <div class = "food">
+                    <h3>L33. Bun Bo Nuong</h3>
+                    <p>bbq beef with rice vermicelli</p>
+                </div>
+                <div>
+                    <h2>11.95</h2>
+                </div>
+            </div>
+            <div class = "food-item">
+                <div class = "food">
+                    <h3>L34. Bun Thit Nuong</h3>
+                    <p>bbq pork with rice vermicelli</p>
+                </div>
+                <div>
+                    <h2>11.95</h2>
+                </div>
+            </div>
+            <div class = "food-item alt">
+                <div class = "food">
+                    <h3>L34a. Bun Tom Nuong</h3>
+                    <p>bbq shrimp with rice vermicelli</p>
+                </div>
+                <div>
+                    <h2>12.95</h2>
+                </div>
+            </div>
+            <div class = "food-item">
+                <div class = "food">
+                    <h3>L35a. Bun Cha Gio</h3>
+                    <p>spring rolls with rice vermicelli</p>
+                </div>
+                <div>
+                    <h2>11.95</h2>
+                </div>
+            </div>
+            <div class = "food-item alt">
+                <div class = "food">
+                    <h3>L35a. Bun Da Hu</h3>
+                    <p>fried tofu with rice vermicelli</p>
+                </div>
+                <div>
+                    <h2>10.95</h2>
+                </div>
+            </div>
+        </section>
+        <section class = "food-section" id = "rice-section">
             <h2>Rice | Com</h2>
             <div class = "food-item alt">
                 <div class = "food">
@@ -679,7 +649,7 @@
                     <h2>13.95</h2>
                 </div>
             </div>
-            <div class = "food-item alt" id = "Beverages">
+            <div class = "food-item alt">
                 <div class = "food">
                     <h3>L30. Com Chien Bo Luc Lac</h3>
                     <p>beef cubes over fried rice</p>
@@ -689,6 +659,8 @@
                 </div>
             </div>
         </section>
+    </div>
+    <div class = "drinks-content">
         <section class = "food-section">
             <h2>Beverages | Giai Khat</h2>
             <div class = "food-item alt">
@@ -774,5 +746,6 @@
             </div>
         </section>
     </div>
+    <script src="/js/menu.js"></script>
 </body>
 </html>
