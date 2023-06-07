@@ -18,8 +18,8 @@ body{
 nav{
     background: white;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     top: 0px;
     position: sticky;
     /* position: fixed;
@@ -217,7 +217,7 @@ li a{
     color: var(--lightGrey);
 }
 .Popular_Dishes_Content .dish{
-    width: 417.73px;
+    width: 357.73px;
     height: 229.97px;
     padding: 10px 10px;
     background-color: var(--lightColor);
@@ -252,8 +252,8 @@ li a{
 }
 .Popular_Dishes_Content img{
     object-fit: cover;
-    height: 190px;
-    width: 180px;
+    height: 160px;
+    width: 140px;
     border-radius: 2.72165px;
     align-self: center;
 }
@@ -293,6 +293,11 @@ li a{
 .Instagram a{
     text-decoration: none;
 }
+.handle{
+    display: flex;
+    gap: 10px;
+}
+
 .Instagram_Handle li{
     display: inline-block;
 }
@@ -396,7 +401,8 @@ li a{
     margin: 25px;
 }
 .Location #map{
-    width: 66%;
+    position: relative;
+    width: 900px;
     margin-top: 20px;
     height: 60vh;
 }
@@ -406,7 +412,7 @@ li a{
     padding: 20px;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
     color: #EEF7FC;
     font-family: 'Oswald', sans-serif;
 }
@@ -414,10 +420,15 @@ li a{
     width: 40vw;
 }
 .about img{
-    height: 900px;
+    height: 750px;
     width: auto;
 }
 .about p{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 20px;
     background:
       linear-gradient(to right, #EEF7FC 1px, transparent 2px) 0 0,
@@ -471,10 +482,11 @@ li a{
     justify-content: center;
     align-items: center;
     position: sticky;
-    top: 82px;
+    top: 70px;
     background-color: var(--darkBlue);
 }
 .menu-buttons a{
+    text-decoration: none;
     color: #ACACAC;
     background-color: var(--darkGrey);
     width: 170px;

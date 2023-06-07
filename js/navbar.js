@@ -12,10 +12,12 @@ const toggleDropDown =  () => {
         element.classList.toggle("active")
     })
     var menuButtons = document.querySelector(".menu-buttons")
-    if(menuButtons.classList.contains("hide")){
-        setTimeout(() => menuButtons.classList.toggle("hide"), 250)
-    }else{
-        menuButtons.classList.toggle("hide")
+    if(menuButtons){
+        if(menuButtons.classList.contains("hide")){
+            setTimeout(() => menuButtons.classList.toggle("hide"), 250)
+        }else{
+            menuButtons.classList.toggle("hide")
+        }
     }
     var backTopButton = document.querySelector(".top-button")
     if(backTopButton){
