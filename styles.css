@@ -286,7 +286,7 @@ li a{
 }
 .Instagram_Handle{
     display: flex; 
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center;
     padding-bottom: 10px;
 }
@@ -295,6 +295,8 @@ li a{
 }
 .handle{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -306,6 +308,7 @@ li a{
     font-style: normal;
     font-weight: 500;
     font-size: 2vw;
+    margin: 0;
     /* text-transform: lowercase; */
     color: var(--darkBlue);
 }
@@ -449,8 +452,8 @@ li a{
 /* MENUUUUUUUUUUUUUUUUUUU */
 .top-button{
     position: fixed;
-    bottom: .5rem;
-    right: .5rem;
+    bottom: 1rem;
+    right: 2.5rem;
 }
 .top-button img{
     width: 100px;
@@ -477,7 +480,7 @@ li a{
 .hide{
     display: none;
 }
-.center{ 
+.menu-nav{ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -511,33 +514,20 @@ li a{
 .drinks-content{
     display: none;
 }
-/* .food-content, .drink-content {
-  transition: opacity 0.5s ease;
+.food-content > :first-child, .drinks-content > :first-child{
+    padding-top: 35px;
 }
-
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-      display: none;
-    }
-    100% {
-      opacity: 1;
-      display: block;
-    }
-  } */
-
-.food-section {
+.food-section {/* inside menu style */
     background-color: var(--lightColor);
-    margin: 0px 15px;
-    padding: 45px 50px;
+    padding-inline: 60px;
+    padding-top: 20px;         /* PADDING OF THE INSIDE MENU */
+    padding-bottom: 45px;
     font-family: 'Oswald', sans-serif;
+} 
+.food-section, .food-content h1, .drinks-content h1{ /* margin of menu content */
+    margin: 0px 45px;
 }
-.food-section h2{
-    text-transform: uppercase;
-    font-size: 45px;
-    font-weight: 800;
-}
-.food-item{
+.food-item{ /* container of menu-item */
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -545,28 +535,41 @@ li a{
     align-items: center;
     padding: 10px 30px;
 }
-.food{
+.food{ /* left portion of the menu-item */
     display: flex;
     flex-direction: column;
     justify-content: left;
 }
-.alt{
+.alt{ 
     background-color: var(--lightBlue);
 }
-.food-item h3{
+.food-content h1, .drinks-content h1{ /* HEADERS OF THE MENU */
+    background-color: var(--lightColor);
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    padding-left: 25px;
+    text-decoration: underline;
+}
+.food-section h2{ /* menu sub-sections */
     text-transform: uppercase;
+    font-size: 45px;
     font-weight: 700;
+}
+.food-item h3{ /* menu-item NAME */
+    text-transform: uppercase;
+    font-weight: 600;
     font-style: normal;
     font-size: 37.5px;
     margin-bottom: 0;
 }
-.food-item p{
+.food-item p{ /* menu-item DESCRIPTION */
     font-weight: 300;
     text-transform: lowercase;
     margin-bottom: 1.5px;
     font-size: 30px;
 }
-.food-item h2{
+.food-item h2{ /* MENU-ITEM PRICE */
     font-weight: 500;
     font-size: 62.5px;
     font-weight: 500;
@@ -602,7 +605,7 @@ footer ul{
         display: none;
     }
 }
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1170px) { /* START OF WHEN NAV BAR WRAPS */
     #toggle{
         display: flex;
     }
@@ -728,9 +731,6 @@ footer ul{
         height: 600px;
         width: auto;
     }
-    .center{
-        top: 90px;  
-    }
     
 }
 @media (min-width: 300px) and (max-width: 1000px) {
@@ -754,40 +754,58 @@ footer ul{
     .photos img{
         width: 45vw;
     }
-    
-    .food-section h2{
+    .top-button{
+        right: 1rem;
+    }
+    .food-content h1, .drinks-content h1{ /* SECTION HEADERS OF THE MENU */
+        font-size: 40px;
+    }
+    .food-section h2{ /* SUBSECTION HEADERS OF THE MENU */
         text-transform: uppercase;
-        font-size: 45px;
+        font-size: 30px;
         font-weight: 900;
     }
-    .food-item h3{
+    .food-item h3{ /* NAME OF THE FOOD ITEM */
         text-transform: uppercase;
         font-weight: 700;
         font-style: normal;
-        font-size: 40px;
+        font-size: 25px;
         margin-bottom: 0;
     }
-    .food-item p{
+    .food-item p{ /* DESCRIPTION OF THE FOOD ITEM */
         font-weight: 300;
-        font-size: 32.5px;
+        font-size: 18px;
         text-transform: capitalize;
         margin-bottom: 1.5px;
     }
-    .food-item h2{
+    .food-item h2{ /* PRICE OF THE FOOD ITEM */
         font-weight: 500;
-        font-size: 50px;
+        font-size: 40px;
     }
     .menu-buttons a{
         width: 120px;
     }
-    
+    .food-section, .food-content h1, .drinks-content h1{ /* margin of menu content */
+        margin: 0px 20px;
+    }
+    .menu-nav{ 
+        position: static; 
+    }
+    .food-section{  /* PADDING OF THE PARENT CONTAINER */
+        padding-inline: 10px;
+    }
 }
 
  /*IPADDD */
 @media (min-width: 1000px) and (max-width: 1400px) {
-    nav{
-        padding-top: 30px;
-        padding-bottom: 20px;
+    .Nav_Bar_Links.active{
+        height: 95vh;
+    }
+    nav h1{
+        font-size: 42px;
+    }
+    .Layer_3{
+        width: 50px;
     }
     .dropdown{
         top: 112px;
@@ -806,15 +824,6 @@ footer ul{
     }
     .photos img{
         width: 40vw;
-    }
-    .logo{
-        width: 550px;
-    }
-    .NHA_TRANG_ONE{
-        font-size: 50px;
-    }
-    #toggle{
-        top: 40px
     }
     .Landing_Page_Content h1{
         font-size: 60px;
@@ -845,7 +854,7 @@ footer ul{
         font-size: 3rem;
     }
     .Instagram_Handle p{
-        font-size: 3rem;
+        font-size: 40px;
     }
     .Location h1 {
         font-size: 4rem;
@@ -854,6 +863,9 @@ footer ul{
     .Location h2, .Location p {
         font-size: 2.25rem;
     }
+    .menu-nav{
+        top: 85px;
+    }   
     
 }
 @media (min-width: 1400px) {

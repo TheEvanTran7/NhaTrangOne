@@ -17,7 +17,8 @@ eatButtons.forEach(button => {
 
 
 const navbarHeight = document.querySelector("nav").offsetHeight
-const mobile = window.matchMedia("(max-width: 600px)");
+const mobile = window.matchMedia("(max-width: 1000px)");
+const ipad = window.matchMedia("(min-width: 1000px) and (max-width: 1400px)")
 const noodleButton = document.querySelector("#noodle")
 noodleButton.addEventListener("click", () => {
     const noodleSection = document.querySelector("#noodle-section")
@@ -32,6 +33,7 @@ appButton.addEventListener("click", () => {
     var targetPosition = getScrollHeight(appSection)
     removeActiveButton()
     appButton.classList.add("select")
+    console.log(targetPosition)
     window.scrollTo({ top: targetPosition, behavior: "smooth"})
 })
 const riceButton = document.querySelector("#rice")
@@ -53,12 +55,23 @@ entreeButton.addEventListener("click", () => {
 const bevButton = document.querySelector(".bev")
 bevButton.addEventListener("click", () => {
     const bevSection = document.querySelector("#bev-content")
-    var targetPosition = getScrollHeight(bevSection)
+    var targetPosition = getScrollHeight(bevSection) + 62
     removeActiveButton()
     bevButton.classList.add("select")
     window.scrollTo({ top: targetPosition, behavior: "smooth"})
 })
-
+const topButton = document.querySelector(".top-button")
+topButton.addEventListener("click", () => {
+    const topSection = document.querySelector(".menu-nav")
+    var targetPosition = 887
+    if(ipad.matches){
+        targetPosition = 1366
+    }
+    else if(!mobile.matches){
+        targetPosition = 933
+    }
+    window.scrollTo({ top: targetPosition, behavior: "smooth"})
+})
 function removeActiveButton() {
     const buttons = document.querySelectorAll(".menu-buttons a")
     buttons.forEach(button => {
@@ -67,9 +80,11 @@ function removeActiveButton() {
 }
 
 function getScrollHeight(section){
-    var targetPosition = section.offsetTop - navbarHeight - 90;
+    var targetPosition = section.offsetTop - navbarHeight;
     if(mobile.matches){
-        targetPosition += 90
+        targetPosition = targetPosition - 60
+    }else{
+        targetPosition -= 180
     }
     return targetPosition
 }
