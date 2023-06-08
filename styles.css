@@ -521,11 +521,11 @@ li a{
     background-color: var(--lightColor);
     padding-inline: 60px;
     padding-top: 20px;         /* PADDING OF THE INSIDE MENU */
-    padding-bottom: 45px;
+    padding-bottom: 20px;
     font-family: 'Oswald', sans-serif;
 } 
 .food-section, .food-content h1, .drinks-content h1{ /* margin of menu content */
-    margin: 0px 45px;
+    margin: 0px 150px;
 }
 .food-item{ /* container of menu-item */
     background-color: white;
@@ -533,7 +533,7 @@ li a{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 35px;
 }
 .food{ /* left portion of the menu-item */
     display: flex;
@@ -546,33 +546,34 @@ li a{
 .food-content h1, .drinks-content h1{ /* HEADERS OF THE MENU */
     background-color: var(--lightColor);
     font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
     font-size: 50px;
-    font-weight: 800;
-    padding-left: 25px;
+    font-weight: 700;
+    padding-top: 50px;
+    padding-left: 50px;
     text-decoration: underline;
 }
 .food-section h2{ /* menu sub-sections */
     text-transform: uppercase;
-    font-size: 45px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 600;
 }
 .food-item h3{ /* menu-item NAME */
     text-transform: uppercase;
     font-weight: 600;
     font-style: normal;
-    font-size: 37.5px;
+    font-size: 25px;
     margin-bottom: 0;
 }
 .food-item p{ /* menu-item DESCRIPTION */
     font-weight: 300;
     text-transform: lowercase;
-    margin-bottom: 1.5px;
-    font-size: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 .food-item h2{ /* MENU-ITEM PRICE */
     font-weight: 500;
-    font-size: 62.5px;
-    font-weight: 500;
+    font-size: 42.5px;
 }
 
 
