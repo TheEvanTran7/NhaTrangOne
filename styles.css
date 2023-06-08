@@ -525,7 +525,7 @@ li a{
     font-family: 'Oswald', sans-serif;
 } 
 .food-section, .food-content h1, .drinks-content h1{ /* margin of menu content */
-    margin: 0px 150px;
+    margin: 0px 300px;
 }
 .food-item{ /* container of menu-item */
     background-color: white;
@@ -533,7 +533,7 @@ li a{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 35px;
+    padding: 15px 35px 5px 35px;
 }
 .food{ /* left portion of the menu-item */
     display: flex;
@@ -549,7 +549,7 @@ li a{
     text-transform: uppercase;
     font-size: 50px;
     font-weight: 700;
-    padding-top: 50px;
+    padding-top: 25px;
     padding-left: 50px;
     text-decoration: underline;
 }
