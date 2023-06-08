@@ -1,6 +1,7 @@
 :root{
     --lightColor: #EEF7FC;
     --darkBlue: #1B1F2F;
+    --blue: #0C1837;
     --lightBlue: #CEDFFE;
     --primaryRed: #C13434;
     --darkGrey: #2C2726;
@@ -8,15 +9,9 @@
     --lightestGrey:#717070;
 }
 
-body{
-    background: var(--lightColor);
-    width: 100%;
-    margin: auto;
-}
-
 
 nav{
-    background: white;
+    background-color: white;
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -27,6 +22,11 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+body{
+    background-color: var(--darkBlue);
+    width: 100%
 }
 .Layer_3{
     width: 12%;
@@ -68,7 +68,7 @@ li a{
     margin:auto;
     font-family: 'Roboto Slab';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 18px;
     line-height: 30px;
     display: flex;
@@ -83,14 +83,14 @@ li a{
 }
 .Order_Button{
     width: 150px;
-    height: 39px;
+    height: 45px;
     text-align: center;
     background: var(--primaryRed);
     color: var(--lightColor);
     cursor: pointer;
     border: 0px;
-    border-radius: 2 px;
-    font-size:18px;
+    border-radius: 2px;
+    font-size: 16px;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 700;
@@ -151,8 +151,16 @@ li a{
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.Menu_Landing_Page .Landing_Page_Content h1{
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 150px;
+    text-transform: uppercase;
+}
 .Landing_Page_Content button{
-    width: 20vw;
+    width: 12vw;
     height: 65px;
     text-align: center;
     background-color: var(--primaryRed);
@@ -182,9 +190,9 @@ li a{
     align-items: center;
     padding: 0px 0px 70px;
     gap: 10px;
-    background-color: var(--darkBlue);
 }
 .Popular_Dishes_Content h1{
+    margin-bottom: 25px;
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     margin-top: 30px;
@@ -206,7 +214,8 @@ li a{
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
-    line-height: 105%;
+    line-height: 100%;
+    letter-spacing: 90%;
     /* identical to box height, or 26px */
 
     display: flex;
@@ -216,9 +225,16 @@ li a{
     /* Nav Bar */
     color: var(--lightGrey);
 }
+
+/* Entire Dishes Container */
+.Popular_Dishes_Content .dishes{
+    margin-top: 40px;
+}
+
+/* Individual Dish Containter*/
 .Popular_Dishes_Content .dish{
-    width: 357.73px;
-    height: 229.97px;
+    width: 350px;
+    height: 200px;
     padding: 10px 10px;
     background-color: var(--lightColor);
     display: flex;
@@ -226,6 +242,8 @@ li a{
     order: 1;
     flex-grow: 0;
 }
+
+/* Dish Container Description */
 .Popular_Dishes_Content .description{
     display: flex;
     flex-direction: column;
@@ -238,6 +256,7 @@ li a{
     border-radius: 4.53609px;
 }
 .Popular_Dishes_Content p{
+    padding-top: 2.5px;
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 300;
@@ -248,7 +267,7 @@ li a{
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.025em;
+    letter-spacing: 0%;
 }
 .Popular_Dishes_Content img{
     object-fit: cover;
@@ -258,8 +277,9 @@ li a{
     align-self: center;
 }
 .Popular_Dishes_Content button{
-    width: 324.68px;
-    height: 67.21px;
+    margin-bottom: 40px;
+    width: 250px;
+    height: 60px;
     text-align: center;
     background-color: var(--primaryRed);
     color: var(--lightColor);
@@ -269,7 +289,7 @@ li a{
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 700;
-    font-size: 27px;
+    font-size: 20px;
     line-height: 100%;
     /* or 30px */
     align-items: center;
@@ -278,11 +298,16 @@ li a{
 }
 
 .Instagram{
+    background-color: var(--lightColor);
+    width: 95%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin:auto;
     padding-top: 15px;
     padding-bottom: 20px;
+
 }
 .Instagram_Handle{
     display: flex; 
@@ -315,8 +340,8 @@ li a{
 .Instagram .photos, .Popular_Dishes_Content .dishes{
     display: grid;
     place-items: center;
-    padding: 0px 5.16306px;
-    gap: 30px 20px;
+    padding: 0px 5px;
+    gap: 20px 20px;
 }
 .photos img{
     width: 325px;
@@ -326,7 +351,6 @@ li a{
 
 
 .Location{
-    background-color: var(--darkBlue);
     color: var(--lightColor);
     font-family: 'Roboto Slab';
     display: flex;
@@ -334,7 +358,6 @@ li a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 25px;
 }
 .Location .description{
     width: 100%;
@@ -346,10 +369,12 @@ li a{
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 900;
-    font-size: 65px;
+    font-size: 50px;
     line-height: 111px;
     letter-spacing: 0.05em;
     text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -358,7 +383,7 @@ li a{
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 22.5px;
     line-height: 150%;
     text-align: center;
     text-decoration-line: underline;
@@ -368,15 +393,15 @@ li a{
 .Location h3{
     font-family: 'Roboto Slab';
     font-style: normal;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 150%;
     text-align: center;
     text-transform: capitalize;
 }
 
 .Location p{
-    font-size: 25px;
-    margin: 33px;
+    font-size: 18px;
+    margin: 20px;
 }
 /* boot strap */
 
@@ -401,13 +426,13 @@ li a{
 }
 
 .directions{
-    margin: 25px;
+    margin: 5px;
 }
 .Location #map{
     position: relative;
-    width: 900px;
+    width: 800px;
     margin-top: 20px;
-    height: 60vh;
+    height: 40vh;
 }
 /* ABOUTTTTTTTTTTTTTTTT */
 .about{
@@ -452,7 +477,7 @@ li a{
 /* MENUUUUUUUUUUUUUUUUUUU */
 .top-button{
     position: fixed;
-    bottom: 1rem;
+    bottom: 2rem;
     right: 2.5rem;
 }
 .top-button img{
@@ -481,12 +506,12 @@ li a{
     display: none;
 }
 .menu-nav{ 
+    background-color: var(--darkBlue);
     display: flex;
     justify-content: center;
     align-items: center;
     position: sticky;
     top: 70px;
-    background-color: var(--darkBlue);
 }
 .menu-buttons a{
     text-decoration: none;
