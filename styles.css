@@ -755,7 +755,10 @@ footer ul{
     }
     
 }
-@media (min-width: 300px) and (max-width: 1000px) {
+@media (min-width: 300px) and (max-width: 1000px) { /* PHONE RESOLUTION */
+    .Menu_Landing_Page .Landing_Page_Content h1 {
+        font-size: 80px;
+    }
     .dishes { grid-template-columns: repeat(2, 1fr); }
     .Popular_Dishes_Content .dish{
         height: 260px;
@@ -780,8 +783,12 @@ footer ul{
     .top-button{
         right: 1rem;
     }
+    .menu-nav{ 
+        position: static; 
+    }
     .food-content h1, .drinks-content h1{ /* SECTION HEADERS OF THE MENU */
         font-size: 40px;
+        padding-left: 10px;
     }
     .food-section h2{ /* SUBSECTION HEADERS OF THE MENU */
         text-transform: uppercase;
@@ -792,6 +799,7 @@ footer ul{
         text-transform: uppercase;
         font-weight: 700;
         font-style: normal;
+        line-height: 35px;
         font-size: 25px;
         margin-bottom: 0;
     }
@@ -809,14 +817,30 @@ footer ul{
         width: 120px;
     }
     .food-section, .food-content h1, .drinks-content h1{ /* margin of menu content */
-        margin: 0px 20px;
-    }
-    .menu-nav{ 
-        position: static; 
+        margin: 0px 30px;
     }
     .food-section{  /* PADDING OF THE PARENT CONTAINER */
-        padding-inline: 10px;
+        padding-inline: 20px;
     }
+    /* .food-item{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    .food-item h3{
+        grid-column: 1/ span 2;
+        grid-row: 1;
+    }
+    .food-item p{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .food-item h2{
+        grid-column: 2;
+        grid-row: 2;
+        text-align: right;
+    } */
 }
 
  /*IPADDD */
@@ -888,7 +912,10 @@ footer ul{
     }
     .menu-nav{
         top: 85px;
-    }   
+    }
+    .food-section, .food-content h1, .drinks-content h1 {
+        margin: 0px 120px;
+    }
     
 }
 @media (min-width: 1400px) {

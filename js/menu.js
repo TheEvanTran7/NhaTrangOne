@@ -19,66 +19,93 @@ eatButtons.forEach(button => {
 const navbarHeight = document.querySelector("nav").offsetHeight
 const mobile = window.matchMedia("(max-width: 1000px)");
 const ipad = window.matchMedia("(min-width: 1000px) and (max-width: 1400px)")
+var bevPage = false;
+
 const noodleButton = document.querySelector("#noodle")
 noodleButton.addEventListener("click", () => {
     const noodleSection = document.querySelector("#noodle-section")
-    var targetPosition = getScrollHeight(noodleSection)
-    removeActiveButton()
-    noodleButton.classList.add("select")
-    window.scrollTo({ top: targetPosition, behavior: "smooth"})
+    scrollAction(noodleSection,noodleButton)
 })
 const appButton = document.querySelector("#appetizer")
 appButton.addEventListener("click", () => {
     const appSection = document.querySelector("#appetizer-section")
-    var targetPosition = getScrollHeight(appSection)
-    removeActiveButton()
-    appButton.classList.add("select")
-    console.log(targetPosition)
-    window.scrollTo({ top: targetPosition, behavior: "smooth"})
+    scrollAction(appSection,appButton)
 })
 const riceButton = document.querySelector("#rice")
 riceButton.addEventListener("click", () => {
     const riceSection = document.querySelector("#rice-section")
-    var targetPosition = getScrollHeight(riceSection)
-    removeActiveButton()
-    riceButton.classList.add("select")
-    window.scrollTo({ top: targetPosition, behavior: "smooth"})
+    scrollAction(riceSection,riceButton)
 })
 const entreeButton = document.querySelector("#entree")
 entreeButton.addEventListener("click", () => {
     const entreeSection = document.querySelector("#entree-section")
-    var targetPosition = getScrollHeight(entreeSection)
-    removeActiveButton()
-    entreeButton.classList.add("select")
-    window.scrollTo({ top: targetPosition, behavior: "smooth"})
+    scrollAction(entreeSection,entreeButton)
 })
 const bevButton = document.querySelector(".bev")
 bevButton.addEventListener("click", () => {
+    bevPage = true
     const bevSection = document.querySelector("#bev-content")
     var targetPosition = getScrollHeight(bevSection) + 62
     removeActiveButton()
     bevButton.classList.add("select")
+    console.log(bevSection)
     window.scrollTo({ top: targetPosition, behavior: "smooth"})
+
 })
 const topButton = document.querySelector(".top-button")
 topButton.addEventListener("click", () => {
-    const topSection = document.querySelector(".menu-nav")
-    var targetPosition = 887
+    var targetPosition;
     if(ipad.matches){
-        targetPosition = 1366
+        targetPosition = 1336
     }
-    else if(!mobile.matches){
-        targetPosition = 933
+    else if(mobile.matches){
+        targetPosition = 857
+    }else{
+        targetPosition = 900
     }
     window.scrollTo({ top: targetPosition, behavior: "smooth"})
 })
+window.addEventListener('scroll', function() {
+    var appY = 900; // Specify the desired Y position here
+    var entreeY = 1676;
+    var noodleY = 4509;
+    var riceY = 6562;
+    if(bevPage){
+        return
+    }
+    removeActiveButton()
+    if (window.scrollY >= riceY) {
+        riceButton.classList.add("select")
+    }else if(window.scrollY >= noodleY){
+        noodleButton.classList.add("select")
+    }else if(window.scrollY >= entreeY){
+        entreeButton.classList.add("select")
+    }else if(window.scrollY >= appY){
+        appButton.classList.add("select")
+    }
+});
+
+
+
+// HELPER FUNCTIONS
 function removeActiveButton() {
     const buttons = document.querySelectorAll(".menu-buttons a")
     buttons.forEach(button => {
         button.classList.remove("select")
     })
 }
-
+function scrollAction (section, button) {
+    bevPage = false
+    var targetPosition = getScrollHeight(section)
+    if(button == bevButton){
+        if(ipad.matches){
+            targetPosition += 3000
+        }else{
+            targetPosition += 22
+        }
+    }
+    window.scrollTo({ top: targetPosition, behavior: "smooth"})
+}
 function getScrollHeight(section){
     var targetPosition = section.offsetTop - navbarHeight;
     if(mobile.matches){
