@@ -68,7 +68,7 @@ topButton.addEventListener("click", () => {
 window.addEventListener('scroll', function() {
     var appY = 900; // Specify the desired Y position here
     var entreeY = 1676;
-    var noodleY = 4509;
+    var noodleY = 4400;
     var riceY = 6562;
     if(bevPage){
         return
