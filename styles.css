@@ -475,6 +475,7 @@ li a{
     position: fixed;
     bottom: 2rem;
     right: 2.5rem;
+    z-index: 2;
 }
 .top-button img{
     width: 100px;
@@ -508,6 +509,7 @@ li a{
     align-items: center;
     position: sticky;
     top: 70px;
+    z-index: 1;
 }
 .menu-buttons a{
     text-decoration: none;
@@ -549,11 +551,15 @@ li a{
     margin: 0px 300px;
 }
 .food-item{ /* container of menu-item */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content; 
+    grid-gap: 10px;
     background-color: white;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     padding: 15px 35px 5px 35px;
 }
 .food{ /* left portion of the menu-item */
@@ -580,19 +586,30 @@ li a{
     font-weight: 600;
 }
 .food-item h3{ /* menu-item NAME */
+    grid-column: 1;
+    grid-row: 1;
     text-transform: uppercase;
     font-weight: 600;
     font-style: normal;
     font-size: 25px;
     margin-bottom: 0;
 }
+.food-item h3 span{ /* menu-item NUMBER */
+    font-size: 0.83em;
+}
 .food-item p{ /* menu-item DESCRIPTION */
+    grid-column: 1;
+    grid-row: 2;
     font-weight: 300;
     text-transform: lowercase;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-size: 20px;
 }
 .food-item h2{ /* MENU-ITEM PRICE */
+    grid-column: 2;
+    grid-row: 1/span2;
+    justify-self: end;
+    align-self: center;
     font-weight: 500;
     font-size: 42.5px;
 }
@@ -755,7 +772,11 @@ footer ul{
     }
     
 }
-@media (min-width: 300px) and (max-width: 1000px) { /* PHONE RESOLUTION */
+@media (min-width: 300px) and (max-width: 750px) { /* PHONE RESOLUTION */
+    div{
+        border: none;
+        outline: none;
+    }
     .Menu_Landing_Page .Landing_Page_Content h1 {
         font-size: 80px;
     }
@@ -786,6 +807,9 @@ footer ul{
     .menu-nav{ 
         position: static; 
     }
+    .menu-buttons a{
+        width: 100px;
+    }
     .food-content h1, .drinks-content h1{ /* SECTION HEADERS OF THE MENU */
         font-size: 40px;
         padding-left: 10px;
@@ -811,10 +835,7 @@ footer ul{
     }
     .food-item h2{ /* PRICE OF THE FOOD ITEM */
         font-weight: 500;
-        font-size: 40px;
-    }
-    .menu-buttons a{
-        width: 120px;
+        font-size: 30px;
     }
     .food-section, .food-content h1, .drinks-content h1{ /* margin of menu content */
         margin: 0px 30px;
@@ -822,29 +843,26 @@ footer ul{
     .food-section{  /* PADDING OF THE PARENT CONTAINER */
         padding-inline: 20px;
     }
-    /* .food-item{
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-columns: auto;
-        grid-gap: 10px;
+    .food-item{
+        grid-template-rows: min-content min-content; 
     }
     .food-item h3{
-        grid-column: 1/ span 2;
+        grid-column: 1/ span 3;
         grid-row: 1;
     }
     .food-item p{
-        grid-column: 1;
+        grid-column: 1 /span 2;
         grid-row: 2;
     }
     .food-item h2{
-        grid-column: 2;
+        grid-column: 3;
         grid-row: 2;
         text-align: right;
-    } */
+    }
 }
 
  /*IPADDD */
-@media (min-width: 1000px) and (max-width: 1400px) {
+@media (min-width: 750px) and (max-width: 1400px) {
     .Nav_Bar_Links.active{
         height: 95vh;
     }
@@ -911,7 +929,10 @@ footer ul{
         font-size: 2.25rem;
     }
     .menu-nav{
-        top: 85px;
+        top: 75px;
+    }
+    .menu-nav a{
+        width: 115px;
     }
     .food-section, .food-content h1, .drinks-content h1 {
         margin: 0px 120px;

@@ -17,34 +17,37 @@ eatButtons.forEach(button => {
 
 
 const navbarHeight = document.querySelector("nav").offsetHeight
-const mobile = window.matchMedia("(max-width: 1000px)");
-const ipad = window.matchMedia("(min-width: 1000px) and (max-width: 1400px)")
+const mobile = window.matchMedia("(max-width: 750px)");
+console.log(window.innerWidth)
+const ipad = window.matchMedia("(min-width: 750px) and (max-width: 1400px)")
 var bevPage = false;
 
-const noodleButton = document.querySelector("#noodle")
-noodleButton.addEventListener("click", () => {
-    const noodleSection = document.querySelector("#noodle-section")
-    scrollAction(noodleSection,noodleButton)
-})
+
 const appButton = document.querySelector("#appetizer")
+const appSection = document.querySelector("#appetizer-section")
 appButton.addEventListener("click", () => {
-    const appSection = document.querySelector("#appetizer-section")
     scrollAction(appSection,appButton)
 })
-const riceButton = document.querySelector("#rice")
-riceButton.addEventListener("click", () => {
-    const riceSection = document.querySelector("#rice-section")
-    scrollAction(riceSection,riceButton)
-})
 const entreeButton = document.querySelector("#entree")
+const entreeSection = document.querySelector("#entree-section")
 entreeButton.addEventListener("click", () => {
-    const entreeSection = document.querySelector("#entree-section")
     scrollAction(entreeSection,entreeButton)
 })
+const noodleButton = document.querySelector("#noodle")
+const noodleSection = document.querySelector("#noodle-section")
+noodleButton.addEventListener("click", () => {
+    scrollAction(noodleSection,noodleButton)
+})
+const riceButton = document.querySelector("#rice")
+const riceSection = document.querySelector("#rice-section")
+riceButton.addEventListener("click", () => {
+    scrollAction(riceSection,riceButton)
+})
 const bevButton = document.querySelector(".bev")
+const bevSection = document.querySelector("#bev-content")
 bevButton.addEventListener("click", () => {
     bevPage = true
-    const bevSection = document.querySelector("#bev-content")
+    
     var targetPosition = getScrollHeight(bevSection) + 62
     removeActiveButton()
     bevButton.classList.add("select")
@@ -55,21 +58,27 @@ bevButton.addEventListener("click", () => {
 const topButton = document.querySelector(".top-button")
 topButton.addEventListener("click", () => {
     var targetPosition;
-    if(ipad.matches){
-        targetPosition = 1336
+    console.log("hello")
+    if(mobile.matches){
+        targetPosition = getScrollHeight(appSection) - 350
+        if(bevPage){
+            targetPosition = getScrollHeight(bevSection) - 350
+        }
     }
-    else if(mobile.matches){
-        targetPosition = 857
-    }else{
+    else if(ipad.matches){
+        console.log('hello')
+        targetPosition = getScrollHeight(appSection) - 150
+    }
+    else{
         targetPosition = 900
     }
     window.scrollTo({ top: targetPosition, behavior: "smooth"})
 })
 window.addEventListener('scroll', function() {
-    var appY = 900; // Specify the desired Y position here
-    var entreeY = 1676;
-    var noodleY = 4400;
-    var riceY = 6562;
+    var appY = getScrollHeight(appSection) - 100; // Specify the desired Y position here
+    var entreeY = getScrollHeight(entreeSection) - 100;
+    var noodleY = getScrollHeight(noodleSection) - 100;
+    var riceY = getScrollHeight(riceSection) - 100;
     if(bevPage){
         return
     }
@@ -109,10 +118,20 @@ function scrollAction (section, button) {
 function getScrollHeight(section){
     var targetPosition = section.offsetTop - navbarHeight;
     if(mobile.matches){
-        targetPosition = targetPosition - 60
-    }else{
+        // console.log('hello2')
+        targetPosition -= 60
+    }
+    // else if(ipad.matches){
+    //     targetPosition -= 170
+    // }
+    else{
         targetPosition -= 180
     }
+    // if(mobile.matches){
+    //     targetPosition = targetPosition - 60
+    // }else{
+    //     targetPosition -= 180
+    // }
     return targetPosition
 }
 
