@@ -4,6 +4,7 @@
     --blue: #0C1837;
     --lightBlue: #CEDFFE;
     --primaryRed: #C13434;
+    --lightRed: #FFF1F1;
     --darkGrey: #2C2726;
     --lightGrey: #3D3A39;
     --lightestGrey:#717070;
@@ -121,7 +122,7 @@ li a{
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 100%;
+    height: 90vh!important;
     /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/nha-trang-inside.jfif') center/cover no-repeat; */
     height: 95vh;
     gap: 45px;
@@ -451,16 +452,17 @@ li a{
     height: 750px;
     width: auto;
 }
-.about p{
+.about-info{
     font-weight: 300;
     font-size: 25px;
     line-height: 135%;
     letter-spacing: 0.0333em;
 
-    height: 600px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     text-align: left;
     padding: 20px;
     background:
@@ -532,6 +534,7 @@ li a{
     justify-content: center;
     box-shadow: 2px 2px;
     cursor: pointer;
+    transition: background-color .3s;
 }
 
 /*hover style*/
@@ -626,12 +629,48 @@ li a{
 
 /* FAQ */
 .faq{
-    margin: 50px 300px;
-    background-color: white;
+    margin: 30px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white
 }
-
-
-
+.faq-dropdown{
+    background-color: var(--primaryRed);
+    font-family: 'Oswald', sans-serif;
+    /* width: 100%; */
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+.carrot{
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 11px solid white;
+    transition: 0.3s;
+}
+.carrot-rotate{
+    transform: rotate(180deg);
+}
+.faq-item{
+    background-color: var(--lightRed);
+}
+.answer{
+    color: black;
+    display: none;
+    padding: 15px;
+}
+.open{
+    display: block;
+}
 footer{
     display: flex;
     justify-content: space-between;
@@ -679,13 +718,13 @@ footer ul{
     }
     #toggle{
         position: absolute;
-        top: 30px;
+        top: 35px;
         right: 1.5rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 40px;
-        height: 35px;
+        height: 30px;
     }
     #toggle .bar{
         transition: all 0.3s;
@@ -721,7 +760,7 @@ footer ul{
     .bar:nth-of-type(1).active {
         transition: all 0.3s;
         transform: rotate(135deg);
-        translate: 0px 20px;
+        translate: 0px 15px;
       }
       
       .bar:nth-of-type(2).active {
@@ -775,8 +814,8 @@ footer ul{
     }
     .about{
         display: flex;
-        flex-direction: column;
-        padding: 20px;
+        flex-direction: column-reverse;
+        padding: 30px;
         gap: 15px;
         color: #EEF7FC;
     }
@@ -784,7 +823,7 @@ footer ul{
         width: 90vw;
     }
     .about img{
-        height: 600px;
+        height: 500px;
         width: auto;
     }
     
@@ -794,7 +833,7 @@ footer ul{
         border: none;
         outline: none;
     }
-    .Menu_Landing_Page .Landing_Page_Content h1 {
+    .Landing_Page_Content h2 {
         font-size: 80px;
     }
     .dishes { grid-template-columns: repeat(2, 1fr); }
@@ -818,8 +857,16 @@ footer ul{
     .photos img{
         width: 45vw;
     }
+    .about-info{
+        margin: 10px;
+        padding: 10px;
+    }
+    .about-info p{
+        font-size: 20px;
+    }
     .top-button{
         right: 1rem;
+        filter: drop-shadow(5px 5px 5px black);
     }
     .menu-nav{ 
         position: static; 
@@ -876,7 +923,13 @@ footer ul{
         grid-row: 2;
         text-align: right;
     }
-}
+    .faq-dropdown {
+        font-size: 18px;
+    }
+    .faq{
+        margin: 20px 20px;
+    }
+}   
 
  /*IPADDD */
 @media (min-width: 750px) and (max-width: 1400px) {
@@ -945,11 +998,14 @@ footer ul{
     .Location h2, .Location p {
         font-size: 2.25rem;
     }
+    .top-button{
+        right: 20px;
+    }
     .menu-nav{
         top: 75px;
     }
     .menu-nav a{
-        width: 115px;
+        width: 135px;
     }
     .food-section, .food-content h1, .drinks-content h1 {
         margin: 0px 120px;
