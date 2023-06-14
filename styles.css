@@ -148,7 +148,8 @@ li a{
     margin-bottom: 0;
 }
 
-.Menu_Landing_Page .Landing_Page_Content h1{
+.Landing_Page_Content h2{
+    color: var(--lightColor);
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -554,7 +555,7 @@ li a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content; 
-    grid-gap: 10px;
+    grid-gap: 0px;
     background-color: white;
     /* display: flex;
     flex-direction: row;
@@ -595,14 +596,15 @@ li a{
     margin-bottom: 0;
 }
 .food-item h3 span{ /* menu-item NUMBER */
-    font-size: 0.83em;
+    font-weight: 500;
+    font-size: 0.85em;
 }
 .food-item p{ /* menu-item DESCRIPTION */
     grid-column: 1;
     grid-row: 2;
     font-weight: 300;
     text-transform: lowercase;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     font-size: 20px;
 }
 .food-item h2{ /* MENU-ITEM PRICE */
@@ -614,6 +616,11 @@ li a{
     font-size: 42.5px;
 }
 
+/* FAQ */
+.faq{
+    margin: 0px 300px;
+    background-color: white;
+}
 
 footer{
     display: flex;
