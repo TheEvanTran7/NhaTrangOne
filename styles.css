@@ -675,13 +675,17 @@ li a{
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: 20px;
-
     color: black;
     display: none;
-    padding: 15px;
+    padding: 0;
+    height: auto;
+    transition: height 0.3s ease-out;
 }
 .open{
     display: block;
+    padding: 15px;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
 }
 footer{
     display: flex;

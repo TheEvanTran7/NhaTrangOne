@@ -6,6 +6,7 @@ dropdowns.forEach(dropdown => {
         var answer = dropdown.nextElementSibling;
         answer.classList.toggle("open")
     })
+    
 })
 // if(dropdown){
 //     dropdown.classList.toggle("show")
