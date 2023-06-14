@@ -647,6 +647,14 @@ li a{
     font-size: 25px;
     font-weight: 700;
 }
+
+.faq h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    text-transform: uppercase;
+    padding: 20px 0px;
+}
 .carrot{
     display: flex;
     flex-direction: column;
@@ -664,6 +672,10 @@ li a{
     background-color: var(--lightRed);
 }
 .answer{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
     color: black;
     display: none;
     padding: 15px;
