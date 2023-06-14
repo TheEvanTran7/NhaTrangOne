@@ -18,10 +18,8 @@ eatButtons.forEach(button => {
 
 const navbarHeight = document.querySelector("nav").offsetHeight
 const mobile = window.matchMedia("(max-width: 750px)");
-console.log(window.innerWidth)
 const ipad = window.matchMedia("(min-width: 750px) and (max-width: 1400px)")
 var bevPage = false;
-
 
 const appButton = document.querySelector("#appetizer")
 const appSection = document.querySelector("#appetizer-section")
@@ -47,7 +45,6 @@ const bevButton = document.querySelector(".bev")
 const bevSection = document.querySelector("#bev-content")
 bevButton.addEventListener("click", () => {
     bevPage = true
-    
     var targetPosition = getScrollHeight(bevSection) + 62
     removeActiveButton()
     bevButton.classList.add("select")
@@ -79,6 +76,11 @@ window.addEventListener('scroll', function() {
     var entreeY = getScrollHeight(entreeSection) - 100;
     var noodleY = getScrollHeight(noodleSection) - 100;
     var riceY = getScrollHeight(riceSection) - 100;
+    if(window.scrollY >= appY){
+        topButton.classList.remove("hide")
+    }else{
+        topButton.classList.add("hide")
+    }
     if(bevPage){
         return
     }

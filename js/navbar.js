@@ -27,6 +27,10 @@ const toggleDropDown =  () => {
             backTopButton.classList.toggle("hide")
         }
     }
+    const map = document.querySelector(".map")
+    if(map){
+        map.classList.toggle("hide")
+    }
 }
 toggle.addEventListener('click', () => {
     toggleDropDown()
