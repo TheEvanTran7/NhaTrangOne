@@ -17,10 +17,9 @@ eatButtons.forEach(button => {
 
 
 const navbarHeight = document.querySelector("nav").offsetHeight
-const mobile = window.matchMedia("(max-width: 750px)");
-const ipad = window.matchMedia("(min-width: 750px) and (max-width: 1400px)")
+const mobile = window.matchMedia("(max-width: 767px)");
+const ipad = window.matchMedia("(min-width: 768px) and (max-width: 1400px)")
 var bevPage = false;
-
 const appButton = document.querySelector("#appetizer")
 const appSection = document.querySelector("#appetizer-section")
 appButton.addEventListener("click", () => {
@@ -48,14 +47,12 @@ bevButton.addEventListener("click", () => {
     var targetPosition = getScrollHeight(bevSection) + 62
     removeActiveButton()
     bevButton.classList.add("select")
-    console.log(bevSection)
     window.scrollTo({ top: targetPosition, behavior: "smooth"})
 
 })
 const topButton = document.querySelector(".top-button")
 topButton.addEventListener("click", () => {
     var targetPosition;
-    console.log("hello")
     if(mobile.matches){
         targetPosition = getScrollHeight(appSection) - 350
         if(bevPage){

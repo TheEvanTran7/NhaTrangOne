@@ -127,7 +127,7 @@ li a{
     height: 95vh;
     gap: 45px;
   }
-.Landing_Page_Content .main_logo{
+.Landing_Page_Content img{
     /* margin-top: 0px; */
     width: 18vw;
     height: auto;
@@ -335,7 +335,7 @@ li a{
     /* text-transform: lowercase; */
     color: var(--darkBlue);
 }
-.Instagram .photos, .Popular_Dishes_Content .dishes{
+.photos, .dishes{
     display: grid;
     place-items: center;
     padding: 0px 5px;
@@ -426,7 +426,7 @@ li a{
 .directions{
     margin: 5px;
 }
-.Location #map{
+#map{
     position: relative;
     width: 800px;
     margin-top: 20px;
@@ -534,7 +534,7 @@ li a{
     justify-content: center;
     box-shadow: 2px 2px;
     cursor: pointer;
-    transition: background-color .3s;
+    transition: background-color .1s;
 }
 
 /*hover style*/
@@ -548,6 +548,9 @@ li a{
 }
 .drinks-content{
     display: none;
+}
+.food-content, .drinks-content{
+    padding-bottom: 100px;
 }
 .food-content > :first-child, .drinks-content > :first-child{
     padding-top: 35px;
@@ -729,9 +732,6 @@ footer ul{
         width: 100vw;
         padding-top: 20px;
     }
-    nav h1{
-        font-size: 32px;
-    }
     #toggle{
         position: absolute;
         top: 35px;
@@ -769,7 +769,7 @@ footer ul{
         padding-top: 0px;
         /* padding-bottom: 50px; */
         justify-content: center;
-        gap: 50px;
+        gap: 30px;
         transition: height .3s ease-out;
     }
     /* create the X for the bars */
@@ -795,7 +795,7 @@ footer ul{
         padding-bottom: 20px;
     }
     .Nav_Bar_Links li a{
-        font-size: 45px;
+        font-size: 40px;
     }
     .Nav_Bar_Links li a button{
         height: 90px;
@@ -808,7 +808,7 @@ footer ul{
         font-size: 30px;
         justify-content: center;
     }
-    .Landing_Page_Content .main_logo{
+    .Landing_Page_Content img{
         width: 50vw;
     }
     .Landing_Page_Content button{
@@ -844,11 +844,7 @@ footer ul{
     }
     
 }
-@media (min-width: 300px) and (max-width: 750px) { /* PHONE RESOLUTION */
-    div{
-        border: none;
-        outline: none;
-    }
+@media (min-width: 300px) and (max-width: 767px) { /* PHONE RESOLUTION */
     .Landing_Page_Content h2 {
         font-size: 80px;
     }
@@ -869,9 +865,15 @@ footer ul{
         margin-bottom: 10px;
         object-fit: cover;
     }
-    .photos { grid-template-columns: repeat(2, 1fr); }
+    .photos {
+        grid-gap: 10px 15px;
+        grid-template-columns: repeat(2, 1fr);
+    }
     .photos img{
-        width: 45vw;
+        width: 43vw;
+    }
+    #map{
+        width: 100px;
     }
     .about-info{
         margin: 10px;
@@ -896,26 +898,27 @@ footer ul{
     }
     .food-section h2{ /* SUBSECTION HEADERS OF THE MENU */
         text-transform: uppercase;
-        font-size: 30px;
-        font-weight: 900;
+        font-size: 25px;
+        font-weight: 800;
     }
     .food-item h3{ /* NAME OF THE FOOD ITEM */
         text-transform: uppercase;
         font-weight: 700;
         font-style: normal;
         line-height: 35px;
-        font-size: 25px;
+        font-size: 23px;
         margin-bottom: 0;
     }
     .food-item p{ /* DESCRIPTION OF THE FOOD ITEM */
         font-weight: 300;
         font-size: 18px;
-        text-transform: capitalize;
+        text-transform: lowercase;
         margin-bottom: 1.5px;
+        margin-right: 10px;
     }
     .food-item h2{ /* PRICE OF THE FOOD ITEM */
         font-weight: 500;
-        font-size: 30px;
+        font-size: 25px;
     }
     .food-section, .food-content h1, .drinks-content h1{ /* margin of menu content */
         margin: 0px 30px;
@@ -948,10 +951,7 @@ footer ul{
 }   
 
  /*IPADDD */
-@media (min-width: 750px) and (max-width: 1400px) {
-    .Nav_Bar_Links.active{
-        height: 95vh;
-    }
+@media (min-width: 768px) and (max-width: 1400px) {
     nav h1{
         font-size: 42px;
     }
@@ -971,26 +971,32 @@ footer ul{
         grid-template-columns: repeat(2, 1fr);
     }
     .photos {
+        gap: 30px;
         grid-template-columns: repeat(2, 1fr);
     }
     .photos img{
         width: 40vw;
     }
     .Landing_Page_Content h1{
-        font-size: 60px;
+        font-size: 40px;
         margin-top: 15px;
         margin-bottom: 15px;
         /* justify-content: center; */
     }
+    .Landing_Page_Content img{
+        width: 330px;
+    }
     .Landing_Page_Content button{
-        height: 100px;
-        font-size: 45px;
+        height: 90px;
+        width: 300px;
+        font-size: 30px;
     }
     .Nav_Bar_Links.active{
-        gap: 135px;
+        height: 95vh;
+        gap: 100px;
     }
     .active li a{
-        font-size: 70px;
+        font-size: 60px;
     }
     .active li a button{
         height: 120px;
@@ -1025,6 +1031,9 @@ footer ul{
     }
     .food-section, .food-content h1, .drinks-content h1 {
         margin: 0px 120px;
+    }
+    .faq{
+        margin: 50px 50px;
     }
     
 }

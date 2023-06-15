@@ -20,12 +20,8 @@ const toggleDropDown =  () => {
         }
     }
     var backTopButton = document.querySelector(".top-button")
-    if(backTopButton){
-        if(backTopButton.classList.contains("hide")){
-            setTimeout(() => backTopButton.classList.toggle("hide"), 100)
-        }else{
-            backTopButton.classList.toggle("hide")
-        }
+    if(backTopButton && !backTopButton.classList.contains("hide")){
+        backTopButton.style.opacity = backTopButton.style.opacity == "0" ? "100" : "0"
     }
     const map = document.querySelector(".map")
     if(map){
