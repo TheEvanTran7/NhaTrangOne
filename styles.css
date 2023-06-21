@@ -632,10 +632,10 @@ li a{
 
 /* FAQ */
 .faq{
-    margin: 30px 300px;
+    margin: 30px 650px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     color: white
 }
 .faq-dropdown{
