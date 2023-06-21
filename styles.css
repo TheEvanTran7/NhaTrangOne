@@ -24,10 +24,34 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-
-body{
-    background-color: var(--darkBlue);
-    width: 100%
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.about-parallax {
+    /* The image used */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/bwNhaTrangOne.png') center/cover no-repeat;
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-parallax{
+    /* background-image: url("nhatrangImg/bwNhaTrangOne.png"); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/nha-trang-inside.jfif') center/cover no-repeat;
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .Layer_3{
     width: 12%;
@@ -182,11 +206,14 @@ li a{
 .Popular_Dishes_Content{
     /* display: grid;
     place-items: center; */
+    background-color: var(--darkBlue);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 0px 70px;
+    padding-bottom: 50px;
+    margin: auto;
+    width: 80%;
     gap: 10px;
 }
 .Popular_Dishes_Content h1{
@@ -297,7 +324,7 @@ li a{
 
 .Instagram{
     background-color: var(--lightColor);
-    width: 95%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -305,7 +332,6 @@ li a{
     margin:auto;
     padding-top: 15px;
     padding-bottom: 20px;
-
 }
 .Instagram_Handle{
     display: flex; 
@@ -350,12 +376,16 @@ li a{
 
 .Location{
     color: var(--lightColor);
+    background-color: var(--darkBlue);
+    width: 80%;
+    margin: auto;
     font-family: 'Roboto Slab';
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-bottom: 30px;
 }
 .Location .description{
     width: 100%;
@@ -435,10 +465,15 @@ li a{
 /* ABOUTTTTTTTTTTTTTTTT */
 .about{
     display: flex;
-    padding: 20px;
+    /* padding: 20px; */
     justify-content: center;
     align-items: center;
     gap: 100px;
+    background-color: var(--darkBlue);
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 90vw;
     color: #EEF7FC;
     font-family: 'Oswald';
     font-style: normal;
@@ -514,7 +549,8 @@ li a{
     display: none;
 }
 .menu-nav{ 
-    background-color: var(--darkBlue);
+    /* background-color: var(--darkBlue); */
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -845,6 +881,9 @@ footer ul{
     
 }
 @media (min-width: 300px) and (max-width: 767px) { /* PHONE RESOLUTION */
+    .Location, .Instagram, .Popular_Dishes_Content{
+        width: 100%;
+    }
     .Landing_Page_Content h2 {
         font-size: 80px;
     }
@@ -951,7 +990,7 @@ footer ul{
 }   
 
  /*IPADDD */
-@media (min-width: 768px) and (max-width: 1400px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     nav h1{
         font-size: 42px;
     }

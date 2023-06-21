@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Menu</title>
 </head>
-<body style="background-color: #1B1F2F;">
+<body class = "about-parallax">
     <nav>
         <div class = 'drop'>
             <div class="logo">
@@ -36,7 +36,7 @@
         <script src = "/js/navbar.js"></script>
     </nav>
     <section class="Menu_Landing_Page">
-        <div class="Landing_Page_Content"style = "background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/about.png') center/cover no-repeat;">
+        <div class="Landing_Page_Content">
             <h2>Menu</h2>
         </div>
     </section>
@@ -414,58 +414,105 @@
                     <h2>15.95</h2>
             </div>
         </section>
-    </div>
-    <div class = "drinks-content" id = "bev-content">
-        <h1>Beverages</h1>
-        <section class = "food-section">
-            <h2>Non-Alcoholic</h2>
-            <div class = "food-item alt">
-                    <h3><span>1. </span>Càphê Phin Sữa Nóng</h3>
-                    <p>french hot/iced vietnamese coffee with condensed milk</p>
-                    <h2>4.95</h2>
-            </div>
-            <div class = "food-item">
-                    <h3><span>2. </span>Trà Sữa Đã</h3>
-                    <p>Iced tea with condensed milk</p>
-                    <h2>4.95</h2>
-            </div>
-            <div class = "food-item alt">
-                    <h3><span>3. </span>Trà Đá Chanh</h3>
-                    <p>french iced lemon tea</p>
-                    <h2>4.95</h2>
-            </div>
-            <div class = "food-item">
-                    <h3><span>4. </span>Đá Chanh</h3>
-                    <p>fresh lemonade</p>
-                    <h2>4.95</h2>
-            </div>
-            <div class = "food-item alt">
-                    <h3><span>5. </span>Soda Chanh</h3>
-                    <p>fresh soda lemonade</p>
-                    <h2>4.95</h2>
-            </div>
-            <div class = "food-item">
-                    <h3><span>6. </span>Soda Xí Muội / chanh muối</h3>
-                    <p>soda with salted plum (or salted lemon)</p>
-                    <h2>4.95</h2>
-            </div>
-            <div class = "food-item alt">
-                    <h3><span>7. </span>Nước Ngọt</h3>
-                    <p>soda (sprite, coco cola, diet coco cola, ginger ale, seltzer)</p>
-                    <h2>2.50</h2>
-            </div>
-            <div class = "food-item">
-                    <h3><span>14. </span>Sparkling Mint Lemonade</h3>
-                    <p>fresh mint soda lemonade</p>
-                    <h2>4.95</h2>
-            </div>
-            <div class = "food-item alt">
-                    <h3><span>15. </span>Trà Thái</h3>
-                    <p>Thai iced tea with condensed milk</p>
-                    <h2>4.95</h2>
-            </div>
-        </section>
-    </div>
+        <section id = "bev-content">
+                <h1>Beverages</h1>
+                <section class = "food-section">
+                        <h2>Non-Alcohol</h2>
+                        <div class = "food-item alt">
+                                <h3><span>1. </span>Càphê Phin Sữa Nóng</h3>
+                                <p>french hot/iced vietnamese coffee with condensed milk</p>
+                                <h2>4.95</h2>
+                        </div>
+                        <div class = "food-item">
+                                <h3><span>2. </span>Trà Sữa Đã</h3>
+                                <p>Iced tea with condensed milk</p>
+                                <h2>4.95</h2>
+                        </div>
+                        <div class = "food-item alt">
+                                <h3><span>3. </span>Trà Đá Chanh</h3>
+                                <p>french iced lemon tea</p>
+                                <h2>4.95</h2>
+                        </div>
+                        <div class = "food-item">
+                                <h3><span>4. </span>Đá Chanh</h3>
+                                <p>fresh lemonade</p>
+                                <h2>4.95</h2>
+                        </div>
+                        <div class = "food-item alt">
+                                <h3><span>5. </span>Soda Chanh</h3>
+                                <p>fresh soda lemonade</p>
+                                <h2>4.95</h2>
+                        </div>
+                        <div class = "food-item">
+                                <h3><span>6. </span>Soda Xí Muội / chanh muối</h3>
+                                <p>soda with salted plum (or salted lemon)</p>
+                                <h2>4.95</h2>
+                        </div>
+                        <div class = "food-item alt">
+                                <h3><span>7. </span>Nước Ngọt</h3>
+                                <p>soda (sprite, coco cola, diet coco cola, ginger ale, seltzer)</p>
+                                <h2>2.50</h2>
+                        </div>
+                        <div class = "food-item">
+                                <h3><span>14. </span>Sparkling Mint Lemonade</h3>
+                                <p>fresh mint soda lemonade</p>
+                                <h2>4.95</h2>
+                        </div>
+                        <div class = "food-item alt">
+                                <h3><span>15. </span>Trà Thái</h3>
+                                <p>Thai iced tea with condensed milk</p>
+                                <h2>4.95</h2>
+                        </div>
+                </section>
+                <section class = "food-section">
+                        <h2>Alcohol</h2>
+                        <div class = "food-item alt">
+                                <h3><span></span>White Wine</h3>
+                                <p>Sauvignon Blanc, Pinot Grigio, chardonnay (glass / bottle)</p>
+                                <h2>7 / 26</h2>
+                        </div>
+                        <div class = "food-item">
+                                <h3><span></span>Red Wine</h3>
+                                <p>Carbernet Sauvignon, Malbec, Tempranillo (glass / bottle)</p>
+                                <h2>7 / 26</h2>
+                        </div>
+                        <div class = "food-item alt">
+                                <h3><span></span>Beer</h3>
+                                <p>Tsingtao, Singha, Sapporo, Lucky Buddah, Red Horse (+1), Saigon (+1) </p>
+                                <h2>6</h2>
+                        </div>
+                        <div class = "food-item">
+                                <h3><span></span>Soju</h3>
+                                <p>original, lychee, peach, ginger</p>
+                                <h2>10</h2>
+                        </div>
+                        <div class = "food-item alt">
+                                <h3><span></span>White Claw Hard Seltzer</h3>
+                                <p>Tangerine, Lemon, Watermelon, Mango</p>
+                                <h2>6</h2>
+                        </div>
+                        <div class = "food-item">
+                                <h3><span></span>Soju</h3>
+                                <p>original, lychee, peach, ginger</p>
+                                <h2>10</h2>
+                        </div>
+                        <div class = "food-item alt">
+                                <h3><span></span>Ozedi Sake</h3>
+                                <p>Mini Bottle</p>
+                                <h2>10</h2>
+                        </div>
+                        <div class = "food-item">
+                                <h3><span></span>Nectar Hard Seltzer</h3>
+                                <p>asian pear, lychee, mandarin, yuzu</p>
+                                <h2>7</h2>
+                        </div>
+                        <div class = "food-item alt">
+                                <h3><span></span>Prosecco Sparkling Wine</h3>
+                                <p>Mini Bottle</p>
+                                <h2>10</h2>
+                        </div>
+                </section>
+        </div>
     <script src="/js/menu.js"></script>
 </body>
 </html>

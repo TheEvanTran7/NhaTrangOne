@@ -19,7 +19,6 @@ eatButtons.forEach(button => {
 const navbarHeight = document.querySelector("nav").offsetHeight
 const mobile = window.matchMedia("(max-width: 767px)");
 const ipad = window.matchMedia("(min-width: 768px) and (max-width: 1400px)")
-var bevPage = false;
 const appButton = document.querySelector("#appetizer")
 const appSection = document.querySelector("#appetizer-section")
 appButton.addEventListener("click", () => {
@@ -43,11 +42,7 @@ riceButton.addEventListener("click", () => {
 const bevButton = document.querySelector(".bev")
 const bevSection = document.querySelector("#bev-content")
 bevButton.addEventListener("click", () => {
-    bevPage = true
-    var targetPosition = getScrollHeight(bevSection) + 62
-    removeActiveButton()
-    bevButton.classList.add("select")
-    window.scrollTo({ top: targetPosition, behavior: "smooth"})
+    scrollAction(bevSection,bevButton)
 
 })
 const topButton = document.querySelector(".top-button")
@@ -60,11 +55,13 @@ topButton.addEventListener("click", () => {
         }
     }
     else if(ipad.matches){
-        console.log('hello')
         targetPosition = getScrollHeight(appSection) - 150
     }
     else{
-        targetPosition = 900
+        targetPosition = getScrollHeight(appSection)
+        if(bevPage){
+            targetPosition = getScrollHeight(bevSection)
+        }
     }
     window.scrollTo({ top: targetPosition, behavior: "smooth"})
 })
@@ -73,16 +70,16 @@ window.addEventListener('scroll', function() {
     var entreeY = getScrollHeight(entreeSection) - 100;
     var noodleY = getScrollHeight(noodleSection) - 100;
     var riceY = getScrollHeight(riceSection) - 100;
+    var bevY = getScrollHeight(bevSection) - 100;
     if(window.scrollY >= appY){
         topButton.classList.remove("hide")
     }else{
         topButton.classList.add("hide")
     }
-    if(bevPage){
-        return
-    }
     removeActiveButton()
-    if (window.scrollY >= riceY) {
+    if(window.scrollY >= bevY){
+        bevButton.classList.add("select")
+    }else if (window.scrollY >= riceY) {
         riceButton.classList.add("select")
     }else if(window.scrollY >= noodleY){
         noodleButton.classList.add("select")
