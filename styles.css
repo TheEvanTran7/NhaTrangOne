@@ -668,7 +668,7 @@ li a{
 
 /* FAQ */
 .faq{
-    margin: 30px 650px;
+    margin: 30px 20vw;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -1072,7 +1072,7 @@ footer ul{
         margin: 0px 120px;
     }
     .faq{
-        margin: 50px 50px;
+        margin: 50px 15vw;
     }
     
 }
