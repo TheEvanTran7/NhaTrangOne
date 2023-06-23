@@ -189,7 +189,7 @@ li a{
     justify-content: center;
     text-align: center;
     /* Set a specific height */
-    min-height: 700px;
+    min-height: 550px;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -217,10 +217,6 @@ li a{
     -webkit-backdrop-filter: blur(3.333px);
 }
 .Landing_Page_Content {
-
-
-
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -467,8 +463,8 @@ li a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .Location .description{
     width: 100%;
@@ -1102,6 +1098,9 @@ footer{
     }
     .home h2{
         font-size: 6rem;
+    }
+    .carousel-nav{
+        margin-bottom: 100px;
     }
     .menu-nav{ 
         position: static; 
