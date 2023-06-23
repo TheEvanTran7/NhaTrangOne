@@ -1165,7 +1165,7 @@ footer{
         margin: 20px 20px;
     }
     .buffer{
-        min-height: 500px;
+        min-height: 300px;
     }
     .buffer h1{
         font-size: 3rem;
