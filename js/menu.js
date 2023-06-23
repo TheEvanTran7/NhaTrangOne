@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         if(auto){
             nextSlide(currentSlide)
         }
-    }, 5000); // Change slide every 5 seconds
+    }, 4500); // Change slide every seconds
 });
 
 const drinkButton = document.querySelector(".bev")

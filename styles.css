@@ -187,6 +187,7 @@ li a{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     /* Set a specific height */
     min-height: 700px;
   
@@ -202,22 +203,22 @@ li a{
     font-size: 5rem;
     text-transform: uppercase;
 }
-.Landing_Page{
+.main-content{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url('nhatrangImg/nha-trang-inside.jfif');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
-}   
-.Landing_Page_Content {
-
-    background: linear-gradient(135deg,rgba(0,0,0,0.55),rgb(0,0,0,.55)
+    background: linear-gradient(135deg,rgba(0,0,0,0.25),rgb(0,0,0,.25)
     );
     width: 100%;
     min-height: 500px;
     backdrop-filter: blur(3.333px);
     -webkit-backdrop-filter: blur(3.333px);
+}
+.Landing_Page_Content {
+
+
 
 
     display: flex;
@@ -556,9 +557,9 @@ li a{
     gap: 100px;
     background-color: var(--darkBlue);
     margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 90vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
     color: #EEF7FC;
     font-family: 'Oswald';
     font-style: normal;
@@ -870,20 +871,22 @@ li a{
     font-weight: 400;
     font-size: 20px;
     color: black;
-    display: none;
+    /* display: none; */
     padding: 0;
+    opacity: 0;
     height: 0px;
     overflow: hidden;
-    transition: height 0.3s ease-out;
+    transition: opacity 3s ease-out;
   }
   
-  .answer.open {
+.answer.open {
     display: block;
     height: auto;
+    opacity: 1;
     max-height: 500px;
     padding: 15px;
-    transition: height 0.3s ease-out;
-  }
+    transition: opacity 0.3s ease-out;
+}
 footer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -1097,6 +1100,9 @@ footer{
         right: 1rem;
         filter: drop-shadow(5px 5px 5px black);
     }
+    .home h2{
+        font-size: 6rem;
+    }
     .menu-nav{ 
         position: static; 
     }
@@ -1158,6 +1164,12 @@ footer{
     }
     .faq{
         margin: 20px 20px;
+    }
+    .buffer{
+        min-height: 500px;
+    }
+    .buffer h1{
+        font-size: 3rem;
     }
 }   
 
