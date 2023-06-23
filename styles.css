@@ -203,22 +203,22 @@ li a{
     font-size: 5rem;
     text-transform: uppercase;
 }
-.Landing_Page{
+.main-content{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url('nhatrangImg/nha-trang-inside.jfif');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
-}   
-.Landing_Page_Content {
-
-    background: linear-gradient(135deg,rgba(0,0,0,0.55),rgb(0,0,0,.55)
+    background: linear-gradient(135deg,rgba(0,0,0,0.25),rgb(0,0,0,.25)
     );
     width: 100%;
     min-height: 500px;
     backdrop-filter: blur(3.333px);
     -webkit-backdrop-filter: blur(3.333px);
+}
+.Landing_Page_Content {
+
+
 
 
     display: flex;
