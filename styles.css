@@ -56,12 +56,10 @@ nav{
 }
 
 .food-parallax-overlay{
-    background: linear-gradient(135deg,rgba(50,50,50,0.45),rgb(50,50,50,.45)
+    background: linear-gradient(135deg,rgba(100,100,100,0.25),rgb(100,100,100,.25)
     );
     width: 100%;
     min-height: 500px;
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
 }
 .about-parallax {
     /* The image used */
@@ -96,12 +94,11 @@ nav{
     background-size: cover;
 }   
 .insta-parallax-overlay{
-    background: linear-gradient(135deg,rgba(200,200,200,0.35),rgb(200,200,200,.35)
+    background: linear-gradient(135deg,rgba(200,200,200,0.35),rgb(200,200,200,0.35)
     );
     width: 100%;
     min-height: 500px;
-    backdrop-filter: blur(21px);
-    -webkit-backdrop-filter: blur(25px);
+
 }  
 .main-parallax{
     /* background-image: url("nhatrangImg/bwNhaTrangOne.png"); */
@@ -205,22 +202,24 @@ li a{
     font-size: 5rem;
     text-transform: uppercase;
 }
-/* .Landing_Page_Content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center left, center right;
-    padding: 0px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/nha-trang-inside.jfif');
-    background-size: cover;
-    height: 100vh;
-    gap: 44.32px;
-} */
+.Landing_Page{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url('nhatrangImg/nha-trang-inside.jfif');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}   
 .Landing_Page_Content {
+
+    background: linear-gradient(135deg,rgba(0,0,0,0.55),rgb(0,0,0,.55)
+    );
+    width: 100%;
+    min-height: 500px;
+    backdrop-filter: blur(3.333px);
+    -webkit-backdrop-filter: blur(3.333px);
+
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,7 +227,7 @@ li a{
     text-align: center;
     width: 100%;
     height: 95vh!important;
-    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/nha-trang-inside.jfif') center/cover no-repeat; */
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.8)), url('nhatrangImg/nha-trang-inside.jfif') center/cover no-repeat; */
     height: 95vh;
     gap: 45px;
   }
