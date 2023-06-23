@@ -94,10 +94,10 @@ nav{
     background-size: cover;
 }   
 .insta-parallax-overlay{
-    background: linear-gradient(135deg,rgba(200,200,200,0.35),rgb(200,200,200,0.35)
-    );
+    background: linear-gradient(135deg,rgba(200,200,200,0.20),rgb(200,200,200,0.20));
     width: 100%;
-    min-height: 500px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
 
 }  
 .main-parallax{
