@@ -28,7 +28,6 @@ nav{
 .flex{
     display: flex;
     flex-direction: column;
-    gap: 100px;
 }
 .menu-parallax {
     /* The image used */
@@ -44,7 +43,7 @@ nav{
 }
 .about-parallax {
     /* The image used */
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/food.png') center/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('nhatrangImg/food.png') center/cover no-repeat;
     /* Set a specific height */
     min-height: 500px;
   
@@ -65,13 +64,19 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.main-parallax{
-    /* background-image: url("nhatrangImg/bwNhaTrangOne.png"); */
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/nha-trang-inside.jfif') center/cover no-repeat;
-    /* Set a specific height */
+.insta-parallax{
+    background: linear-gradient(45deg, #833AB4, #833AB4,  #C13584, #FD1D1D, #F56040, #FFC20E, #FFC20E, #FFC20E);
     min-height: 500px;
   
     /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+.main-parallax{
+    /* background-image: url("nhatrangImg/bwNhaTrangOne.png"); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/nha-trang-inside.jfif') center/cover no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,15 +155,28 @@ li a{
 }
 
 .buffer{
-    height: 200px;
+    /* height: 250px; */
     background-color: black;
-    filter: brightness(40%);
+    /* filter: brightness(40%); */
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* Set a specific height */
+    min-height: 700px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
+.buffer h1{
+    font-family: 'Oswald', sans-serif;
+    filter: brightness(100%)!important;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
 /* .Landing_Page_Content{
     display: flex;
     flex-direction: column;
@@ -246,6 +264,7 @@ li a{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-top: 50px;
     padding-bottom: 50px;
     margin: auto;
     /* width: 80%; */
@@ -420,6 +439,7 @@ li a{
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 .Location .description{
@@ -488,7 +508,7 @@ li a{
     text-transform: uppercase;
 }
 .Location, .Instagram, .Popular_Dishes_Content{ /* gap for index.html cards */
-    width: 75%;
+    width: 100%;
 }
 
 .directions{
@@ -604,12 +624,13 @@ li a{
 .home img.active{
     opacity: 1;
 }
-.slider-nav{
-    z-index: 8;
-    position: absolute;
+.carousel-nav{
+    height: 100px;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.carousel-indicators{
+    background-color: white;
 }
 .menu-buttons{
     font-family: 'Oswald', sans-serif;
