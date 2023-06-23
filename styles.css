@@ -866,23 +866,25 @@ li a{
 .faq-item{
     background-color: var(--lightRed);
 }
-.answer{
+.answer {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: black;
     display: none;
     padding: 0;
-    height: 0;
-    transition: height 0.3s ease-out;
-}
-.open{
-    display: block;
-    height: auto;
-    padding: 15px;
+    height: 0px;
     overflow: hidden;
     transition: height 0.3s ease-out;
-}
+  }
+  
+  .answer.open {
+    display: block;
+    height: auto;
+    max-height: 500px;
+    padding: 15px;
+    transition: height 0.3s ease-out;
+  }
 footer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
