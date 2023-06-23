@@ -1,4 +1,29 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+    var carouselItems = document.querySelectorAll(".img-slide");
+    var currentSlide = 0;
+    var auto = true;
+    function showSlide(slideIndex) {
+        carouselItems.forEach(function(item) {
+            item.classList.remove("active");
+        });
 
+        carouselItems[slideIndex].classList.add("active");
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % carouselItems.length;
+        showSlide(currentSlide);
+    }
+
+    setInterval(() => {
+        // if(currentSlide == 1){
+        //     auto = false;
+        // }
+        if(auto){
+            nextSlide(currentSlide)
+        }
+    }, 5000); // Change slide every 5 seconds
+});
 
 const drinkButton = document.querySelector(".bev")
 const drinkContent = document.querySelector(".drinks-content")
@@ -50,18 +75,12 @@ topButton.addEventListener("click", () => {
     var targetPosition;
     if(mobile.matches){
         targetPosition = getScrollHeight(appSection) - 350
-        if(bevPage){
-            targetPosition = getScrollHeight(bevSection) - 350
-        }
     }
     else if(ipad.matches){
         targetPosition = getScrollHeight(appSection) - 150
     }
     else{
         targetPosition = getScrollHeight(appSection)
-        if(bevPage){
-            targetPosition = getScrollHeight(bevSection)
-        }
     }
     window.scrollTo({ top: targetPosition, behavior: "smooth"})
 })
@@ -100,7 +119,6 @@ function removeActiveButton() {
     })
 }
 function scrollAction (section, button) {
-    bevPage = false
     var targetPosition = getScrollHeight(section)
     if(button == bevButton){
         if(ipad.matches){
