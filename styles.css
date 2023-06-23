@@ -23,7 +23,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 3;
 }
 .flex{
     display: flex;
@@ -593,10 +593,14 @@ li a{
     width: 100%;
     height: 95vh;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 .home h2{
+    /* align-self: center; */
+    margin-top: auto;
+    margin-bottom: auto;
     color: white;
     /* position: absolute; */
     font-size: 100px;
@@ -619,18 +623,35 @@ li a{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: opacity 1s ease;
+    transition: opacity 1.5s ease;
 }
 .home img.active{
     opacity: 1;
 }
 .carousel-nav{
-    height: 100px;
-    width: 100%;
+    align-self: center;
     display: flex;
+    gap: 15px;
+    margin-bottom: 50px;
 }
-.carousel-indicators{
-    background-color: white;
+.carousel-indicator{
+    /* background: linear-gradient(135deg,rgba(255,255,255,0.25),rgb(255,255,255,0.25)); */
+    background-color: var(--lightRed);
+    width: 30px;
+    height: 30px;
+    box-shadow: 1px 1px;
+    border-radius: 20px;
+    z-index: 99;
+    cursor: pointer;
+    transition: width 0.5s ;
+}
+.carousel-indicator.active{
+    width: 50px;
+    background-color:var(--primaryRed)!important;
+    /* border-radius: 39%; */
+}
+.carousel-indicator:hover{
+    background-color:var(--lightestGrey);
 }
 .menu-buttons{
     font-family: 'Oswald', sans-serif;
@@ -824,11 +845,12 @@ li a{
     color: black;
     display: none;
     padding: 0;
-    height: auto;
+    height: 0;
     transition: height 0.3s ease-out;
 }
 .open{
     display: block;
+    height: auto;
     padding: 15px;
     overflow: hidden;
     transition: height 0.3s ease-out;

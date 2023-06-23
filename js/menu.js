@@ -1,20 +1,31 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     var carouselItems = document.querySelectorAll(".img-slide");
     var currentSlide = 0;
-    var auto = true;
+
     function showSlide(slideIndex) {
         carouselItems.forEach(function(item) {
             item.classList.remove("active");
         });
-
+        carouselIndicators.forEach((indicator) => {
+            indicator.classList.remove("active");
+        })
+        carouselIndicators[slideIndex].classList.add("active")
         carouselItems[slideIndex].classList.add("active");
     }
-
     function nextSlide() {
         currentSlide = (currentSlide + 1) % carouselItems.length;
         showSlide(currentSlide);
     }
 
+    var carouselIndicators = document.querySelectorAll(".carousel-indicator")
+    var auto = true;
+    carouselIndicators.forEach((indicator) => {
+        indicator.addEventListener("click", () => {
+            var id = indicator.id
+            auto = false;
+            showSlide(id)
+        })
+    })
     setInterval(() => {
         // if(currentSlide == 1){
         //     auto = false;
