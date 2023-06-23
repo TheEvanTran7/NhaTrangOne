@@ -190,6 +190,7 @@ li a{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     /* Set a specific height */
     min-height: 700px;
   
@@ -557,9 +558,9 @@ li a{
     gap: 100px;
     background-color: var(--darkBlue);
     margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 90vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
     color: #EEF7FC;
     font-family: 'Oswald';
     font-style: normal;
@@ -871,20 +872,22 @@ li a{
     font-weight: 400;
     font-size: 20px;
     color: black;
-    display: none;
+    /* display: none; */
     padding: 0;
+    opacity: 0;
     height: 0px;
     overflow: hidden;
-    transition: height 0.3s ease-out;
+    transition: opacity 3s ease-out;
   }
   
-  .answer.open {
+.answer.open {
     display: block;
     height: auto;
+    opacity: 1;
     max-height: 500px;
     padding: 15px;
-    transition: height 0.3s ease-out;
-  }
+    transition: opacity 0.3s ease-out;
+}
 footer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -1098,6 +1101,9 @@ footer{
         right: 1rem;
         filter: drop-shadow(5px 5px 5px black);
     }
+    .home h2{
+        font-size: 6rem;
+    }
     .menu-nav{ 
         position: static; 
     }
@@ -1159,6 +1165,12 @@ footer{
     }
     .faq{
         margin: 20px 20px;
+    }
+    .buffer{
+        min-height: 500px;
+    }
+    .buffer h1{
+        font-size: 3rem;
     }
 }   
 
