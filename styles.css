@@ -41,12 +41,34 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.food-parallax {
+    /* The image used */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url('nhatrangImg/food.png') center/cover no-repeat;
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.food-parallax-overlay{
+    background: linear-gradient(135deg,rgba(50,50,50,0.45),rgb(50,50,50,.45)
+    );
+    width: 100%;
+    min-height: 500px;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
 .about-parallax {
     /* The image used */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('nhatrangImg/food.png') center/cover no-repeat;
     /* Set a specific height */
     min-height: 500px;
-  
+    
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -67,13 +89,20 @@ nav{
 .insta-parallax{
     background: linear-gradient(45deg, #833AB4, #833AB4,  #C13584, #FD1D1D, #F56040, #FFC20E, #FFC20E, #FFC20E);
     min-height: 500px;
-  
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }   
+.insta-parallax-overlay{
+    background: linear-gradient(135deg,rgba(200,200,200,0.35),rgb(200,200,200,.35)
+    );
+    width: 100%;
+    min-height: 500px;
+    backdrop-filter: blur(21px);
+    -webkit-backdrop-filter: blur(25px);
+}  
 .main-parallax{
     /* background-image: url("nhatrangImg/bwNhaTrangOne.png"); */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/nha-trang-inside.jfif') center/cover no-repeat;
@@ -156,7 +185,6 @@ li a{
 
 .buffer{
     /* height: 250px; */
-    background-color: black;
     /* filter: brightness(40%); */
     color: white;
     display: flex;
