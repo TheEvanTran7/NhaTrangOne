@@ -189,7 +189,7 @@ li a{
     justify-content: center;
     text-align: center;
     /* Set a specific height */
-    min-height: 550px;
+    min-height: 55vh;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -259,7 +259,7 @@ li a{
     text-transform: uppercase;
 }
 .Landing_Page_Content button{
-    width: 10vw;
+    width: 200px;
     height: 60px;
     text-align: center;
     background-color: var(--primaryRed);
@@ -438,7 +438,7 @@ grid-template-columns: repeat(3, 1fr);
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 500;
-    font-size: 1.5vw;
+    font-size: 30px;
     padding: 30px 0px;
     margin: 0;
     /* text-transform: lowercase; */
@@ -672,8 +672,8 @@ grid-template-columns: repeat(3, 1fr);
 .carousel-indicator{
     /* background: linear-gradient(135deg,rgba(255,255,255,0.25),rgb(255,255,255,0.25)); */
     background-color: var(--lightRed);
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     box-shadow: 1px 1px;
     border-radius: 20px;
     z-index: 99;
@@ -681,7 +681,7 @@ grid-template-columns: repeat(3, 1fr);
     transition: width 0.5s ;
 }
 .carousel-indicator.active{
-    width: 50px;
+    width: 45px;
     background-color:var(--primaryRed)!important;
     /* border-radius: 39%; */
 }
@@ -917,6 +917,9 @@ footer{
     width: 100px; 
 }
 
+.mapboxgl-ctrl-attrib-button{
+    display: none!important;
+}
 
 /* mobile responsiveness */
 #toggle{
@@ -1021,30 +1024,8 @@ footer{
         font-size: 36px;
         border-radius: 20px;
     }
-
-    .Landing_Page_Content h1{
-        font-size: 30px;
-        justify-content: center;
-    }
     .Landing_Page_Content img{
         width: 50vw;
-    }
-    .Landing_Page_Content button{
-        width: 50vw;
-    }
-
-    .Popular_Dishes_Content h1{
-        font-size: 1.75rem;
-    }
-    .Instagram_Handle p{
-        font-size: 1.5rem;
-    }
-    .Location h1 {
-        font-size: 38px;
-        font-weight: 700;
-    }
-    .Location h2, .Location p {
-        font-size: 18px;
     }
     .about{
         display: flex;
@@ -1094,7 +1075,7 @@ footer{
         width: 43vw;
     }
     #map{
-        width: 100px;
+        width: 350px;
     }
 
     .about {
@@ -1102,12 +1083,7 @@ footer{
         gap: 50px;
     }
     .about-info p{
-        width: 96%;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 125%;
-        letter-spacing: 0.05em;
-        padding: 5px;
+        font-size: 15px;
     }
 
     .top-button{
@@ -1191,9 +1167,34 @@ footer{
 }   
 
  /*IPADDD */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1100px) {
     nav h1{
         font-size: 42px;
+    }
+    
+    .Landing_Page_Content h1{
+        font-size: 30px;
+        justify-content: center;
+    }
+    .Landing_Page_Content img{
+        width: 50vw;
+    }
+    .Landing_Page_Content button{
+        width: 50vw;
+    }
+
+    .Popular_Dishes_Content h1{
+        font-size: 1.75rem;
+    }
+    .Instagram_Handle p{
+        font-size: 1.5rem;
+    }
+    .Location h1 {
+        font-size: 38px;
+        font-weight: 700;
+    }
+    .Location h2, .Location p {
+        font-size: 18px;
     }
     .Layer_3{
         width: 50px;
@@ -1202,17 +1203,10 @@ footer{
         top: 112px;
     }
     .description h2{
-        font-size: 35px;
+        font-size: 28px;
     }
     .description p{
-        font-size: 25px;
-    }
-    .dishes {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .photos {
-        gap: 30px;
-        grid-template-columns: repeat(2, 1fr);
+        font-size: 20px;
     }
     .photos img{
         width: 40vw;
@@ -1244,6 +1238,13 @@ footer{
         font-size: 40px;
         border-radius: 20px;
     }
+    .dishes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .photos {
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
     /* .active li{
         padding-bottom: 20px;
     } */
@@ -1266,11 +1267,21 @@ footer{
     .menu-nav{
         top: 75px;
     }
+    .carousel-indicator{
+        width: 30px;
+        height: 30px;
+    }
+    .carousel-indicator.active{
+        width: 50px;
+    }
     .menu-nav a{
         width: 135px;
     }
     .food-section, .food-content h1, .drinks-content h1 {
         margin: 0px 120px;
+    }
+    #map{
+        width: 600px;
     }
     .faq{
         margin: 50px 15vw;
