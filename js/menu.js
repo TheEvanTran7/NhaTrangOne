@@ -131,19 +131,18 @@ function removeActiveButton() {
 }
 function scrollAction (section, button) {
     var targetPosition = getScrollHeight(section)
-    if(button == bevButton){
-        if(ipad.matches){
-            targetPosition += 3000
-        }else{
-            targetPosition += 22
-        }
-    }
+    // if(button == bevButton){
+    //     if(ipad.matches){
+    //         targetPosition += 3000
+    //     }else{
+    //         targetPosition += 22
+    //     }
+    // }
     window.scrollTo({ top: targetPosition, behavior: "smooth"})
 }
 function getScrollHeight(section){
     var targetPosition = section.offsetTop - navbarHeight;
     if(mobile.matches){
-        // console.log('hello2')
         targetPosition -= 60
     }
     // else if(ipad.matches){

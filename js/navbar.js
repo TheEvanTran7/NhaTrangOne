@@ -4,10 +4,9 @@ const toggle = document.getElementById("toggle");
 const navLinks = document.querySelector(".Nav_Bar_Links");
 const locationNavLink = document.querySelector("#location")
 const bars = document.querySelectorAll(".bar")
+const dropdown = window.matchMedia("(max-width: 1100px)");
 const toggleDropDown =  () => {
     navLinks.classList.toggle("active")
-    if (navLinks.classList.contains('active')) {document.body.style.overflow = 'hidden';}
-    else {document.body.style.overflow = 'auto';}
     bars.forEach((element) => {
         element.classList.toggle("active")
     })
@@ -23,9 +22,10 @@ const toggleDropDown =  () => {
     if(backTopButton && !backTopButton.classList.contains("hide")){
         backTopButton.style.opacity = backTopButton.style.opacity == "0" ? "100" : "0"
     }
-    const map = document.querySelector(".map")
-    if(map){
+    if(dropdown){
         map.classList.toggle("hide")
+        if (navLinks.classList.contains('active')) {document.body.style.overflow = 'hidden';}
+    else {document.body.style.overflow = 'auto';}
     }
 }
 toggle.addEventListener('click', () => {

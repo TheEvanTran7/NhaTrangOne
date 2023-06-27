@@ -331,9 +331,15 @@ li a{
 
 /* Entire Dishes Container */
 .Popular_Dishes_Content .dishes{
+    /* grid-template-columns: repeat(3, 1fr); */
     margin-top: 40px;
 }
-
+.dishes {
+grid-template-columns: repeat(3, 1fr);
+}
+.photos {
+grid-template-columns: repeat(3, 1fr);
+}
 /* Individual Dish Containter*/
 .Popular_Dishes_Content .dish{
     width: 350px;
@@ -925,7 +931,7 @@ footer{
         display: none;
     }
 }
-@media only screen and (max-width: 1170px) { /* START OF WHEN NAV BAR WRAPS */
+@media only screen and (max-width: 1100px) { /* START OF WHEN NAV BAR WRAPS */
     #toggle{
         display: flex;
     }
@@ -1258,13 +1264,13 @@ footer{
     }
     
 }
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
   .dishes {
     grid-template-columns: repeat(3, 1fr);
     }
   .photos {
     grid-template-columns: repeat(3, 1fr);
     }
-}
+} */
 /* change width of items 
     fonts with 
