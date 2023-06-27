@@ -561,8 +561,7 @@ grid-template-columns: repeat(3, 1fr);
     color: #EEF7FC;
     font-family: 'Oswald';
     font-style: normal;
-    width: 95%;
-    margin-bottom: 50px;
+    width: 100%;
 }
 
 .about p, .about img{
@@ -1079,7 +1078,7 @@ footer{
     }
 
     .about {
-        width: 92.5%;
+        width: 100%;
         padding: 50px 0px;
         gap: 50px;  
     }
@@ -1293,7 +1292,7 @@ footer{
         margin: 50px 15vw;
     }
     .about{
-        width: 95%;
+        width: 100%;
         padding: 50px 0px;
         gap: 50px;
     }
