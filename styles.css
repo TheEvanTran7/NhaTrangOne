@@ -5,6 +5,7 @@
     --lightBlue: #CEDFFE;
     --primaryRed: #C13434;
     --lightRed: #FFF1F1;
+    --footer: #11141E;
     --darkGrey: #2C2726;
     --lightGrey: #3D3A39;
     --lightestGrey:#717070;
@@ -600,11 +601,13 @@ grid-template-columns: repeat(3, 1fr);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     margin: 0px 25px;
+    width: 33%;
 }
 .about-info p{
     font-weight: 400;
     font-size: 20px;
     line-height: 133%;
+    width: 100%;
 }
 
 
@@ -898,7 +901,7 @@ footer{
     grid-template-columns: repeat(3,1fr);
     place-items: top;
     text-align: center;
-    background-color: var(--darkBlue);
+    background-color: var(--footer);
     color: white;
     font-family: 'Oswald', sans-serif;
 
