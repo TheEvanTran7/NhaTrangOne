@@ -575,11 +575,10 @@ grid-template-columns: repeat(3, 1fr);
     width: auto;
 }
 .about-info{
+    
     font-weight: 300;
-    font-size: 25px;
-    line-height: 135%;
-    letter-spacing: 0.0333em;
-
+    font-size: 22.5px;
+    line-height: 133%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -587,20 +586,27 @@ grid-template-columns: repeat(3, 1fr);
     flex-direction: column;
     text-align: left;
     padding: 20px;
-    background:
-      linear-gradient(to right, #EEF7FC 1px, transparent 2px) 0 0,
-      linear-gradient(to right, #EEF7FC 1px, transparent 2px) 0 100%,
-      linear-gradient(to left, #EEF7FC 1px, transparent 2px) 100% 0,
-      linear-gradient(to left, #EEF7FC 1px, transparent 2px) 100% 100%,
-      linear-gradient(to bottom, #EEF7FC 1px, transparent 2px) 0 0,
-      linear-gradient(to bottom, #EEF7FC 1px, transparent 2px) 100% 0,
-      linear-gradient(to top, #EEF7FC 1px, transparent 2px) 0 100%,
-      linear-gradient(to top, #EEF7FC 1px, transparent 2px) 100% 100%;
-    
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
+    margin: 20px;
+   
 }
 
+.about-info{
+    
+    background:
+    linear-gradient(to right, #EEF7FC 1px, transparent 2px) 0 0,
+    linear-gradient(to right, #EEF7FC 1px, transparent 2px) 0 100%,
+    linear-gradient(to left, #EEF7FC 1px, transparent 2px) 100% 0,
+    linear-gradient(to left, #EEF7FC 1px, transparent 2px) 100% 100%,
+    linear-gradient(to bottom, #EEF7FC 1px, transparent 2px) 0 0,
+    linear-gradient(to bottom, #EEF7FC 1px, transparent 2px) 100% 0,
+    linear-gradient(to top, #EEF7FC 1px, transparent 2px) 0 100%,
+    linear-gradient(to top, #EEF7FC 1px, transparent 2px) 100% 100%;
+  
+  
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    margin: 0px 25px;
+}
 
 
 /* MENUUUUUUUUUUUUUUUUUUU */
@@ -1061,7 +1067,7 @@ footer{
         width: 100%;
     }
     .Landing_Page_Content h2 {
-        font-size: 80px;
+        font-size: 65px;
     }
     .dishes { grid-template-columns: repeat(2, 1fr); }
     .Popular_Dishes_Content .dish{
@@ -1090,13 +1096,20 @@ footer{
     #map{
         width: 100px;
     }
-    .about-info{
-        margin: 10px;
-        padding: 10px;
+
+    .about {
+        padding: 50px 0px;
+        gap: 50px;
     }
     .about-info p{
+        width: 96%;
+        font-weight: 300;
         font-size: 20px;
+        line-height: 125%;
+        letter-spacing: 0.05em;
+        padding: 5px;
     }
+
     .top-button{
         right: 1rem;
         filter: drop-shadow(5px 5px 5px black);
