@@ -552,33 +552,28 @@ grid-template-columns: repeat(3, 1fr);
 /* ABOUTTTTTTTTTTTTTTTT */
 .about{
     display: flex;
-    /* padding: 20px; */
     justify-content: center;
     align-items: center;
     gap: 100px;
     background-color: var(--darkBlue);
     margin: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 100%;
+    padding: 100px 0px;
     color: #EEF7FC;
     font-family: 'Oswald';
     font-style: normal;
-
+    width: 95%;
+    margin-bottom: 50px;
 }
+
 .about p, .about img{
     width: 40vw;
 
 }
 .about img{
-    height: 750px;
+    height: 600px;
     width: auto;
 }
 .about-info{
-    
-    font-weight: 300;
-    font-size: 22.5px;
-    line-height: 133%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -606,6 +601,11 @@ grid-template-columns: repeat(3, 1fr);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     margin: 0px 25px;
+}
+.about-info p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 133%;
 }
 
 
@@ -1079,11 +1079,12 @@ footer{
     }
 
     .about {
+        width: 92.5%;
         padding: 50px 0px;
-        gap: 50px;
+        gap: 50px;  
     }
     .about-info p{
-        width: 96%;
+        width: 90%;
         font-weight: 300;
         font-size: 18.5px;
         line-height: 125%;
@@ -1291,7 +1292,22 @@ footer{
     .faq{
         margin: 50px 15vw;
     }
-    
+    .about{
+        width: 95%;
+        padding: 50px 0px;
+        gap: 50px;
+    }
+    .about-info{
+        padding: 20px;
+    }
+    .about-info p{
+        width: 60%;
+        font-weight: 300;
+        font-size: 18.5px;
+        line-height: 125%;
+        letter-spacing: 0.05em;
+        padding: 5px;
+    }
 }
 /* @media (min-width: 1400px) {
   .dishes {
