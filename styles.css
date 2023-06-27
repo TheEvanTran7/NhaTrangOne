@@ -407,15 +407,13 @@ li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:auto;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    margin: auto;
+    padding-bottom: 15px;
 }
 .Instagram_Handle{
     display: flex; 
     justify-content: center; 
     align-items: center;
-    padding-bottom: 10px;
 }
 .Instagram a{
     text-decoration: none;
@@ -434,7 +432,8 @@ li a{
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 500;
-    font-size: 2vw;
+    font-size: 1.5vw;
+    padding: 30px 0px;
     margin: 0;
     /* text-transform: lowercase; */
     color: var(--darkBlue);
@@ -819,11 +818,11 @@ li a{
 /* FAQ */
 .faq{
     margin: 50px 20vw;
-    padding: 30px;
+    padding: 50px;
     background-color: var(--darkBlue);
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 33px;
     color: white
 }
 .faq-dropdown{
@@ -831,12 +830,11 @@ li a{
     font-family: 'Oswald', sans-serif;
     /* width: 100%; */
     display: flex;
-    padding: 10px 20px;
+    padding: 17.5px;
     justify-content: space-between;
     align-items: center;
     color: white;
-    font-size: 25px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .faq h1{
@@ -844,7 +842,8 @@ li a{
     font-weight: 700;
     font-size: 65px;
     text-transform: uppercase;
-    padding: 20px 0px;
+
+    margin: 0;
 }
 .carrot{
     display: flex;
@@ -864,8 +863,8 @@ li a{
 }
 .answer {
     font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 18px;
     color: black;
     /* display: none; */
     padding: 0;
@@ -1026,7 +1025,7 @@ footer{
         font-size: 1.75rem;
     }
     .Instagram_Handle p{
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
     .Location h1 {
         font-size: 38px;
