@@ -914,6 +914,7 @@ grid-template-columns: repeat(3, 1fr);
     padding: 15px;
     transition: opacity 0.3s ease-out;
 }
+
 footer{
     display: flex;
     background-color: var(--darkBlue);
@@ -926,11 +927,18 @@ footer{
     padding: 50px 0px;
 }
 footer .logo img{
-    width: 50px;
+    width: 75px;
     height: auto;
 }
+footer .logo{
+    gap: 10px;
+}
+footer .logo h1{
+    font-size: 75px;
+}
 .footer-divider{
-    margin: 20px 0px;
+    margin-top: 49px;
+    margin-bottom: 25px;
     height: 3px;
     width: 90vw;
     background-color: white;
@@ -944,7 +952,7 @@ footer .logo img{
 }   
 .footer-bar{
     align-self: center;
-    height: 120px;
+    height: 200px;
     width: 3px;
     background-color: white;
 }
@@ -952,11 +960,16 @@ footer .logo img{
     margin-top: 25px;
 }
 .footer-section h3{ /*footer section header */
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-family: Squada One;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 60px;
 }
 .footer-section p{ /*footer section content */
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 5px;
 }
 .footer-section img{ /*footer section nhatrang logo */
     height: auto;
