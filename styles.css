@@ -102,11 +102,13 @@ nav{
 }  
 .main-parallax{
     /* background-image: url("nhatrangImg/bwNhaTrangOne.png"); */
+    /* width: 100%; */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/nha-trang-inside.jfif') center/cover no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    object-fit: cover;
 }
 .Layer_3{
     width: 12%;
@@ -129,7 +131,6 @@ nav{
     font-weight: 400;
     /* font-size: 32px; */
     line-height: 30px;
-    /* Dark Blue */
     color: var(--darkBlue);
 }
 .Nav_Bar_Links{
@@ -844,7 +845,7 @@ grid-template-columns: repeat(3, 1fr);
 
 /* FAQ */
 .faq{
-    margin: 50px 20vw;
+    margin: 50px 0px;
     padding: 50px;
     background-color: var(--darkBlue);
     display: flex;
@@ -914,26 +915,62 @@ grid-template-columns: repeat(3, 1fr);
     transition: opacity 0.3s ease-out;
 }
 footer{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    place-items: top;
-    text-align: center;
+    display: flex;
+    background-color: var(--darkBlue);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--footer);
     color: white;
-    font-family: 'Oswald', sans-serif;
-
-    
+    font-family: 'Oswald', sans-serif;   
+    padding: 50px 0px;
+}
+footer .logo img{
+    width: 50px;
+    height: auto;
+}
+.footer-divider{
+    margin: 20px 0px;
+    height: 3px;
+    width: 90vw;
+    background-color: white;
+}
+.footer-bottom{
+    /* border-top: 3px solid white; */
+    text-align: center;
+    display: flex;
+    align-items: top;
+    gap: 200px;
+}   
+.footer-bar{
+    align-self: center;
+    height: 120px;
+    width: 3px;
+    background-color: white;
 }
 .footer-section{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
 }
-.footer-section p{
+.footer-section h3{ /*footer section header */
     margin-bottom: 10px;
 }
-.footer-section img{
+.footer-section p{ /*footer section content */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.footer-section img{ /*footer section nhatrang logo */
     height: auto;
     width: 100px; 
+}
+.footer-social{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-social img{ /*footer section social media icons */
+    height: auto;
+    width: 35px;
 }
 
 .mapboxgl-ctrl-attrib-button{
@@ -970,11 +1007,11 @@ footer{
         flex-direction: column;
         /* height: 100px; */
         width: 100vw;
-        padding-top: 20px;
+        padding-top: 0px;
     }
     #toggle{
         position: absolute;
-        top: 35px;
+        top: 18px;
         right: 1.5rem;
         display: flex;
         flex-direction: column;
@@ -1001,7 +1038,7 @@ footer{
         align-items: center;
         flex-direction: column;
         gap: 50px;
-        transition: height .3s ease-out;
+        transition: height 0.3s ease-in-out;
     }
     .Nav_Bar_Links.active {
         display: flex;
@@ -1010,7 +1047,7 @@ footer{
         /* padding-bottom: 50px; */
         justify-content: center;
         gap: 30px;
-        transition: height .3s ease-out;
+        transition: height 0.5s ease-in-out;
     }
     /* create the X for the bars */
     .bar:nth-of-type(1).active {
@@ -1119,7 +1156,7 @@ footer{
         font-size: 6rem;
     }
     .carousel-nav{
-        margin-bottom: 100px;
+        margin-bottom: 150px;
     }
     .menu-nav{ 
         position: static; 
@@ -1181,7 +1218,7 @@ footer{
         font-size: 18px;
     }
     .faq{
-        margin: 20px 20px;
+        margin: 20px 0px;
     }
     .buffer{
         min-height: 300px;
@@ -1193,10 +1230,18 @@ footer{
 
  /*IPADDD */
 @media (min-width: 768px) and (max-width: 1100px) {
+    nav{
+        padding-top: 20px;
+    }
+    #toggle{
+        top: 35px;
+    }
     nav h1{
         font-size: 42px;
     }
-    
+    .buffer{
+        min-height: 40vh;
+    }
     .Landing_Page_Content h1{
         font-size: 30px;
         justify-content: center;
@@ -1292,6 +1337,9 @@ footer{
     .menu-nav{
         top: 75px;
     }
+    .carousel-nav{
+        margin-bottom: 200px;
+    }
     .carousel-indicator{
         width: 30px;
         height: 30px;
@@ -1306,10 +1354,10 @@ footer{
         margin: 0px 120px;
     }
     #map{
-        width: 600px;
+        width: 700px;
     }
     .faq{
-        margin: 50px 15vw;
+        margin: 50px 0px;
     }
     .about{
         width: 100%;

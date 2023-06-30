@@ -1,4 +1,3 @@
-
 //toggle button the dropdown menu
 const toggle = document.getElementById("toggle");
 const navLinks = document.querySelector(".Nav_Bar_Links");
@@ -23,7 +22,9 @@ const toggleDropDown =  () => {
         backTopButton.style.opacity = backTopButton.style.opacity == "0" ? "100" : "0"
     }
     if(dropdown){
-        map.classList.toggle("hide")
+        if(map){
+            map.classList.toggle("hide")
+        }
         if (navLinks.classList.contains('active')) {document.body.style.overflow = 'hidden';}
     else {document.body.style.overflow = 'auto';}
     }
