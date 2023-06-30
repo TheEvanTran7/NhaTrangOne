@@ -15,7 +15,7 @@ nav{
     background-color: white;
     width: 100%;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     top: 0px;
     position: sticky;
     /* position: fixed;
@@ -607,13 +607,13 @@ grid-template-columns: repeat(3, 1fr);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     margin: 0px 25px;
-    width: 33%;
+    width: auto;
 }
 .about-info p{
     font-weight: 400;
     font-size: 20px;
     line-height: 133%;
-    width: 100%;
+    /* width: 100%; */
 }
 
 
@@ -1062,7 +1062,7 @@ footer .logo h1{
     }
     .Nav_Bar_Links.active {
         display: flex;
-        height: 90vh;
+        height: 95vh;
         padding-top: 0px;
         /* padding-bottom: 50px; */
         justify-content: center;
@@ -1073,7 +1073,7 @@ footer .logo h1{
     .bar:nth-of-type(1).active {
         transition: all 0.3s;
         transform: rotate(135deg);
-        translate: 0px 15px;
+        translate: 0px 10px;
       }
       
       .bar:nth-of-type(2).active {
@@ -1086,7 +1086,7 @@ footer .logo h1{
       .bar:nth-of-type(3).active {
         transition: all 0.3s;
         transform: rotate(-135deg);
-        translate: 0px -10px;
+        translate: 0px -11px;
       }
     .Nav_Bar_Links li{
         padding-bottom: 20px;
@@ -1127,6 +1127,9 @@ footer .logo h1{
         font-size: 65px;
     }
     .dishes { grid-template-columns: repeat(2, 1fr); }
+    .Popular_Dishes_Content h2{
+        font-size: 1.3rem;
+    }
     .Popular_Dishes_Content .dish{
         height: 260px;
         padding-inline: 10px;
@@ -1239,6 +1242,7 @@ footer .logo h1{
     }
     .faq{
         margin: 20px 0px;
+        padding: 30px;
     }
     .buffer{
         min-height: 300px;
@@ -1246,13 +1250,21 @@ footer .logo h1{
     .buffer h1{
         font-size: 3rem;
     }
-}   
+    .footer-bottom{
+        flex-direction: column;
+        gap: 0;
+    }
+    .footer-bar{
+        height: 3px;
+        width: 70vw;
+    }
+}       
 
  /*IPADDD */
 @media (min-width: 768px) and (max-width: 1100px) {
-    nav{
+    /* nav{
         padding-top: 20px;
-    }
+    } */
     #toggle{
         top: 35px;
     }
@@ -1378,6 +1390,7 @@ footer .logo h1{
     }
     .faq{
         margin: 50px 0px;
+        padding: 50px 200px;
     }
     .about{
         width: 100%;
@@ -1394,6 +1407,9 @@ footer .logo h1{
         line-height: 125%;
         letter-spacing: 0.05em;
         padding: 5px;
+    }
+    .footer-bottom{
+        gap: 50px;
     }
 }
 /* @media (min-width: 1400px) {
