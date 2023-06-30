@@ -924,21 +924,23 @@ footer{
     background-color: var(--footer);
     color: white;
     font-family: 'Oswald', sans-serif;   
-    padding: 50px 0px;
+    padding-top: 12.5px;
+    padding-bottom: 25px;
 }
 footer .logo img{
-    width: 75px;
+    width: 37.5px;
     height: auto;
 }
 footer .logo{
+    padding-left: 0px;
     gap: 10px;
 }
 footer .logo h1{
-    font-size: 75px;
+    font-size: 37.5px;
 }
 .footer-divider{
-    margin-top: 49px;
-    margin-bottom: 25px;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
     height: 3px;
     width: 90vw;
     background-color: white;
@@ -948,28 +950,31 @@ footer .logo h1{
     text-align: center;
     display: flex;
     align-items: top;
-    gap: 200px;
+    gap: 100px;
 }   
 .footer-bar{
     align-self: center;
-    height: 200px;
+    height: 100px;
     width: 3px;
     background-color: white;
 }
 .footer-section{
-    margin-top: 25px;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
 }
 .footer-section h3{ /*footer section header */
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     font-family: Squada One;
     font-style: normal;
-    font-weight: 400;
+
+    letter-spacing: 1.125px;
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 30px;
 }
 .footer-section p{ /*footer section content */
-    font-size: 30px;
-    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 17.5px;
+    margin-bottom: 2.5px;
 }
 .footer-section img{ /*footer section nhatrang logo */
     height: auto;
