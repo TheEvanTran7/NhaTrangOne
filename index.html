@@ -15,7 +15,7 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
     <title> Home | Nha Trang One </title>
 </head>
-<body class="main-parallax flex">
+<body class="flex">
     <nav>
         <div class = 'drop'>
             <div class="logo">
@@ -39,13 +39,12 @@
     </nav>
     
     <section class="Landing_Page main-content">
-        <div class="Landing_Page_Content">
+        <div class="Landing_Page_Content main-parallax">
             <img class="main_logo" src="nhatrangImg/NhaTrangOneLogo.svg" alt="NhaTrangOneLogo">
             <h1>Vietnamese Food From Our <br>Family To Yours</h1>
             <a target="_blank" href="https://food.google.com/chooseprovider?restaurantId=/g/1x5qtptq&g2lbs=ADZRdktx84tqCqsdoSX3TckSHPKsx5cZctaLnqjCyJ1CB2SRrbct25yM90bJC1jOSHynm1ktqH5x_r5zBqm3tub_cqR_t6RiEbjhNE5_YcFr47tjMddqLJM%3D&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=9x6KZND0Eb-sptQP6MeF4AE&ei=9x6KZND0Eb-sptQP6MeF4AE&fo_s=OA&sei=CSfBCmfmUxutEU8djF2F__E6&utm_campaign" id="order"><button class="Order_Button">ORDER NOW</button></a>
         </div>
     </section>
-
     <div class = "buffer food-parallax" style="border-top: 60px solid var(--darkBlue);">
         <div class = "buffer food-parallax-overlay">
             <h1>POPULAR DISHES & DRINKS</h1>
@@ -181,7 +180,7 @@
         
         <script>
             // Adding my map from mapbox with access token and map style
-            mapboxgl.accessToken = ''; 
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYW5kcmV3ZGFpNjEyMyIsImEiOiJjbGcyenV3aDIwYXM1M2twbDUxd2tweWZwIn0.l3e_ddn_pjNLLkWt3sdUnQ'; 
             const map = new mapboxgl.Map({
               container: 'map',
               style: 'mapbox://styles/andrewdai6123/clg2xlsap002f01mqrt7vrgqt', 
@@ -216,14 +215,18 @@
             <div class = "footer-bar"></div>
             <div class = "footer-section">
                 <h3>Social Media</h3>
+                <a target = "_blank" href = "https://www.instagram.com/nhatrangnyc/?hl=en">
                 <div class = "footer-social">
-                    <p>Instagram</p>
-                    <img src = "nhatrangImg/instagram icon.svg">
-                </div>
-                <div class = "footer-social">
-                    <p>Yelp</p>
-                    <img src = "nhatrangImg/yelp icon.svg">
-                </div>
+                        <p>Instagram</p>
+                        <img src = "nhatrangImg/instagram icon.svg">
+                    </div>
+                </a>
+                <a target = "_blank" href = "https://www.yelp.com/biz/nha-trang-one-new-york?osq=nha+trang+one">
+                    <div class = "footer-social">
+                        <p>Yelp</p>
+                        <img src = "nhatrangImg/yelp icon.svg">
+                    </div>
+                </a>
             </div>
         </div>
     </footer>

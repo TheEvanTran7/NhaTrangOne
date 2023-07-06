@@ -21,13 +21,8 @@ const toggleDropDown =  () => {
     if(backTopButton && !backTopButton.classList.contains("hide")){
         backTopButton.style.opacity = backTopButton.style.opacity == "0" ? "100" : "0"
     }
-    if(dropdown){
-        if(map){
-            map.classList.toggle("hide")
-        }
-        if (navLinks.classList.contains('active')) {document.body.style.overflow = 'hidden';}
-    else {document.body.style.overflow = 'auto';}
-    }
+    if (navLinks.classList.contains('active')) {document.body.style.overflow = 'hidden';}
+        else {document.body.style.overflow = 'auto';}
 }
 toggle.addEventListener('click', () => {
     toggleDropDown()
