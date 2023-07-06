@@ -845,7 +845,7 @@ grid-template-columns: repeat(3, 1fr);
 
 /* FAQ */
 .faq{
-    margin: 50px 0px;
+    margin: 0px 0px;
     padding: 50px 400px;
     background-color: var(--darkBlue);
     display: flex;
