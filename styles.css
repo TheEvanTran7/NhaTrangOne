@@ -29,6 +29,18 @@ nav{
     display: flex;
     flex-direction: column;
 }
+.location-parallax {
+    /* The image used */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/bwNhaTrangOne.png') center/cover no-repeat;
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .menu-parallax {
     /* The image used */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url('nhatrangImg/bwNhaTrangOne.png') center/cover no-repeat;
@@ -41,7 +53,6 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .food-parallax {
     /* The image used */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url('nhatrangImg/food.png') center/cover no-repeat;
@@ -63,7 +74,7 @@ nav{
 }
 .about-parallax {
     /* The image used */
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('nhatrangImg/food.png') center/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('nhatrangImg/andyoutsidenhatrangone.jpg') center/cover no-repeat;
     /* Set a specific height */
     min-height: 500px;
     
@@ -111,7 +122,7 @@ nav{
     object-fit: cover;
 }
 .Layer_3{
-    width: 12%;
+    width: 0%;
     height: auto;
     text-align: center;
 }
@@ -677,7 +688,7 @@ grid-template-columns: repeat(3, 1fr);
     align-self: center;
     display: flex;
     gap: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .carousel-indicator{
     /* background: linear-gradient(135deg,rgba(255,255,255,0.25),rgb(255,255,255,0.25)); */
@@ -846,7 +857,7 @@ grid-template-columns: repeat(3, 1fr);
 /* FAQ */
 .faq{
     margin: 0px 0px;
-    padding: 50px 400px;
+    padding: 50px 20vw;
     background-color: var(--darkBlue);
     display: flex;
     flex-direction: column;
@@ -1022,20 +1033,13 @@ footer a{
         display: none;
     }
 }
-@media only screen and (max-width: 1100px) { /* START OF WHEN NAV BAR WRAPS */
-    .faq-parallax, .main-parallax, .about-parallax, .food-parallax, .insta-parallax, .menu-parallax{
+@media only screen and (max-width: 1200px) { /* START OF WHEN NAV BAR WRAPS */
+    .faq-parallax, .main-parallax, .menu-parallax, .about-parallax, .food-parallax, .insta-parallax, .location-parallax{
         background-attachment: scroll;
         background-position: center;
         /* background-size: auto; */
         width: 100%;
     }
-    .faq-parallax, .about-parallax{
-        /* height: 110vh; */
-        background-position: bottom;
-    }
-    /* .menu-parallax{
-        background-repeat: repeat-y;
-    } */
     #toggle{
         display: flex;
     }
@@ -1431,6 +1435,18 @@ footer a{
         gap: 50px;
     }
 }
+@media (min-width: 1100px) and (max-width: 1200px) { /* LANDSCAPE IPAD */
+    .Landing_Page_Content img{
+        width: 330px;
+    }
+    .carousel-nav{
+        margin-bottom: 150px;
+    }
+    .food-section, .food-content h1, .drinks-content h1 {
+        margin: 0px 150px;
+    }
+}
+
 /* @media (min-width: 1400px) {
   .dishes {
     grid-template-columns: repeat(3, 1fr);
