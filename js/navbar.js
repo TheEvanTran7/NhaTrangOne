@@ -4,6 +4,7 @@ const navLinks = document.querySelector(".Nav_Bar_Links");
 const locationNavLink = document.querySelector("#location")
 const bars = document.querySelectorAll(".bar")
 const dropdown = window.matchMedia("(max-width: 1100px)");
+// console.log("Window dimensions: " + window.innerWidth + " x " + window.innerHeight);
 const toggleDropDown =  () => {
     navLinks.classList.toggle("active")
     bars.forEach((element) => {
