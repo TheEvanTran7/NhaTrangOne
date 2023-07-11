@@ -647,7 +647,7 @@ grid-template-columns: repeat(3, 1fr);
 
 .home{
     position: relative;
-    background-color: black;
+    background-color: #212529;
     z-index: 0;
     width: 100%;
     height: 95vh;
@@ -861,7 +861,7 @@ grid-template-columns: repeat(3, 1fr);
 .faq{
     margin: 0px 0px;
     padding: 50px 20vw;
-    background-color: var(--darkBlue);
+    background-color: #212529;
     display: flex;
     flex-direction: column;
     gap: 33px;
